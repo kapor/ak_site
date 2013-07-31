@@ -4,18 +4,6 @@ layout: home
 ---
 
 <div id="container">
-    {% assign columns = site.posts.each_slice(3)%}
-    {% for posts in columns %}
-        <div class="galcolumn">
-            {% for post in posts %}
-                <div class="item">
-                    <a class="">
-                        <img src="{{ site.baseurl }}/images/posts/{{post.slug}}/{{post.image}}">
-                    </a>
-                </div>
-            {% endfor %}
-        </div>
-    {% endfor %}
     
     {% for post in site.posts %}
         <div class="item">
