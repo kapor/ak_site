@@ -4,7 +4,6 @@ layout: home
 ---
 
 <div id="container">
-    
     {% for post in site.posts %}
             <div class="item">
                  <a href="{{ post.url }}">
@@ -20,7 +19,7 @@ layout: home
    $(document).ready(function() {
    		$("#container").gridalicious({
           animate: true;
-          width: 150;
+          width: 100;
           gutter: 10;
           selector: '.item';
           animationOptions: {
