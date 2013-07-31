@@ -1,5 +1,4 @@
 name: aaronkapor.com
 markdown: redcarpet
 pygments: true
-auto: true
 baseurl: ''
