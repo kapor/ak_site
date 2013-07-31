@@ -9,7 +9,7 @@ layout: home
         <div class="item">
             <div class="item">
                  <a href="{{ post.url }}">
-                     {%include post_image.html image=post.image %}
+                     <img src="{{ site.baseurl }}images/posts/{{ post.date | date: "%Y-%m-%d" }}-{{ post.title |downcase|dasherize }}/{{ post.image }}">
                  </a>
              </div>
         </div>
