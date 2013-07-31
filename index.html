@@ -19,7 +19,7 @@ layout: home
     
     {% for post in site.posts %}
         <div class="item">
-            <a class="">
+            <a href="{{ post.url }}">
                 <img src="{{ site.baseurl }}/images/posts/{{post.slug}}/{{post.image}}">
             </a>
         </div>
