@@ -6,13 +6,11 @@ layout: home
 <div id="container">
     
     {% for post in site.posts %}
-        <div class="item">
             <div class="item">
                  <a href="{{ post.url }}">
                      <img src="{{ site.baseurl }}images/posts/{{ post.date | date: "%Y-%m-%d" }}-{{ post.title |downcase|dasherize }}/{{ post.image }}">
                  </a>
              </div>
-        </div>
     {% endfor %}
     
     
