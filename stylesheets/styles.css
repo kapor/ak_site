@@ -21,9 +21,8 @@ h1, h2, h3 {
 }
 
 h1 {
-  font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-
 
 h1 {
   font-size:28px;
