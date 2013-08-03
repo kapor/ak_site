@@ -16,8 +16,8 @@ h1 { font-size:2.4em; line-height:1.6; }
 h2 { margin-top:15px; margin-bottom:10px; }
 
 /* header / footer */
-#header { margin-bottom:0px; }
-#footer { border-top:1px solid #ccc; padding-top:0px; }
+#header { margin-bottom:20px; }
+#footer { border-top:1px solid #ccc; padding-top:20px; }
 
 /* the posts */
 .post { position:absolute; display:none; }
