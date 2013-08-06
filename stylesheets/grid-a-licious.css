@@ -27,7 +27,7 @@ h2 { margin-top:15px; margin-bottom:10px; }
 /* the content */
 .comments { float:right; margin-right:4px; }
 .the_comments { margin-bottom:40px; }
-.the_content,.comments { border-left:1px solid #ccc; }
+.the_content,.comments { border-left:1px solid #000; }
 .the_content,.attachment,.the_content_no_border { float:left; }
 .commentmetadata { display:block; margin:0; }
 .author { font-size:9px; line-height:1.5; margin-top:7px; }
