@@ -1,7 +1,7 @@
 
 body {
 	margin-top: 0px;
-	background: url(/images/bg_1.png) repeat;
+	background: url(/images/bg_temp.jpg) repeat;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-bottom: 0px;
@@ -16,7 +16,7 @@ div#container{
 	bottom:0;
 	right:0;
 	left:0;
-	background: transparent url(/images/catzo_2d.png) no-repeat;
+	background: transparent url(/images/temp.png) no-repeat;
 	background-position: center;
 }
 
