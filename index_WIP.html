@@ -1,0 +1,34 @@
+---
+title: "Aaron Kapor"
+layout: home
+---
+
+<div id="container">
+<div id="page" class="opencols" style="width: 1080px;"></div>
+    {% for post in site.posts %}
+            <div class="item">
+                 <a href="{{ post.url }}">
+                     <img src="{{ site.baseurl }}images/posts/{{ post.date | date: "%Y-%m-%d" }}-{{ post.title |downcase|dasherize }}/{{ post.image }}">
+                 </a>
+             </div>
+    {% endfor %}
+    
+    
+</div>
+
+<script>
+   $(document).ready(function() {
+   		$("#container").gridalicious({
+          animate: true,
+          width: 200,
+          gutter: 0,
+          selector: '.item',
+          animationOptions: {
+              speed: 100,
+              duration: 200
+          }
+        });
+    });
+    
+
+</script>
