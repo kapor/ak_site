@@ -76,7 +76,7 @@ div#links3{
 
 .main {
 	font-family: "Times", Times New Roman, Serif;
-	font-size: 12px;
+	font-size: 14px;
 	font-style: normal;
 	font-weight: normal;
 	color: #000000;
@@ -104,7 +104,7 @@ a:hover {
 	font-size: 14px;
 	padding: 3px 0px 2px 0px;
 	line-height: 30px;
-	background-color: #7c958b;
+	background-color: #000000;
 	color: #FFFFFF;
 }
 
