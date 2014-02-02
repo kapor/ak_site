@@ -23,7 +23,7 @@ div#container{
 div#links{
 	width="204";
 	background: transparent; 
-	padding: 0px 0px 5px 0px;
+	padding: 0px 0px 0px 0px;
 	text-align: left;
 	position: relative;
 	float: left
@@ -33,7 +33,7 @@ div#links{
 div#links2{
 	width="204";
 	background: transparent; 
-	padding: 0px 0px 5px 0px;
+	padding: 0px 0px 0px 0px;
 	text-align: right;
 	position: relative;
 	float: right
@@ -95,7 +95,7 @@ a {
 	color: #000000;
 	background-color: #444444;
 	line-height: 30px;
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 a:hover {
@@ -105,7 +105,7 @@ a:hover {
 	color: #000000;
 	background-color: #888888;
 	line-height: 30px;
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 
