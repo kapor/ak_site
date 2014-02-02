@@ -16,7 +16,7 @@ div#container{
 	bottom:0;
 	right:0;
 	left:0;
-	background: transparent url() no-repeat;
+	background: transparent url(/images/000.png) no-repeat;
 	background-position: center;
 }
 
