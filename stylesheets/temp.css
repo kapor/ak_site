@@ -98,6 +98,15 @@ a {
 	text-decoration: underline;
 }
 
+a:hover {
+	font-family: "Times", Times New Roman, Serif;
+	font-size: 14px;
+	padding: 5px 0px 3px 0px;
+	color: #000000;
+	background-color: #FF3333;
+	line-height: 30px;
+	text-decoration: underline;
+}
 
 
 
