@@ -68,7 +68,7 @@ div#links3{
 	font-family: "lucida grande", verdana, Sans-Serif;
 	font-size: 10px;
 	line-height: 20px;
-	padding: 0px 0px 0px 0px;
+	padding: 4px 10px 4px 10px;
 	color: #FF908A;
 	background-color: #ae0000;
 	text-decoration: none
@@ -98,15 +98,6 @@ a {
 	text-decoration: underline;
 }
 
-a:hover {
-	font-family: "Times", Times New Roman, Serif;
-	font-size: 14px;
-	padding: 5px 0px 3px 0px;
-	line-height: 30px;
-	background-color: #000000;
-	color: #FFFFFF;
-	text-decoration: none;
-}
 
 
 
