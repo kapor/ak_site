@@ -1,0 +1,98 @@
+ /* aaronkapor
+  v 1.0 - 08-2023
+*/
+
+/* reset margins 
+html, body, div, span, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, form, label, legend, table, caption, tbody, tfoot, thead,
+tr, th, td, article, aside, canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, section, summary, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+*/
+
+/* setup body */
+p {
+    line-height: 1;
+    font-family: Georgia, serif;
+    font-size: 16pt;
+}
+body {
+    background-color: #FFFFFF;
+	line-height: 1;
+    font-family: Georgia, serif;
+    font-size: 16pt;
+}
+
+/* margins */
+p, h1, h2, h3, h4, h5, h6 { 
+	margin: 12pt; 
+}
+
+/* headings */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+h1 {
+	line-height: 1;
+    font-size: 400%;
+    color: #444444;
+    font-family: Helvetica Neue, Verdana, sans-serif}
+h2 {
+	line-height: 1;
+    font-size: 180%;
+    color: #444444;
+    font-family: Helvetica Neue, Verdana, sans-serif}
+}
+h3 {
+	line-height: 1;
+    font-size: 160%;
+    color: #444444;
+    font-family: Helvetica Neue, Verdana, sans-serif}
+}
+h4 {
+	line-height: 1;
+    font-size: 140%;
+    color: #444444;
+    font-family: Helvetica Neue, Verdana, sans-serif}
+}
+h5 {
+	line-height: 1;
+    font-size: 120%;
+    color: #444444;
+    font-family: Helvetica Neue, Verdana, sans-serif}
+}
+h6 {
+	line-height: 1;
+    font-size: 100%;
+    color: #444444;
+    font-family: Helvetica Neue, Verdana, sans-serif}
+}
+
+
+/* setup pre */
+pre { font-family: consolas, monospace; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,56 @@
+ /* aaronkapor
+  v 1.0 - 08-2023
+*/
+
+nav#sections {
+    width: 240px;
+    height: 100vh;
+    background-color: #FFFFFF;
+    float: left;
+    margin-top: 0;
+}
+
+/* unordered list (ul) within the #section id */
+#sections ul {
+    display: block;
+    list-style-type: none;
+    padding-left: 16px;
+    padding-top: 0px;
+    margin-bottom: 8pt;
+}
+
+/* line items (li) within the unordered list (ul) */
+#sections ul li {
+    margin-bottom: 8pt;
+    padding: 8px 0px 0px 0px;
+    
+}
+
+/* links (a) within line items (li) within the unordered list (ul) */
+#sections ul li a {
+    display: block;
+    padding-bottom: 4px;
+    font-family: Helvetica Neue, Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    background-color: #ffffff;
+    text-decoration: none;
+    color: #666666;
+    border-bottom: #ffffff solid 2px;
+}
+
+/* link hover (a:hover) within line items (li) within the unordered list (ul) */
+#sections ul li a:hover { 
+	border-bottom: #CCCCCC solid 2px;
+	width: 200px;
+	color: #303A3F;
+}
+
+#sections ul li a:active { 
+	border-bottom: red solid 2px;
+	width: 200px;
+	color: red;
+}
+
