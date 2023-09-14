@@ -1,0 +1,20 @@
+posts({
+  "posts": [
+    
+    {
+      "id": 1,
+      "title": "Welcome to Jekyll!",
+      "tags": [ null],
+      "href": "/jekyll/update/2023/09/14/welcome-to-jekyll.html",
+      "content": "%3Cp%3EYou%E2%80%99ll+find+this+post+in+your+%3Ccode+class%3D%22language-plaintext+highlighter-rouge%22%3E_posts%3C%2Fcode%3E+directory.+Go+ahead+and+edit+it+and+re-build+the+site+to+see+your+changes.+You+can+rebuild+the+site+in+many+different+ways%2C+but+the+most+common+way+is+to+run+%3Ccode+class%3D%22language-plaintext+highlighter-rouge%22%3Ejekyll+serve%3C%2Fcode%3E%2C+which+launches+a+web+server+and+auto-regenerates+your+site+when+a+file+is+updated.%3C%2Fp%3E%3Cp%3EJekyll+requires+blog+post+files+to+be+named+according+to+the+following+format%3A%3C%2Fp%3E%3Cp%3E%3Ccode+class%3D%22language-plaintext+highlighter-rouge%22%3EYEAR-MONTH-DAY-title.MARKUP%3C%2Fcode%3E%3C%2Fp%3E%3Cp%3EWhere+%3Ccode+class%3D%22language-plaintext+highlighter-rouge%22%3EYEAR%3C%2Fcode%3E+is+a+four-digit+number%2C+%3Ccode+class%3D%22language-plaintext+highlighter-rouge%22%3EMONTH%3C%2Fcode%3E+and+%3Ccode+class%3D%22language-plaintext+highlighter-rouge%22%3EDAY%3C%2Fcode%3E+are+both+two-digit+numbers%2C+and+%3Ccode+class%3D%22language-plaintext+highlighter-rouge%22%3EMARKUP%3C%2Fcode%3E+is+the+file+extension+representing+the+format+used+in+the+file.+After+that%2C+include+the+necessary+front+matter.+Take+a+look+at+the+source+for+this+post+to+get+an+idea+about+how+it+works.%3C%2Fp%3E%3Cp%3EJekyll+also+offers+powerful+support+for+code+snippets%3A%3C%2Fp%3E%3Cfigure+class%3D%22highlight%22%3E%3Cpre%3E%3Ccode+class%3D%22language-ruby%22+data-lang%3D%22ruby%22%3E%3Cspan+class%3D%22k%22%3Edef%3C%2Fspan%3E+%3Cspan+class%3D%22nf%22%3Eprint_hi%3C%2Fspan%3E%3Cspan+class%3D%22p%22%3E%28%3C%2Fspan%3E%3Cspan+class%3D%22nb%22%3Ename%3C%2Fspan%3E%3Cspan+class%3D%22p%22%3E%29%3C%2Fspan%3E++%3Cspan+class%3D%22nb%22%3Eputs%3C%2Fspan%3E+%3Cspan+class%3D%22s2%22%3E%22Hi%2C+%3C%2Fspan%3E%3Cspan+class%3D%22si%22%3E%23%7B%3C%2Fspan%3E%3Cspan+class%3D%22nb%22%3Ename%3C%2Fspan%3E%3Cspan+class%3D%22si%22%3E%7D%3C%2Fspan%3E%3Cspan+class%3D%22s2%22%3E%22%3C%2Fspan%3E%3Cspan+class%3D%22k%22%3Eend%3C%2Fspan%3E%3Cspan+class%3D%22n%22%3Eprint_hi%3C%2Fspan%3E%3Cspan+class%3D%22p%22%3E%28%3C%2Fspan%3E%3Cspan+class%3D%22s1%22%3E%27Tom%27%3C%2Fspan%3E%3Cspan+class%3D%22p%22%3E%29%3C%2Fspan%3E%3Cspan+class%3D%22c1%22%3E%23%3D%26gt%3B+prints+%27Hi%2C+Tom%27+to+STDOUT.%3C%2Fspan%3E%3C%2Fcode%3E%3C%2Fpre%3E%3C%2Ffigure%3E%3Cp%3ECheck+out+the+%3Ca+href%3D%22https%3A%2F%2Fjekyllrb.com%2Fdocs%2Fhome%22%3EJekyll+docs%3C%2Fa%3E+for+more+info+on+how+to+get+the+most+out+of+Jekyll.+File+all+bugs%2Ffeature+requests+at+%3Ca+href%3D%22https%3A%2F%2Fgithub.com%2Fjekyll%2Fjekyll%22%3EJekyll%E2%80%99s+GitHub+repo%3C%2Fa%3E.+If+you+have+questions%2C+you+can+ask+them+on+%3Ca+href%3D%22https%3A%2F%2Ftalk.jekyllrb.com%2F%22%3EJekyll+Talk%3C%2Fa%3E.%3C%2Fp%3E",
+      "teaser": "&lt;p&gt;You’ll find this post in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to...",
+      "date": {
+        "day": "14",
+        "month": "September",
+        "year": "2023"
+      }
+    },
+    
+    null
+  ]
+})
