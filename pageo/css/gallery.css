@@ -1,0 +1,265 @@
+
+
+
+
+/* ------------------ SNAPSHOTS ------------------ */
+
+.gallery_grid {
+	padding: 40px 10px 100px;
+	margin: auto;
+	max-width: 1200px
+}
+
+@media screen and (min-width: 1200px) {
+	.gallery_grid {
+		border: border: 2px solid #fff;
+		padding: 80px 0px 80px 0px;
+	}
+}	
+
+.gallery_row > .gallery_column {
+	padding: 2px 2px;
+	border: 2px solid #fff;
+	overflow: hidden;
+}
+
+.gallery_row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+ /*
+@media screen and (min-width: 1200px) {
+	.gallery_column {
+		float: left;
+		width: 8.333%;
+	}
+}	
+
+@media screen and (max-width: 1200px) {
+	.gallery_column {
+		float: left;
+		width: 16.666666666666667%;
+	}
+}	
+*/
+
+@media screen and (min-width: 1200px) {
+	.gallery_column {
+		float: left;
+		width: 16.666666666666667%;
+	}
+}	
+
+@media screen and (max-width: 1200px) {
+	.gallery_column {
+		float: left;
+		width: 25%;
+	}
+}	
+
+@media screen and (max-width: 800px) {
+	.gallery_column {
+		float: left;
+		width: 25%;
+	}
+	.gallery_grid {
+		padding: 8px 8px 60px 8px;
+	}
+}	
+
+/* The Modal (background) */
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 20000;
+	padding-top: 0px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-color: #ffffff;
+}
+
+/* Modal Content */
+.gallery_modal_content {
+	position: relative;
+	margin: 88px auto 20px auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+
+.gallery_slides_container {
+	position: relative;
+	margin: auto;
+	padding: 0px 0px 20px 0px;
+	width: 100%;
+	max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+	text-align: right;
+	width: auto;
+	float: right;
+	z-index: 20001;
+	padding-right: 20px;
+	padding-top: 20px;
+	visibility: visible;
+	max-height: 48px;
+}
+
+.close:hover,
+.close:focus {
+	color: #999;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+	.close {
+		scale: .5;
+		padding-right: 20px;
+		padding-top: 40px;
+	}
+
+}
+
+.slides {
+	display: none;
+}
+
+.gallery_cursor {
+	cursor: pointer;
+}
+
+/* next_slide & prev_slideious buttons */
+.prev_slide,
+.next_slide {
+	background-color: rgba(255, 255, 255, 0.35);
+	cursor: pointer;
+	position: absolute;
+	top: 48%;
+	width: auto;
+	padding: 16px;
+	margin-top: -48px;
+	transition: 0.6s ease;
+	user-select: none;
+	-webkit-user-select: none;
+}
+
+/* Position the "next_slide button" to the right */
+.next_slide {
+	right: -10px;
+}
+
+.prev_slide {
+	left: -10px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev_slide:hover,
+.next_slide:hover {
+	background-color: rgba(255, 255, 255, 1);
+}
+
+@media screen and (max-width: 1200px) {
+	.next_slide {
+		scale: .75;
+		right: -10px;
+	}
+
+	.prev_slide {
+		scale: .75;
+		left: -10px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+
+	.next_slide {
+		scale: .50;
+		right: -22px;
+	}
+
+	.prev_slide {
+		scale: .50;
+		left: -22px;
+	}
+
+}
+
+.gallery_slide_number {
+	color: #222;
+	font-family: urw-din, Source Sans Pro, Sans-Serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 14px;
+	padding: 0px 0px;
+	position: absolute;
+	bottom: 0;
+}
+
+.gallery_credit {
+	color: #222;
+	font-family: urw-din, Source Sans Pro, Sans-Serif;
+	font-weight: 400;
+	font-style: normal;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 14px;
+	padding: 0px 0px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+@media screen and (max-width: 1200px) {
+
+	.gallery_slide_number {
+		padding-left: 10px;
+	}
+
+	.gallery_credit {
+		padding-right: 10px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+
+	.gallery_slide_number, .gallery_credit {
+		font-size: 12px;
+	}
+
+}
+
+.gallery_grid img {
+	margin-bottom: -5px;
+}
+
+.gallery_caption_container {
+	text-align: center;
+	background-color: #FFF;
+	padding: 2px 16px;
+	color: white;
+}
+
+.gallery {
+	opacity: 0.6;
+}
+
+.active,
+.gallery:hover {
+	opacity: 1;
+}
+
+.gallery_grid img.gallery_hover {
+	transition: 0.4s;
+}
+
+.gallery_hover:hover {
+	opacity: .75;
+
+}
