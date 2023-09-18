@@ -1869,7 +1869,7 @@ footer .row:after {
 	position: relative; 
 	width: 94%; 
 	margin: auto;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("../images/home/parallax_7.jpg");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("../images/home/parallax_07.jpg");
 	background-attachment: fixed; 
 	background-size: cover; 
 	-moz-background-size: cover; 
