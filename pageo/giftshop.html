@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<!-- Gift Shop & Nursery -->
+
+<html lang="en">
+
+
+
+<head>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+<title>Giftshop & Nursery</title>
+<link rel="stylesheet" type="text/css" href="css/styles.css"> 
+<link rel="stylesheet" type="text/css" href="css/topnav.css">
+<link rel="stylesheet" type="text/css" href="css/products.css">
+<link rel="stylesheet" href="https://use.typekit.net/gkr1vzv.css">
+<style>
+
+#hero_giftshop {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url("images/giftshop/hero_giftshop_2.jpg");
+}
+
+.shopify_junk {
+	max-width: 1280px;
+	text-align: center;
+	margin: 60px auto 60px auto;
+}
+
+
+
+
+</style>
+<script src="js/javascript.js"></script>
+<script src="js/product.js"></script>
+	
+</head>
+
+
+
+<body>
+
+
+<!--------------- NAVIGATION –––––––––––––––––––––––-->
+
+<div id="topnav_menu" class="overlay_menu">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+		<span style="cursor:pointer" onclick="openNav()"><img src="images/global/icon/24x24_close.svg"></span>	
+	</a>
+	<div class="overlay_content">
+		<a href="weddings.html" class="overlay_link">Weddings & Events</a>
+			<a href="weddings.html#services" class="topnav_mobile_subnav">Our Services</a>
+			<a href="weddings.html#about" class="topnav_mobile_subnav">About Us</a>
+			<a href="weddings.html#test" class="topnav_mobile_subnav">Testimonials</a>
+		<!--<a href="weddings.html#snapshots" class="topnav_mobile_subnav">Snapshots</a> -->
+		<a href="giftshop.html" class="overlay_link">Gift Shop & Services</a>
+			<a href="giftshop.html#lunch_anchor" class="topnav_mobile_subnav">Lunch Menu</a>
+			<a href="giftshop.html#products" class="topnav_mobile_subnav">Products</a>
+		<a href="gallery.html" class="overlay_link">Galleries</a> <!--
+			<a href="gallery.html#weddings" class="topnav_mobile_subnav">Weddings Photos</a>
+			<a href="gallery.html#giftshop" class="topnav_mobile_subnav">Gift Shop Photos</a>
+			<a href="gallery.html#harvest" class="topnav_mobile_subnav">Harvest Photos</a>
+			<a href="gallery.html#farm" class="topnav_mobile_subnav">Around the Farm</a> 
+		<!-- ><a href="#" class="overlay_link">Gallery</a>
+		<a href="#" class="overlay_link">Contact</a> -->
+	</div>
+	<div class="button_overlay" style='background-color:#FEF2DA'>
+		<a href="#">Book a consultation</a>
+	</div>
+</div>
+
+
+<div id="topnav_contact" class="overlay_contact">
+		<div class="nav_form">
+			<div class="nav_getintouch_closex">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeContact()">
+				<span style="cursor:pointer" onclick="openContact()"><img src="images/global/icon/24x24_close.svg"></span>	
+			</a>
+			</div>
+			<div class="nav_getintouch_top">
+				<h4>
+				<ol>
+					<li> Fill out the inquiry form and submit.</li>
+					<li> Receive pricing information and availability dates.</li>
+					<li> Book a tour of the venue for a free consultation.</li>
+				</ol>
+				</h4>
+			</div>
+			<div class="nav_getintouch_bottom">
+				<form action="/action_page.php">
+					<!-- ><label for="fname">First Name</label> -->
+					<input type="text" id="fname" name="firstname" placeholder="Full Name">
+					<!-- ><label for="fname">First Name</label> -->
+					<input type="text" id="lname" name="lastname" placeholder="Email Address">
+					<!-- ><label for="fname">First Name</label> -->
+					<input type="text" id="pnumber" name="phone" placeholder="Phone Number">
+					<!-- ><label for="fname">First Name</label> -->
+					<input type="text" id="etype" name="type" placeholder="Event Type (Wedding, Shower, etc.)">
+					<!-- ><label for="fname">First Name</label> -->
+					<input type="text" id="datesofinterest" name="dates" placeholder="Date(s) of Interest)">
+					<!-- ><label for="fname">First Name</label> -->
+					<input type="text" id="numberofguests" name="guests" placeholder="Approx. Number of Guests">
+					<!-- ><label for="fname">First Name</label> -->
+					<input type="text" id="daysofweek" name="days" placeholder="Preferred Day(s) of the Week">
+					<input type="submit" value="Submit">
+				</form>
+			</div>
+		</div>
+</div>
+
+<div class="topnav_fixed">
+	<div class="topnav">
+		<div class="topnav_left">
+			<a class="nav_pageo_logo" href="index.html">PAGEO LAVENDER FARM</a>
+			<div class="topnav_vertical_divider"></div>
+			<div class="nav_link_left">
+			<a href="weddings.html">Weddings & Events</a>
+			<a href="giftshop.html">Gift Shop & Services</a>
+			</div>
+			
+		</div>
+		<div id="menu">
+			<span style="cursor:pointer" onclick="openNav()"><img src="images/global/icon/24x24_ham.svg"></span>
+		</div>
+		<div class="topnav_right_button_group">
+			<div class="button_nav_right">
+			<span style="cursor:pointer" onclick="openContact()"><a href="#">Contact</a></span>
+				<div class="topnav_vertical_divider"></div>
+			</div>		
+		</div>	
+		<div class="topnav_right">
+			<a href="gallery.html">Galleries</a>
+		</div>
+	</div>
+</div>
+
+
+
+
+<!--------------- HERO –––––––––––––––––––––––-->
+
+<div id="hero_giftshop">
+		
+	<div class="hero_info">
+		<header> <a class="logo" href="#"></a> </header>
+		
+		<article>
+			<br><br>
+			<h1 style='color:white'>
+			Gift Shop & Services
+			</h1>
+			<hr style='background-color:white; width:280px; height:2px'>
+				<h2 style="color:#FFFFFF; text-align:center;">Our on-site shop is full of unique offerings - gifts perfect for any occasion.</h2>
+				<br><br>
+		</div>
+		
+	</div>
+</div>
+
+
+
+<!--------------- OUR SERVICES –––––––––––––––––––––––-->
+
+<div class="divider">
+	<div id="services">Our Services</div>
+</div>
+
+<div class="cards">
+
+	<div class="card">
+	<img src="images/giftshop/icons/gifts.svg"/>
+	<h6>GIFTS</h6>
+	<p>With a wide array of handmade lavender products – everything from pillows to beard oil – we provide anything you might need to pamper yourself properly.</p>
+	</div>
+
+	<div class="card">
+	<img src="images/giftshop/icons/lunch.svg"/>
+	<h6>LUNCHES</h6>
+	<p>Replenish yourself by spending the afternoon dining with us . Our seasonal menus are complete with a selection of dishes prepared on-site by our catering team.</p>
+	</div>
+
+	<div class="card">
+	<img src="images/giftshop/icons/tours.svg"/>
+	<h6>TOURS</h6>
+	<p>Schedule a tour of the farm’s features and highlights while hearing about it’s history from one of our many guides. We frequently hold bus tours as well as visits from smaller parties.</p>
+	</div>
+	
+	<div class="card">
+	<img src="images/giftshop/icons/photo.svg"/>
+	<h6>PHOTOSHOOTS</h6>
+	<p>Book a session at our farm with one of our preferred photographers or feel free to bring your own. The farms setting has been a popular backdrop choice for years.</p>
+	</div>
+	
+</div>
+
+
+
+
+<!--------------- ACTIVITIES –––––––––––––––––––––––-
+
+<div class="divider">
+	Activities
+</div>
+
+<div class='about_us'>
+
+<!--––––––– Guided Tours -
+
+<div class="about_copy_image">
+  <div class="about_row">
+  
+    <div class="about_left_copy">
+    	<h1 class=h1b>Guided Tours</h1>
+		<p>Fish i must find my red catnip fishy fish bury the poop bury it deep to pet a cat, rub its belly, endure blood and agony, quietly weep, keep rubbing belly but ask to be pet then attack. Quietly weep, keep rubbing belly but no.
+		<br><br>
+		Fish i must find my red catnip fishy fish bury the poop bury it deep to pet a cat. Fishy fish bury the poop bury it deep to pet a cat rub its belly. Endure blood and agony, quietly weep, keep rubbing belly but ask to be pet then attack. </p>
+    </div>
+
+    <div class="about_right_image">
+		<div>
+			<img src="images/weddings/about_us/our_story.jpg">
+		</div>
+    </div>
+	</div>
+</div>
+
+
+
+<!--––––––– Photoshoots --
+
+<div class="about_image_copy">
+  <div class="about_row">
+    <div class="about_left_image">
+		<div>
+			<img src="images/weddings/about_us/the_farm.jpg">
+		</div>
+    </div>
+    <div class="about_right_copy">
+        <h1 class=h1b>Photoshoots</h1>
+		<p>Fish i must find my red catnip fishy fish bury the poop bury it deep to pet a cat, rub its belly, endure blood and agony, quietly weep, keep rubbing belly but ask to be pet then attack. Quietly weep, keep rubbing belly but no.
+		<br><br>
+		Fish i must find my red catnip fishy fish bury the poop bury it deep to pet a cat. Fishy fish bury the poop bury it deep to pet a cat rub its belly. Endure blood and agony, quietly weep, keep rubbing belly but ask to be pet then attack. </p>
+    </div>
+	</div>
+</div>
+
+
+</div>
+
+
+<!--------------- PRODUCTS –––––––––––––––––––––––-->
+
+<div class="divider">
+	<div id="products">Products</div>
+</div>
+
+
+
+<div class="prod_grid">
+
+<h5 class="prod_intro">We have a large selection of lavender products that look beautiful and have an amazing fragrance. Our gift shop also has a lot of unique crafts and hardware. Below is a sample selection from our online store, you can check it out<a href="https://pageo.myshopify.com/collections/all" target="_blank"> here<span class="outlink_icon"><svg style="width:24px;height:32px"  viewBox="-2 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.8 3.7998V5.1998H17.8075L8.86719 14.1499L9.84982 15.1326L18.81 6.18222V11.1397H20.21V3.7998H12.8Z" fill="#6219FF"/>
+<path d="M18.2008 13.7998H16.8008V18.7998H5.20078V7.1998H10.2008V5.7998H3.80078V20.1998H18.2008V13.7998Z" fill="#6219FF"/>
+</svg></span> </a>.</h5>
+
+<!---------------------ROW-1--------------------------->
+
+
+<div class="prod_row_1">
+
+
+  <div class="prod_column_1">
+    <div class="prod_container">
+	<div class="prod_image_container">
+	<img src="images/giftshop/products/rows/lotion2.jpg">
+	</div>
+		<h5>Lavender Lotion</h5>
+      <p>Our popular lotions are a Pageo staple. One of our earliest formulas comes in a variety of different scents.</p>
+		<a href="https://pageo.myshopify.com/products/lotions" target="_blank">
+			<div class="prod_button">
+				View Product Page
+				<img style='max-width:24px' src="images/global/outlink_dark.svg"/>
+			</div>
+		</a>
+		</div>
+	</div>
+
+  <div class="prod_column_1">
+    <div class="prod_container">
+	<div class="prod_image_container">
+	<img src="images/giftshop/products/rows/Sugar.jpg">
+	</div>
+		<h5>Lavender Sugar</h5>
+      <p>A special blend of culinary lavender and sugar. Add this surprise ingredient to your next recipe.</p>
+		<a href="https://pageo.myshopify.com/products/lavender-sugar" target="_blank">
+			<div class="prod_button">
+				View Product Page
+				<img style='max-width:24px' src="images/global/outlink_dark.svg"/>
+			</div>
+		</a>
+    </div>
+  </div>
+
+  <div class="prod_column_1">
+    <div class="prod_container">
+	<div class="prod_image_container">
+	<img src="images/giftshop/products/rows/hydrosol.jpg">
+	</div>
+		<h5>Lavender Hydrosol</h5>
+      <p>A workhorse. Our natural cleaner is used for most of our cleaning, deodorizing and other household tasks.</p>
+		<a href="https://pageo.myshopify.com/products/lavender-hydrosol" target="_blank">
+			<div class="prod_button">
+				View Product Page
+				<img style='max-width:24px' src="images/global/outlink_dark.svg"/>
+			</div>
+		</a>
+		</div>
+	</div>
+
+</div>
+
+
+
+<!---------------------ROW-2--------------------------->
+
+<div class="prod_row_2">
+
+  <div class="prod_column_2">
+    <div class="prod_container">
+		<div class="prod_image_container">
+		<img src="images/giftshop/products/rows/bathsalts.jpg">
+		</div>
+		<h5>Lavender Bath Salt</h5>
+      <p>Our all-natural take on the classic bath accessory is made with 100% pure salts from the Dead Sea.</p>
+		<a href="https://pageo.myshopify.com/collections/public-site/products/bath-salts" target="_blank">
+			<div class="prod_button">
+				View Product Page
+				<img style='max-width:24px' src="images/global/outlink_dark.svg"/>
+			</div>
+		</a>
+	</div>
+	</div>
+
+ <div class="prod_column_2">
+    <div class="prod_container">
+		<div class="prod_image_container">
+		<img src="images/giftshop/products/rows/product_014.jpg">
+		</div>
+		<h5>Culinary Lavender</h5>
+      <p>Great ingredient for bakes goods, seasonings, meat & poultry, steeping for teas and drinks.</p>
+		<a href="https://pageo.myshopify.com/collections/public-site/products/culinary-lavender" target="_blank">
+			<div class="prod_button">
+				View Product Page
+				<img style='max-width:24px' src="images/global/outlink_dark.svg"/>
+			</div>
+		</a>
+    </div>
+	</div>
+
+</div>
+
+
+<!---------------------ROW-3--------------------------->
+
+
+<div class="prod_row_3">
+
+
+  <div class="prod_column_1">
+    <div class="prod_container">
+	<div class="prod_image_container">
+	<img src="images/giftshop/products/rows/essential_oil.jpg">
+	</div>
+		<h5>Essential Oils</h5>
+      <p>The active ingredient in many of our lavender products is available in two sizes: 1oz and 1/2oz.</p>
+		<a href="https://pageo.myshopify.com/collections/all/products/essential-oil" target="_blank">
+			<div class="prod_button">
+				View Product Page
+				<img style='max-width:24px' src="images/global/outlink_dark.svg"/>
+			</div>
+		</a>
+    </div>
+  </div>
+
+  <div class="prod_column_1">
+    <div class="prod_container">
+	<div class="prod_image_container">
+	<img src="images/giftshop/products/rows/bar_soap.jpg">
+	</div>
+		<h5>Bar Soap</h5>
+      <p>Handcrafted and made with our Grosso lavender plants, our numerous soaps have made great gifts for years.</p>
+		<a href="https://pageo.myshopify.com/collections/public-site/products/soaps" target="_blank">
+			<div class="prod_button">
+				View Product Page
+				<img style='max-width:24px' src="images/global/outlink_dark.svg"/>
+			</div>
+		</a>
+	</div>
+	</div>
+
+  <div class="prod_column_1">
+    <div class="prod_container">
+	<div class="prod_image_container">
+	<img src="images/giftshop/products/rows/massage_oil.jpg">
+	</div>
+		<h5>Massage Oil</h5>
+      <p>For those daring souls out there, we offer a lavender-infused, all-natural massage oil.</p>
+		<a href="https://pageo.myshopify.com/collections/all/products/massage-oil" target="_blank">
+			<div class="prod_button">
+				View Product Page
+				<img style='max-width:24px' src="images/global/outlink_dark.svg"/>
+			</div>
+		</a>
+	</div>
+	</div>
+
+</div>
+
+<!---------------------ROW-4--------------------------->
+
+
+<div class="prod_row_3">
+
+
+  <div class="prod_column_1">
+    <div class="prod_container">
+	<div class="prod_image_container">
+	<img src="images/giftshop/products/rows/tea_earl_grey.jpg">
+	</div>
+		<h5>Earl Grey Tea</h5>
+      	<p>Our line of white, green, black, oolong, pu-erh, and herbal teas offer unique and satisfying flavors in every sip.</p>
+		<a href="https://pageo.myshopify.com/products/tea?variant=1344969474066" target="_blank">
+			<div class="prod_button">
+				View Product Page
+				<img style='max-width:24px' src="images/global/outlink_dark.svg"/>
+			</div>
+		</a>
+    </div>
+  </div>
+
+  <div class="prod_column_1">
+    <div class="prod_container">
+	<div class="prod_image_container">
+	<img src="images/giftshop/products/rows/beard_oil.jpg">
+	</div>
+		<h5>Lavender Beard Oil</h5>
+      	<p>Hemmingway-approved! A wonderful blend of oils to soften and condition any beard nearby.</p>
+		<a href="https://pageo.myshopify.com/products/beard-oil" target="_blank">
+			<div class="prod_button">
+				View Product Page
+				<img style='max-width:24px' src="images/global/outlink_dark.svg"/>
+			</div>
+		</a>
+    </div>
+  </div>
+
+  <div class="prod_column_1">
+    <div class="prod_container">
+	<div class="prod_image_container">
+	<img src="images/giftshop/products/rows/tea_peach.jpg">
+	</div>
+		<h5>Lavender-Peach Tea</h5>
+      	<p>Our line of white, green, black, oolong, pu-erh, and herbal teas offer unique and satisfying flavors in every sip.</p>
+		<a href="https://pageo.myshopify.com/products/tea?variant=1343134564370" target="_blank">
+			<div class="prod_button">
+				View Product Page
+				<img style='max-width:24px' src="images/global/outlink_dark.svg"/>
+			</div>
+		</a>
+    </div>
+  </div>
+
+
+
+</div>
+
+</div>
+
+
+
+<!--------------- LUNCH MENU ––––––––––––––––––––––-->
+<div id="lunch_anchor"></div><br><br><br><br>
+<div class="divider">
+	<div id="menu">Our Spring / Summer Menu</div>
+</div>
+
+<div id="lunch_menu">
+
+	<div class="salad_sandwiches">
+	<h1>SALAD</h1>
+	<h5>1. Lime Cilantro Chicken Salad</h5>
+	<p>Mixed greens, corn, shredded cheese, tomatoes, roasted red bell pepper, toasted pumpkin seed, roasted chicken, with chipotle lime vinaigrette dressing. $18</p>
+	<h5>2. Mixed Berry Spinach Salad with Feta</h5>
+	<p>Mixed greens, feta, berries, grilled chicken, sliced almond, candied pecans, with
+	house made vinaigrette dressing. $18</p>
+	<h5>3. Southwest Chicken Salad</h5>
+	<p>Mixed greens, tortilla strips, onions, cheese blend, grilled chicken, with chipotle dressing. $18</p>
+	<h5>4. Mediterranean Chopped Salad</h5>
+	<p>Lettuce, mixed green, tomato, olive, red onion, feta cheese, grilled chicken, cucumber, with dijon balsamic vinaigrette dressing. $18</p>
+	<h1>SANDWICHES</h1>
+	<h5>5. Turkey avocado on Sourdough</h5>
+	<p>Aioli spread, onion, cheese, lettuce, tomato. $18</p>
+	<h5>6. Chicken Salad sandwich on a Croissant</h5>
+	<p>Grapes, toasted almonds, mayo, chicken, croissant. $18</p>
+	<h5>7. The Garden Sandwich</h5>
+	<p>Lettuce, tomato, cucumber, sprouts, herb cream cheese, whole wheat bread. $18</p>
+	<h5>8. Grilled Cheese</h5>
+	<p>Three cheese blend, sourdough. $12</p>
+	</div>
+
+	<div class="horiz"></div>
+
+	<h2>
+	*Comes with choice of side: Broccoli Salad or Pasta Salad
+	<br>
+	Soup of the Day: $9
+	</h2>
+
+	<div class="horiz"></div>
+
+	<div class="asterik">
+	<p>*Food mau contain certain allergens. inquire for specific details*</p>
+	<p>Non alcoholic drinks $2.00 each.</p>
+	<p>Beer, wine and mixed drinks available for purchase</p>
+	<p>Call (209) 262-0131 to place your order</p>
+	<p>Pageo Lavender Farm 11573 Golf Link Rd. Turlock, CA 95380</p>
+	</div>
+
+</div>
+
+
+
+
+
+<!--------------- FOOTER –––––––––––––––––––––––-->
+
+<footer>
+	<div class="row">
+		<div class="info_1">
+			<div>
+			<p>Pageo Lavender Farm</p>
+			<p>11573 Golf Road</p>
+			<p>Turlock, Ca, 95380</p>
+			</div>
+		</div>
+		
+		<div class="info_2" style="overflow: visible;">
+			<div class="showup">
+				<img src="images/global/logo_dark.svg" width="150" height="150">
+			</div>
+		</div> 
+		<div class="info_3">
+			<div>
+			<p>Info@pageolavenderfarm.com</p>
+			<p>Phone:  209.632.5052</p>
+			<p>Fax:  209.634.1379</p>
+			</div>
+		</div> 
+
+	</div>
+</footer>
+
+<script src="js/lightbox-plus-jquery.js"></script>
+
+</body>
+</html>

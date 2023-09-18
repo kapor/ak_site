@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<!-- Pageo Lavender Farm -->
+
+<html lang="en">
+
+
+
+<head>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+<title>Pageo Lavender Farm</title>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link rel="stylesheet" type="text/css" href="css/topnav.css">
+<link rel="stylesheet" href="https://use.typekit.net/gkr1vzv.css"> <!-- DIN & BASKERVILLE -->
+<style>
+
+#home_hero {
+	background-image: url('images/home/main_hero_BG.jpg');
+}
+
+.center {
+	width: 100%;
+	height: 100%;
+    background: #444444;
+}
+
+.slideshow_lide {
+	width: 100vw;
+	height: 900px;
+	overflow: hidden;
+	position: relative;
+	padding-top: 0px;
+    background: #7B7261;
+}
+.slideshow_slide > div {
+	width: 100%;
+	height: 900px;
+	background-size: cover;
+	background-position: center;
+	background-position: top;
+	position: absolute;
+	animation: slide 50s infinite;
+	opacity: 0;
+}
+
+
+.slideshow_slide > div:nth-child(2) {
+	animation-delay: 10s;
+}
+.slideshow_slide > div:nth-child(3) {
+	animation-delay: 20s;
+}
+.slideshow_slide > div:nth-child(4) {
+	animation-delay: 30s;
+}
+.slideshow_slide > div:nth-child(5) {
+	animation-delay: 40s;
+}
+
+
+@keyframes slide {
+	10% {
+		opacity: 1;
+	}
+	20% {
+		opacity: 1;
+	}
+	30% {
+		opacity: 0;
+	}
+	40% {
+		transform: scale(1);
+	}
+}	
+	
+
+</style>
+
+<script src="js/javascript.js"></script>
+
+
+</head>
+
+
+<body>
+
+
+
+
+<!--------------- NAVIGATION –––––––––––––––––––––––-->
+
+<div id="topnav_menu" class="overlay_menu">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+		<span style="cursor:pointer" onclick="openNav()"><img src="images/global/icon/24x24_close.svg"></span>	
+	</a>
+	<div class="overlay_content">
+		<a href="weddings.html" class="overlay_link">Weddings & Events</a>
+			<a href="weddings.html#services" class="topnav_mobile_subnav">Our Services</a>
+			<a href="weddings.html#about" class="topnav_mobile_subnav">About Us</a>
+			<a href="weddings.html#test" class="topnav_mobile_subnav">Testimonials</a>
+		<!--<a href="weddings.html#snapshots" class="topnav_mobile_subnav">Snapshots</a> -->
+		<a href="giftshop.html" class="overlay_link">Gift Shop & Services</a>
+			<a href="giftshop.html#lunch_anchor" class="topnav_mobile_subnav">Lunch Menu</a>
+			<a href="giftshop.html#products" class="topnav_mobile_subnav">Products</a>
+		<a href="gallery.html" class="overlay_link">Galleries</a> <!--
+			<a href="gallery.html#weddings" class="topnav_mobile_subnav">Weddings Photos</a>
+			<a href="gallery.html#giftshop" class="topnav_mobile_subnav">Gift Shop Photos</a>
+			<a href="gallery.html#harvest" class="topnav_mobile_subnav">Harvest Photos</a>
+			<a href="gallery.html#farm" class="topnav_mobile_subnav">Around the Farm</a> 
+		<!-- ><a href="#" class="overlay_link">Gallery</a>
+		<a href="#" class="overlay_link">Contact</a> -->
+	</div>
+	<div class="button_overlay" style='background-color:#FEF2DA'>
+		<a href="#">Book a consultation</a>
+	</div>
+</div>
+
+
+<div id="topnav_contact" class="overlay_contact">
+		<div class="nav_form">
+			<div class="nav_getintouch_closex">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeContact()">
+				<span style="cursor:pointer" onclick="openContact()"><img src="images/global/icon/24x24_close.svg"></span>	
+			</a>
+			</div>
+			<div class="nav_getintouch_top">
+				<h4>
+				<ol>
+					<li> Fill out the inquiry form and submit.</li>
+					<li> Receive pricing information and availability dates.</li>
+					<li> Book a tour of the venue for a free consultation.</li>
+				</ol>
+				</h4>
+			</div>
+			<div class="nav_getintouch_bottom">
+				<form action="/action_page.php">
+					<!-- ><label for="fname">First Name</label> -->
+					<input type="text" id="fname" name="firstname" placeholder="Full Name">
+					<!-- ><label for="fname">First Name</label> -->
+					<input type="text" id="lname" name="lastname" placeholder="Email Address">
+					<!-- ><label for="fname">First Name</label> -->
+					<input type="text" id="pnumber" name="phone" placeholder="Phone Number">
+					<!-- ><label for="fname">First Name</label> -->
+					<input type="text" id="etype" name="type" placeholder="Event Type (Wedding, Shower, etc.)">
+					<!-- ><label for="fname">First Name</label> -->
+					<input type="text" id="datesofinterest" name="dates" placeholder="Date(s) of Interest)">
+					<!-- ><label for="fname">First Name</label> -->
+					<input type="text" id="numberofguests" name="guests" placeholder="Approx. Number of Guests">
+					<!-- ><label for="fname">First Name</label> -->
+					<input type="text" id="daysofweek" name="days" placeholder="Preferred Day(s) of the Week">
+					<input type="submit" value="Submit">
+				</form>
+			</div>
+		</div>
+</div>
+
+<div class="topnav_fixed">
+	<div class="topnav">
+		<div class="topnav_left">
+			<a class="nav_pageo_logo" href="index.html">PAGEO LAVENDER FARM</a>
+			<div class="topnav_vertical_divider"></div>
+			<div class="nav_link_left">
+			<a href="weddings.html">Weddings & Events</a>
+			<a href="giftshop.html">Gift Shop & Services</a>
+			</div>
+			
+		</div>
+		<div id="menu">
+			<span style="cursor:pointer" onclick="openNav()"><img src="images/global/icon/24x24_ham.svg"></span>
+		</div>
+		<div class="topnav_right_button_group">
+			<div class="button_nav_right">
+			<span style="cursor:pointer" onclick="openContact()"><a href="#">Contact</a></span>
+				<div class="topnav_vertical_divider"></div>
+			</div>		
+		</div>	
+		<div class="topnav_right">
+			<a href="gallery.html">Galleries</a>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<!--------------- HERO –––––––––––––––––––––––-->
+
+<div id="home_hero">
+	<div class="hero_info">
+		<div class="logo_hero_home">
+		<img src="images/global/logo.svg"/>
+		</div>
+		<article>
+			<h2 style="color:#FFFFFF; text-align:center;">
+			Central valley’s premiere <br> lavender farm and venue.
+			</h2>
+		</article>
+
+		<div id="button_group_home">
+			<a href="weddings.html">
+			<div class="button_home">
+				Weddings & Events
+			</div>
+			</a>
+			<a href="giftshop.html">
+			<div class="button_home">
+				Gift Shop & Services
+			</div>
+			</a>
+		</div>
+	</div>
+<center>
+
+
+	  
+</center>
+</div>
+	
+<!-- ANNOUNCEMENT CONTAINER -->
+
+
+<div class="tout1">
+	<h3 style='text-align:center'>
+		Contact us now for event inquiries a tour venue or to schedule a free consultation.
+	</h3><br><br>
+	<h5 style='text-align:center' class='paddingtop'>
+		Gift Shop & Lunches:<br>
+		<b>209-262-0131</b>
+	</h5>	
+	<h5 style='text-align:center' class='paddingtop'>
+		Weddings & Events:<br>
+		<b>209-632-5052</b>			
+	</h5><br>
+	<h5 style='text-align:center' class='paddingtop'>
+		Wednesday & Thursday: 10am to 4pm<br>
+		Friday & Saturday: 9am to 2pm
+	</h5><br>
+	<h5 style='text-align:center' class='paddingtop'>
+		11573 Golf Road, Turlock, Ca, 95380<br>
+		PageoFarms@gmail.com
+	</h5>
+</div>
+	
+	
+	
+<!-- PARALLAX -->
+
+<div id="parallax">
+  
+
+<section>
+	<div id="parallax_01">
+		<div class="parallax_card">
+		<h1>EVENTS</h1>
+		</div>
+	</div>
+</section>
+
+<section>
+	<div id="parallax_01_block">
+		<p>
+		A picturesque landscape with rows of green and lavender that provide an ideal backdrop for your wedding. Let us help you create a day that is truly unforgettable.
+		</p>
+		<p><a href="weddings.html"><button class="button_parallax" style="background-color:#E4F4E9">SEE MORE</button></a></p>
+		<hr>
+	</div>
+</section>
+
+<section>
+	<div id="parallax_02">
+		<h1>SHOP</h1>
+	</div>
+</section>
+
+<section>
+	<div id="parallax_02_block">
+		<p>
+		With a wide array of handmade lavender products – everything from pillows to beard oil – we provide anything you might need to pamper yourself properly.
+		</p>
+		<p><a href="giftshop.html#products""><button class="button_parallax" style="background-color:#EFDED4">VIEW PRODUCTS</button></a></p>
+		<hr>
+	</div>
+</section>
+
+<section>
+	<div id="parallax_03">
+		<div class="parallax_card">
+		<h1>LUNCHES</h1>
+		</div>
+	</div>
+</section>
+
+<section>
+	<div id="parallax_03_block">
+		<p>
+		Spend your afternoon dining with us. Our seasonal menus are complete with a selection of dishes prepared on-site by our catering team.
+		</p>
+		<p><a href="giftshop.html#lunch_anchor"><button class="button_parallax">VIEW MENU</button></a></p>
+		<hr>
+	</div>
+</section>
+  
+</div>
+
+<!--------------- GET IN TOUCH –––––––––––––––––––––––-
+
+
+<div class="divider">
+Get in Touch
+</div>
+
+<div class="getintouch_background">
+	<div class="getintouch">
+		<div class="getintouch_left">
+		<div class='arrow'>
+			<img style='max-width:400px' src="images/global/arrow.png"/>
+		</div>
+		<h4>
+		<ol>
+			<li> Fill out the inquiry form and submit.</li>
+			<li> Receive pricing information and availability dates.</li>
+			<li> Book a tour of the venue for a free consultation.</li>
+		</ol>
+		</h4>
+		</div>
+		<div class="getintouch_right">
+			<div>
+				<form action="/action_page.php">
+    				<input type="text" id="fname" name="firstname" placeholder="Full Name">
+    				<input type="text" id="lname" name="lastname" placeholder="Email Address">
+    				<input type="text" id="lname" name="lastname" placeholder="Event Type (Wedding, Shower, etc.)">
+    				<input type="text" id="lname" name="lastname" placeholder="Date(s) of Interest)">
+    				<input type="text" id="lname" name="lastname" placeholder="Est. Number of Guests">
+    				<input type="text" id="lname" name="lastname" placeholder="Days of the week that you are open to">
+  					<input type="submit" value="Submit">
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+-->
+
+
+
+
+<!--------------- FOOTER –––––––––––––––––––––––-->
+
+<footer>
+	<div class="row">
+		<div class="info_1">
+			<div>
+			<p>Pageo Lavender Farm</p>
+			<p>11573 Golf Road</p>
+			<p>Turlock, Ca, 95380</p>
+			</div>
+		</div>
+		
+		<div class="info_2" style="overflow: visible;">
+			<div class="showup">
+				<img src="images/global/logo_dark.svg" width="150" height="150">
+			</div>
+		</div> 
+		<div class="info_3">
+			<div>
+			<p>Info@pageolavenderfarm.com</p>
+			<p>Phone:  209.632.5052</p>
+			<p>Fax:  209.634.1379</p>
+			</div>
+		</div> 
+
+	</div>
+</footer>
+
+
+
+</body>
+</html>
