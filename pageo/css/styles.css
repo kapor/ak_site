@@ -20,6 +20,7 @@ footer, header, hgroup, menu, nav, output, section, summary, audio, video {
 
 body {
   overflow-x: hidden; /* Hide horizontal scrollbar */
+  height: fit-content;
 }
 
 p {
@@ -108,13 +109,10 @@ h6 {
 
 a {
 	text-decoration: none;
-	color: #6219FF;
+	color: #222;
 }
 
-.prod_intro a:hover {
-	text-decoration: none;
-	background: #E4F4E9;
-}
+
 
 
 
@@ -138,6 +136,7 @@ a {
 	line-height: 60px;
 	font-weight: 400;
 	margin: auto;
+	padding-bottom: 40px;
 }
 
 .tout1 h5 {
@@ -186,8 +185,7 @@ a {
 		line-height: 40px;
 		max-width: 600px;
 		margin: auto;
-		margin-bottom: 20px;
-		padding-top: 8px;
+		padding-top: 8px auto 20px auto;
 	}
 	.tout1 {
 		display: block;
@@ -1113,7 +1111,7 @@ input[type=text]:focus {
 #lunch_menu .asterik p {
 	font-family: urw-din, Source Sans Pro, Sans-Serif;
 	font-size: 20px;
-	line-height: 22px;
+	line-height: 30px;
 	color: #222;
 	text-align: center;
 	padding: 0px 0px 20px 0px;
@@ -1384,12 +1382,7 @@ div.hero_info {
 		letter-spacing: 1px;
 		line-height: 64px;
 	}
-
-
 }
-
-
-
 
 
 
@@ -1465,13 +1458,6 @@ a:hover .button_home {
 
 @media screen and (max-width: 800px) {
 
-	.button_home {
-		font-size: 16px;
-		font-weight: 400;
-		min-width: 400px;
-		padding: 0px 20px;
-		margin: 0px 20px;
-	}
 
 
 	.button_home, .button2, .button1 {
@@ -1483,9 +1469,7 @@ a:hover .button_home {
 		line-height: 64px; 
 		letter-spacing: 1.6px;
 		background: #DFB9A4;
-		min-width: 400px;
 		padding: 0px 20px;
-		margin: 0px 20px;
 	}
 	
 
@@ -1496,7 +1480,7 @@ a:hover .button_home {
 
 	#button_group_home {
 		padding-top: 48px 0 64px 0;
-		gap: 20px;
+		gap: 40px;
 	}
 
 }
@@ -1776,6 +1760,7 @@ footer .row:after {
 #parallax {
 	max-width: 1280px;
 	margin: auto;
+	margin-top: 40px;
 }
 	
 #parallax h1 {
@@ -1846,12 +1831,10 @@ footer .row:after {
 }
 
 #parallax #parallax_01 {
-	padding-top: 200px; 
-	padding-bottom: 200px; 
+	padding: 200px 40px 200px 40px; 
 	overflow: hidden; 
 	position: relative; 
 	border-radius: 4px;
-	width: 94%; 
 	margin: auto;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("../images/home/parallax_05.jpg");
 	background-attachment: fixed; 
@@ -1863,11 +1846,10 @@ footer .row:after {
 }
 
 #parallax #parallax_02 {
-	padding-top: 200px; 
-	padding-bottom: 200px; 
+	padding: 200px 40px 200px 40px; 
 	overflow: hidden; 
 	position: relative; 
-	width: 94%; 
+	border-radius: 4px;
 	margin: auto;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("../images/home/parallax_07.jpg");
 	background-attachment: fixed; 
@@ -1879,11 +1861,10 @@ footer .row:after {
 }
 
 #parallax #parallax_03 {
-	padding-top: 200px; 
-	padding-bottom: 200px; 
+	padding: 200px 40px 200px 40px; 
 	overflow: hidden; 
 	position: relative; 
-	width: 94%; 
+	border-radius: 4px;
 	margin: auto;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("../images/home/parallax_03.jpg");
 	background-attachment: fixed; 
@@ -1900,7 +1881,11 @@ footer .row:after {
 	width: 120px;
 }
 
-
+@media screen and (max-width: 1280px) {
+	#parallax #parallax_01, #parallax #parallax_02, #parallax #parallax_03 {
+		border-radius: 0px;
+	}
+}
 
 @media screen and (max-width: 1000px) {
 
@@ -1914,6 +1899,9 @@ footer .row:after {
 		padding-top: 120px; 
 		padding-bottom: 120px;
 	}
+
+
+
 }
 
 @media screen and (max-width: 800px) {
@@ -1949,9 +1937,6 @@ footer .row:after {
 	letter-spacing: 8px;
 }
 	
-#weddings_about_us #parallax {
-	margin-top: 40px;
-}
 
 		
 #weddings_about_us #parallax_01_block, #weddings_about_us #parallax_02_block {
@@ -1960,12 +1945,10 @@ footer .row:after {
 
 #weddings_about_us #parallax #parallax_01 {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("../images/weddings/about_us/our_story.jpg");
-	border-radius: 4px;
 }
 
 #weddings_about_us #parallax #parallax_02 {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("../images/weddings/about_us/the_farm.jpg");
-	border-radius: 4px;
 }
 
 @media screen and (max-width: 800px) {
@@ -1983,9 +1966,6 @@ footer .row:after {
 		padding-bottom: 60px;
 	}
 
-	#weddings_about_us #parallax {
-		margin-top: 20px;
-	}
 
 }
 

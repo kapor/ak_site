@@ -171,8 +171,8 @@ body.lb-disable-scrolling {
 
 .lb-dataContainer {
 	margin: 0 auto;
-	height: 54px;
-	margin-bottom: 10px;
+	height: 100px;
+	margin-bottom: 0px;
 	*zoom: 1;
 	width: 100%;
 	/* border-bottom-left-radius: 0px; */
@@ -221,20 +221,24 @@ body.lb-disable-scrolling {
 .lb-data .lb-close {
 	display: block;
 	float: right;
-	margin-right: 20px;
-	width: 54px;
-	height: 54px;
+	margin: 26px;
+	width: 48px;
+	height: 48px;
 	background: url(../images/gallery/controls/close_large.svg) top right no-repeat;
 	text-align: right;
 	outline: none;
 	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
 	.lb-data .lb-close {
 		scale: .5;
-		padding-right: 20px;
-		padding-top: 40px;
+		margin-top: 16px;
+		margin-right: 20px;
+	}
+
+	.lb-dataContainer {
+		height: 80px;
 	}
 
 }

@@ -5,6 +5,7 @@
 	padding: 0;
 }
 
+
 .prod_button {
 	width: 100%;
 	height: 60px;
@@ -47,6 +48,40 @@
 
 .prod_row_3 {
 	padding-top: 20px;
+}
+
+
+.prod_column_0 {
+	width: 100%;
+	margin: auto;
+	margin-bottom: 20px;
+	overflow: hidden;
+	border: 2px solid #44F4B3;
+	background-color: #FFFFF6;
+}
+
+.prod_column_0 .prod_container {
+    display: block;
+	margin: 12px;
+	height: 450px;
+	overflow: hidden;
+    text-align: center;
+	background-image: url('../images/giftshop/products/prod_hero2.jpg');
+    background-position: center;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width: 800px) {
+	.prod_column_0 .prod_container {
+		height: 320px;
+	}
+}
+
+.prod_column_0 .prod_container img{
+	margin: 12px;
+	height: 100%;
 }
 
 .prod_column_1 {
@@ -116,12 +151,21 @@
 }
 
 
+.prod_intro a {
+	text-decoration: none;
+	color: #6219FF;
+}
+
+.prod_intro a:hover {
+	background: #E4F4E9;
+}
+
 .prod_intro .outlink_icon {
 	vertical-align: middle;
 	display: inline-block;
 	padding: 0px;
+	background: none;
 }
-
 
 
 @media screen and (max-width: 1200px) {

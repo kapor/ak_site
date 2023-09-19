@@ -11042,7 +11042,7 @@ return jQuery;
     imageFadeDuration: 400,
     // maxWidth: 800,
     // maxHeight: 600,
-    positionFromTop: 20,
+    positionFromTop: 0,
     resizeDuration: 400,
     showImageNumberLabel: false,
     wrapAround: false,
