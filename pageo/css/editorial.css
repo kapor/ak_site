@@ -234,45 +234,7 @@
 }
 
 
-.view_more {
-	display: block;
-	width: auto;
-	padding: 0px 30px 0px 30px;
-	color: #FFF;
-	font-family: urw-din, Source Sans Pro, Sans-Serif;
-	font-size: 16px;
-	font-style: normal;
-	font-weight: 600;
-	line-height: 64px; /* 150% */
-	letter-spacing: 1.6px;
-	text-transform: uppercase;
-	text-decoration: none;
-	border-radius: 4px;
-	background: #DFB9A4;
-	text-align: center;
-}
 
-.button_logo_theknot {
-	display: block;
-	width: 240px;
-	height: 64px;
-    background-color: #DFB9A4;
-	text-align: center;
-	padding-top: 10px;
-	border-radius: 4px;
-
-}
-
-.button_logo_weddingwire {
-	display: block;
-	width: 240px;
-	height: 64px;
-    background-color: #DFB9A4;
-	text-align: center;
-	padding-top: 18px;
-	border-radius: 4px;
-
-}
 
 /*
 	<div class="caption">
@@ -468,21 +430,86 @@
 	}
 
 
-	
-@media screen and (max-width: 890px) {
 
-	.view_more {
-		min-width: 400px;
+}
+
+
+.more_reviews_intro {
+    padding-top: 32px;
+	width: auto;
+	margin: auto;
+    font-family: urw-din, Source Sans Pro, Sans-Serif;
+    font-size: 16px;
+    font-style: normal;
+	text-align: center;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 1.6px;
+	text-transform: uppercase;
+}
+
+.more_reviews {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 40px;
+	width: 100vw;
+	margin: auto;
+	max-width: 740px;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+
+}
+
+.more_reviews .more_reviews_btn {
+	display: block;
+	width: 40%;
+    font-family: urw-din, Source Sans Pro, Sans-Serif;
+    font-size: 16px;
+    font-style: normal;
+	border-radius: 4px;
+	text-align: center;
+    font-weight: 400;
+    line-height: 64px;
+    letter-spacing: 1.6px;
+	color: #FFFFFF;
+	text-transform: uppercase;
+    background: #7B7261;
+}
+
+.more_reviews .more_reviews_btn img {
+	vertical-align: middle;
+}
+
+@media screen and (max-width: 600px) {
+	.more_reviews {
+		flex-direction: column;
+		padding: 40px;
+		gap: 20px;
+		overflow: hidden;
 	}
 
-	.button_logo_theknot {
-		min-width: 400px;
-
+	.more_reviews .more_reviews_btn {
+		width: 100%;
+		height: 64px;
 	}
 
-	.button_logo_weddingwire {
-		min-width: 400px;
+	.more_reviews .more_reviews_btn img {
+		vertical-align: middle;
 	}
 }
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -257,335 +257,206 @@ a {
 
 
 
-
-/* LUNCH MENU –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-
+/* AWARDS –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 
-/* ABOUT US –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– 
-
-
-.about_us {
-	background-color: #FFFFFF;
-	height: 100%;
-	padding-bottom: 80px;
-}
-
-.about_copy_image {
-	max-height: 600px;
-    background-position: center;
-    background-position: top;
-    background-image: url('../images/weddings/background_blur/bg_01_desktop.png');
-    background-color: #FFFFFF;
-    background-repeat: no-repeat;
-    background-size: 1280px auto;
-}
-
-.about_image_copy {
-	max-height: 600px;
-    background-position: center;
-    background-position: top;
-    background-image: url('../images/weddings/background_blur/bg_02_desktop.png');
-    background-color: #FFFFFF;
-    background-repeat: no-repeat;
-    background-size: 1280px 600px;
-}
-
-.about_image_copy .about_left_image, {
-	order: 1;
-}
-
-.about_image_copy .about_right_copy, {
-	order: 2;
-}
-
-.about_left_copy .h1b, .about_right_copy .h1b {
-	padding-bottom: 32px;
-}
-
-.about_row {
-	max-width: 1220px;
-	display: flex;
-	height: 700px;
-  	align-items: center;
-  	justify-content: center;
-	align-content: center;
+#awards {
+	width: 100%;
+	border-top: 1px dashed #888;
+	height: auto;
+	position: relative;
 	margin: auto;
-}
-
-/* OUR STORY 
-
-.about_left_copy { 
-	float: left;
-	width: 50%;
-	padding: 40px;
-}
-
-.about_right_image { 
-	float: right;
-	height: 600px;
-	width: 50%;
 	display: flex;
-  	align-items: center;
-  	justify-content: center;
-  	padding-left: 100px;
-	
+	justify-content: center;
+	flex-direction: row;
+	margin-top: 40px;
+	padding-bottom: 0px;
 }
 
-/* THE FARM 
-
-.about_right_copy { 
-	float: right;
-	width: 50%;
-	padding: 40px;
-}
-
-.about_left_image {
+.award_row1 {
+	margin-top: 40px;
 	float: left;
-	height: 600px;
-	width: 50%;
 	display: flex;
-  	align-items: center;
-  	justify-content: center;
-  	padding-right: 100px;
+	justify-content: center;
+	flex-direction: row;
 }
 
-.about_left_image img, .about_right_image img {
-	width: 800px;
-	border-radius: 8px;
-}
-
-.about_right_image img {
+.award {
+	width: 100px;
+	height: 100px;
 	float: left;
-	width: 800px;
-	padding-left: 80px;
+	margin: 40px;
 }
 
-.about_left_image img {
-	float: left;
-	padding-right: 80px;
-	width: 800px;
-}
-	
-@media screen and (max-width: 1150px) {
-
-	.about_us {
-		background-color: #FFFFFF;
-		height: 100%;
-		padding: 0px 0px 80px 0px;
-	}
-	
-	.about_left_copy {
-		min-width: 400px;
-		text-align: left;
-		float: left;
-		margin: auto;
-		padding: 40px 60px 40px 20px;
-	}
-	
-	.about_right_copy {
-		min-width: 400px;
-		text-align: right;
-		float: right;
-		margin: auto;
-		padding: 40px 20px 40px 60px;
-	}
-
-	.about_right_image {
-		float: left;
-		display: flex;
-		height: auto;
-		position: relative;
-		max-width: 400px;
-		min-width: 350px;
-	}
-	
-	.about_right_image img {
-		float: left;
-		width: 700px;
-		padding-left: 60px;
-	}
-
-	
-	.about_left_image img {
-		float: left;
-		padding-right: 60px;
-		width: 700px;
-	}
-	
-	
-	.about_left_image {
-		float: right;
-		display: flex;
-		height: auto;
-		position: relative;
-		max-width: 400px;
-		min-width: 350px;
-	}
-	
-	.about_right_copy .h1b {
-		text-align: left;
-	}
-	
-  
+.award_filter {
+    filter: invert(57%) sepia(9%) saturate(0%) hue-rotate(162deg) brightness(93%) contrast(89%);
 }
 
 @media screen and (max-width: 800px) {
-
-
-	.about_us {
-		background-color: #FFFFFF;
-  		height: 100%;
-		padding: 80px 0px 80px 0px;
-		
-	}
-	
-	p {
-		font-size: 20px;
-		line-height: 30px;
-		
-	}
-	
-
-	.about_image_copy .about_left_image {
-		order: 2;
-	}
-	
-	.about_image_copy .about_right_copy {
-		order: 1;
-	}
-
-  	.about_row {
-  		display: flex;
-  		flex-direction: column;
-  		height: auto;
-  	
-  	}
-  	
-	.about_copy_image {
-  		max-height: 100%;
-  	}
-	
-	.about_image_copy {
-  		max-height: 100%;
-  		padding-top: 80px;
-  	}
-  	
-
-  	
-	.about_left_copy {
-		width: auto;
-		margin: auto;
-		padding: 0px 20px 60px 20px;
-		height: 100%;
-	}
-	
-	.about_right_copy {
+	.award_row1 {
 		float: left;
-		width: auto;
-		margin: auto;
-		padding: 0px 20px 60px 20px;
-		height: 100%;
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
 	}
 
-	.about_right_copy .h1b, .about_left_copy .h1b {
-		text-align: left;
-		font-size: 48px;
-		line-height: 48px;
-		padding-bottom: 20px;
-		padding-left: 60px;
-		
-	}
-	
-	.about_right_copy p, .about_left_copy p {
-		text-align: left;
-		padding-right: 60px;
-		padding-left: 60px;
-		font-size: 20px;
-		line-height: 30px;
-		
-	}
-	
-
-	.about_right_image, .about_left_image {
-		max-width: 100%;
-		height: 100%;
-		padding-left: 0px;
-		padding-right: 0px;
-		
+	.award_filter {
+		scale: .8;
 	}
 
-
-	.about_right_image img, .about_left_image img {
+	.award {
+		width: 100px;
+		height: 100px;
 		float: left;
-		padding: 0;
-		height: auto;
-		width: 100vw;
-		overflow: hidden;
-		text-align: center;
-		border-radius: 0;
+		margin: 20px;
 	}
 
-	
 }
+
 
 @media screen and (max-width: 600px) {
-
-
-
-	.about_us {
-		background-color: #FFFFFF;
-  		height: 100%;
-		padding: 60px 0px 0px 0px;
-		
-	}
-
-	.about_right_copy p, .about_left_copy p {
-		text-align: center;
-		padding: 0px 20px 0px 20px;
-		font-size: 18px;
-		line-height: 28px;
-		letter-spacing: .5px;
-		
-	}
-	
-	.about_right_copy .h1b, .about_left_copy .h1b {
-		text-align: center;
-		font-size: 48px;
-		line-height: 48px;
-		padding-bottom: 20px;
-		padding-left: 0px;
-		
-	}
-	
-	.about_right_image, .about_left_image {
+	.award_row1 {
 		float: left;
-		padding-left: 0px;
-		padding-right: 0px;
-		height: 300px;
-		width: 100vw;
-		overflow: hidden;
-		text-align: left;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
 	}
-	
-	.about_right_image img, .about_left_image img {
+
+	.award_filter {
+		scale: 1;
+	}
+
+	.award {
+		width: 100px;
+		height: 100px;
 		float: left;
-		padding: 0;
-		height: auto;
-		overflow: hidden;
-		text-align: left;
-		position: left;
-		border-radius: 0;
+		margin: 40px;
 	}
-	
-	
-	
+
 }
 
 
+@media screen and (max-width: 400px) {
+	.award_row1 {
+		float: left;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	.award_filter {
+		scale: .8;
+	}
+
+	.award {
+		width: 100px;
+		height: 100px;
+		float: left;
+		margin: 20px;
+	}
+
+}
+
+/* AWARDS-WEDDINGS –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 
 
+#hero_weddings #awards {
+	width: 100%;
+	border-top: none;
+	height: auto;
+	position: relative;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	margin-top: 0px;
+	padding-bottom: 0px;
+}
+
+#hero_weddings .award_row1 {
+	margin-top: 0px;
+	float: left;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+}
+
+#hero_weddings .award {
+	width: 100px;
+	height: 100px;
+	float: left;
+	margin: 30px;
+}
+
+#hero_weddings .award_filter {
+    filter: invert(100%) sepia(1%) saturate(3609%) hue-rotate(311deg) brightness(100%) contrast(84%);
+}
+
+
+@media screen and (max-width: 1000px) {
+
+	#hero_weddings .award_filter {
+		scale: .8;
+	}
+
+	#hero_weddings .award {
+		width: 100px;
+		height: 100px;
+		float: left;
+		margin: 10px;
+		padding-top: 10px;
+	}
+
+}
+
+
+@media screen and (max-width: 800px) {
+	#hero_weddings .award_row1 {
+		float: left;
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+	}
+
+	#hero_weddings .award_filter {
+		scale: .6;
+	}
+
+	#hero_weddings .award {
+		width: 100px;
+		height: 100px;
+		float: left;
+		margin: 4px;
+		padding-top: 10px;
+	}
+
+}
+
+
+@media screen and (max-width: 600px) {
+	#hero_weddings {
+		display: none;
+	}
+
+	#hero_weddings .award {
+		display: none;
+	}
+
+}
+
+
+@media screen and (max-width: 400px) {
+
+	#hero_weddings .award_filter {
+		scale: .8;
+	}
+
+	#hero_weddings .award {
+		margin: 20px;
+	}
+
+}
 
 
 /* SERVICES –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -1057,6 +928,9 @@ input[type=text]:focus {
 
 /* LUNCH MENU –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+
+
+
 #lunch_menu {
 	padding: 40px 20px 40px 20px;	
 	max-width: 800px;
@@ -1260,6 +1134,10 @@ div.hero_info {
 	margin-left: auto;
 }
 
+#hero_weddings .hero_info {
+	padding: 40px 0px 40px 0px
+}
+
 
 @media screen and (max-width: 1000px) {
 
@@ -1267,6 +1145,7 @@ div.hero_info {
 	.logo_hero_home {
 		width: 100%;
 		height: 400px;
+		margin-top: 40px;
 	}
 	
 	.logo_hero_home img {
@@ -1291,8 +1170,8 @@ div.hero_info {
 
 	#home_hero h2 {
 		max-width: 800px;
-		font-size: 48px;
-		line-height: 56px;
+		font-size: 40px;
+		line-height: 50px;
 	}
 
 	#hero_weddings h2, #hero_giftshop h2 {
@@ -1313,6 +1192,8 @@ div.hero_info {
 		font-size: 64px;
 		line-height: 72px;
 	}
+
+
 
 }
 
@@ -1356,8 +1237,8 @@ div.hero_info {
 
 	#home_hero h2 {
 		max-width: 800px;
-		font-size: 40px;
-		line-height: 48px;
+		font-size: 32px;
+		line-height: 40px;
 	}
 
 	#hero_weddings h2, #hero_giftshop h2 {
@@ -1382,7 +1263,12 @@ div.hero_info {
 		letter-spacing: 1px;
 		line-height: 64px;
 	}
+
+	#hero_weddings .hero_info {
+		padding: 40px 0px 0px 0px
+	}
 }
+
 
 
 
@@ -1456,6 +1342,15 @@ a:hover .button_home {
 	background: #DFB9A4;
 }
 
+
+@media screen and (max-width: 1000px) {
+	#button_group_home {
+		padding-top: 48px;
+	}
+
+}
+
+
 @media screen and (max-width: 800px) {
 
 
@@ -1479,7 +1374,7 @@ a:hover .button_home {
 	}
 
 	#button_group_home {
-		padding-top: 48px 0 64px 0;
+		padding-top: 40px;
 		gap: 40px;
 	}
 
@@ -1596,6 +1491,548 @@ a:hover .button_giftshop {
 
 
 
+
+
+
+
+/* HOME - PARALLAX –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+#parallax {
+	max-width: 1280px;
+	margin: auto;
+	margin-top: 40px;
+}
+	
+#parallax h1 {
+	color: #FFFFFF;
+	text-align: center;
+	font-family: Baskerville-URW, Source Serif Pro, Georgia;
+	font-weight: 400;
+	font-style: normal;
+	letter-spacing: 12px;
+	font-size: 72px;
+	line-height: 72px;
+}
+
+#parallax h2 {
+	color: #FFFFFF;
+	text-align: center;;
+	font-family: Baskerville-URW, Source Serif Pro, Georgia;
+	font-weight: 400;
+	font-style: normal;
+	letter-spacing: .2px;
+	font-size: 48px;
+	line-height: 56px;
+}
+
+.button_parallax {
+	margin: 40px auto 30px auto;
+	padding: 0px 28px 0px 28px;
+	background-color: #FEF2DA;
+	border: none;
+	letter-spacing: 4px;
+	color: #222222;
+	text-align: center;
+	font-family: urw-din, Source Sans Pro, Sans-Serif;
+	font-size: 16px;
+	line-height: 54px;
+	font-style: normal;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#parallax p {
+	color: #222222;
+	text-align: center;
+	font-family: Baskerville-URW, Source Serif Pro, Georgia;
+	font-weight: 200;
+	font-style: normal;
+	width: 860px;
+	margin: auto;
+	font-size: 24px;
+	line-height: 34px;
+}
+
+#parallax #parallax_01_block, #parallax #parallax_02_block, #parallax #parallax_03_block {
+	background: white; 
+	padding: 60px 60px 60px 60px; 
+	margin:0 auto; 
+	text-align:justify;
+}
+
+#parallax .section_overlay_mask {
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 100%; 
+	height: 100%; 
+	background-color: black; 
+	opacity: 0.70;
+}
+
+#parallax #parallax_01 {
+	padding: 200px 40px 200px 40px; 
+	overflow: hidden; 
+	position: relative; 
+	border-radius: 4px;
+	margin: auto;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("../images/home/parallax_05.jpg");
+	background-attachment: fixed; 
+	background-size: cover; 
+	-moz-background-size: cover; 
+	-webkit-background-size: cover; 
+	background-repeat: no-repeat; 
+	background-position: top center;
+}
+
+#parallax #parallax_02 {
+	padding: 200px 40px 200px 40px; 
+	overflow: hidden; 
+	position: relative; 
+	border-radius: 4px;
+	margin: auto;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("../images/home/parallax_07.jpg");
+	background-attachment: fixed; 
+	background-size: cover; 
+	-moz-background-size: cover; 
+	-webkit-background-size: cover; 
+	background-repeat: no-repeat; 
+	background-position: center center;
+}
+
+#parallax #parallax_03 {
+	padding: 200px 40px 200px 40px; 
+	overflow: hidden; 
+	position: relative; 
+	border-radius: 4px;
+	margin: auto;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("../images/home/parallax_03.jpg");
+	background-attachment: fixed; 
+	background-size: cover; 
+	-moz-background-size: cover; 
+	-webkit-background-size: cover; 
+	background-repeat: no-repeat; 
+	background-position: center center;
+}
+
+#parallax hr {
+	margin: 40px auto 40px auto;
+	width: 120px;
+}
+
+@media screen and (max-width: 1280px) {
+	#parallax #parallax_01, #parallax #parallax_02, #parallax #parallax_03 {
+		border-radius: 0px;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+
+	#parallax p {
+		width: auto;
+		font-size: 24px;
+		line-height: 34px;
+	}
+
+	#parallax #parallax_01, #parallax #parallax_02, #parallax #parallax_03 {
+		padding-top: 115px; 
+		padding-bottom: 115px;
+	}
+
+
+
+}
+
+@media screen and (max-width: 800px) {
+
+	#parallax #parallax_01_block, #parallax #parallax_02_block, #parallax #parallax_03_block {
+		padding: 40px 40px 40px 40px; 
+		margin: auto;
+		width: auto;
+	}
+
+	#parallax h1 {
+		font-size: 60px;
+		padding-left: 10px;
+	}
+
+	#parallax #parallax_01, #parallax #parallax_02, #parallax #parallax_03 {
+		padding-top: 100px; 
+		padding-bottom: 100px;
+		background-attachment: inherit; 
+	}
+
+
+}
+
+
+
+
+/* WEDDINGS - PARALLAX –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+	
+#weddings_about_us h1 {
+	text-transform: uppercase;
+	letter-spacing: 8px;
+}
+	
+
+		
+#weddings_about_us #parallax_01_block, #weddings_about_us #parallax_02_block {
+	padding-bottom: 100px;
+}
+
+#weddings_about_us #parallax #parallax_01 {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("../images/weddings/about_us/our_story.jpg");
+}
+
+#weddings_about_us #parallax #parallax_02 {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("../images/weddings/about_us/the_farm2.jpg");
+}
+
+@media screen and (max-width: 1000px) {
+	
+#weddings_about_us #parallax {
+	margin-top: 0px;
+}
+
+}
+
+@media screen and (max-width: 800px) {
+	
+	#weddings_about_us h1 {
+		font-size: 40px;
+	} 
+
+	#weddings_about_us p {
+		font-size: 22px;
+		line-height: 32px;
+	}
+
+	#weddings_about_us #parallax_01_block, #weddings_about_us #parallax_02_block {
+		padding-bottom: 60px;
+
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* PRODUCTS –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
+.prod_button {
+	width: 100%;
+	height: 60px;
+	background: #44F4B3;
+	border: none;
+	margin: 16px auto auto auto;
+	text-align: center;
+	vertical-align: middle;
+	display: inline-block;
+	font-size: 14px;
+	font-family: urw-din, Source Sans Pro, Sans-Serif;
+	letter-spacing: 1.4px;
+	padding-bottom: 20px;
+	line-height: 60px;
+	vertical-align: middle;
+	font-weight: 300;
+	font-style: normal;
+	text-transform: uppercase;
+	color: #111;
+	cursor: pointer;
+}
+
+.prod_button img {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 14px 0px 21px 4px;
+}
+
+.prod_grid {
+	padding: 0px 20px 100px 20px;
+	margin: auto;
+	max-width: 1280px
+}
+
+.prod_row_1, .prod_row_2, .prod_row_3 {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+}
+
+.prod_row_3 {
+	padding-top: 20px;
+}
+
+
+.prod_column_0 {
+	width: 100%;
+	margin: auto;
+	margin-bottom: 20px;
+	overflow: hidden;
+	border: 2px solid #44F4B3;
+	background-color: #FFFFF6;
+}
+
+.prod_column_0 .prod_container {
+    display: block;
+	margin: 12px;
+	height: 450px;
+	overflow: hidden;
+    text-align: center;
+	background-image: url('../images/giftshop/products/prod_hero2.jpg');
+    background-position: center;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width: 800px) {
+	.prod_column_0 .prod_container {
+		height: 320px;
+	}
+}
+
+.prod_column_0 .prod_container img{
+	margin: 12px;
+	height: 100%;
+}
+
+.prod_column_1 {
+	width: 33.33%;
+	margin: auto;
+	border: 2px solid #44F4B3;
+	background-color: #FFFFF6;
+}
+
+.prod_column_2 {
+	width: 50%;
+	margin: 20px auto auto auto;
+	border: 2px solid #44F4B3;
+	background-color: #FFFFF6;
+}
+
+.prod_image_container {
+	height: auto;
+	overflow: hidden;
+}
+
+
+.prod_column_1 img {
+	height: auto;
+}
+
+.prod_column_1 p, .prod_column_2 p {
+	padding: 8px 12px 20px 12px;	
+	overflow: hidden;
+    color: #222222;
+    text-align: left;
+    font-family: urw-din, Source Sans Pro, Sans-Serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.prod_column_1 p {	
+	height: 88px;
+}
+
+.prod_column_2 p {	
+	height: 72px;
+}
+
+.prod_column_1 h5, .prod_column_2 h5 {
+	padding: 12px 12px 0px 12px;	
+}
+
+.prod_container {
+	height: 100%;
+	padding: 12px;
+}
+
+.prod_column_1 img, .prod_column_2 img {
+	width: 100%;
+}
+
+
+.intro {
+	text-align: center;
+	line-height: 34px;
+	max-width: 780px;
+	margin: 60px auto 0px auto;
+	padding: 0px 40px 60px 40px;
+	color: #444444;
+}
+
+
+
+.intro a {
+	text-decoration: none;
+	color: #6219FF;
+}
+
+.intro a:hover {
+	background: #E4F4E9;
+}
+
+.intro .outlink_icon {
+	vertical-align: middle;
+	display: inline-block;
+	padding: 0px;
+	background: none;
+}
+
+.nowrap{
+	white-space: nowrap;
+}
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+
+	.prod_column_1 p, .prod_column_3 p {
+		height: 124px;
+	}
+
+	.prod_column_2 p {
+		height: 80px;
+	}
+
+}	
+
+@media screen and (max-width: 1000px) {
+	.prod_column_1 p, .prod_column_2 p {
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	.prod_column_1 h5 {
+		font-size: 18px;
+	}
+
+	.prod_intro h5 {
+		padding: 0px 40px 0px 40px;
+	}
+}	
+
+@media screen and (max-width: 800px) {
+	.prod_column_1, .prod_column_2 {
+		float: left;
+		width: 100%;
+		margin: auto;
+	}
+
+	.prod_row_3 {
+		padding-top: 0px;
+	}
+
+	.prod_row_1, .prod_row_2, .prod_row_3 {
+		display: flex;
+		margin-top: 20px;
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	.prod_column_1 p {
+		height: 80px;
+		font-size: 20px;
+		line-height: 30px;
+	}
+
+	.prod_column_2 p {
+		height: 80px;
+		font-size: 20px;
+		line-height: 30px;
+	}
+
+	.prod_column_1 h5, .prod_column_2 h5 {
+		font-size: 24px;
+	}
+
+	.prod_image_container {
+		height: 260px;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.prod_image_container img {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		-webkit-transform: translateY(-50%) translateX(-50%);
+	}
+
+	.intro {
+		padding: 0px 20px 40px 20px;
+	}
+
+
+}	
+
+@media screen and (max-width: 650px) {
+
+	.prod_column_1 p, .prod_column_2 p {
+		height: 100px;
+		font-size: 20px;
+		line-height: 30px;
+	}
+
+	.intro {
+		font-size: 20px;
+		line-height: 32px;
+		text-align: center;
+		max-width: 780px;
+		margin: 60px auto 20px auto;
+		padding: 0px 40px 20px 40px;
+		color: #444444;
+	}
+
+	.intro .outlink_icon {
+		scale: .8;
+		height: 40px;
+	}
+
+
+}	
+
+
+
+
+
+
+/* PHOTOSHOOTS –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+#photoshoots {
+	background-color: #F8F4F1;
+	padding: auto;
+}
+
+
+
+
 /* FOOTER –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 
@@ -1604,7 +2041,7 @@ footer div {
 }
 
 footer {
-	margin: 80px auto auto auto;
+	margin: 40px auto auto auto;
 	border-top: 1px dashed #888;
 	background-color: #FFFFFF;
 	padding: 40px 40px 200px 40px;
@@ -1748,226 +2185,6 @@ footer .row:after {
 
 
 
-
-
-
-
-
-
-/* HOME - PARALLAX –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-
-#parallax {
-	max-width: 1280px;
-	margin: auto;
-	margin-top: 40px;
-}
-	
-#parallax h1 {
-	color: #FFFFFF;
-	text-align: center;
-	font-family: Baskerville-URW, Source Serif Pro, Georgia;
-	font-weight: 400;
-	font-style: normal;
-	letter-spacing: 12px;
-	font-size: 72px;
-	line-height: 72px;
-}
-
-#parallax h2 {
-	color: #FFFFFF;
-	text-align: center;;
-	font-family: Baskerville-URW, Source Serif Pro, Georgia;
-	font-weight: 400;
-	font-style: normal;
-	letter-spacing: .2px;
-	font-size: 48px;
-	line-height: 56px;
-}
-
-.button_parallax {
-	margin: 40px auto 30px auto;
-	padding: 0px 28px 0px 28px;
-	background-color: #FEF2DA;
-	border: none;
-	letter-spacing: 4px;
-	color: #222222;
-	text-align: center;
-	font-family: urw-din, Source Sans Pro, Sans-Serif;
-	font-size: 16px;
-	line-height: 54px;
-	font-style: normal;
-	text-decoration: none;
-	cursor: pointer;
-}
-
-#parallax p {
-	color: #222222;
-	text-align: center;
-	font-family: Baskerville-URW, Source Serif Pro, Georgia;
-	font-weight: 200;
-	font-style: normal;
-	width: 860px;
-	margin: auto;
-	font-size: 24px;
-	line-height: 34px;
-}
-
-#parallax #parallax_01_block, #parallax #parallax_02_block, #parallax #parallax_03_block {
-	background: white; 
-	padding: 60px 60px 60px 60px; 
-	margin:0 auto; 
-	text-align:justify;
-}
-
-#parallax .section_overlay_mask {
-	position: absolute; 
-	top: 0; 
-	left: 0; 
-	width: 100%; 
-	height: 100%; 
-	background-color: black; 
-	opacity: 0.70;
-}
-
-#parallax #parallax_01 {
-	padding: 200px 40px 200px 40px; 
-	overflow: hidden; 
-	position: relative; 
-	border-radius: 4px;
-	margin: auto;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("../images/home/parallax_05.jpg");
-	background-attachment: fixed; 
-	background-size: cover; 
-	-moz-background-size: cover; 
-	-webkit-background-size: cover; 
-	background-repeat: no-repeat; 
-	background-position: top center;
-}
-
-#parallax #parallax_02 {
-	padding: 200px 40px 200px 40px; 
-	overflow: hidden; 
-	position: relative; 
-	border-radius: 4px;
-	margin: auto;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("../images/home/parallax_07.jpg");
-	background-attachment: fixed; 
-	background-size: cover; 
-	-moz-background-size: cover; 
-	-webkit-background-size: cover; 
-	background-repeat: no-repeat; 
-	background-position: center center;
-}
-
-#parallax #parallax_03 {
-	padding: 200px 40px 200px 40px; 
-	overflow: hidden; 
-	position: relative; 
-	border-radius: 4px;
-	margin: auto;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("../images/home/parallax_03.jpg");
-	background-attachment: fixed; 
-	background-size: cover; 
-	-moz-background-size: cover; 
-	-webkit-background-size: cover; 
-	background-repeat: no-repeat; 
-	background-position: center center;
-}
-
-#parallax hr {
-	margin-top: 40px;
-	margin-bottom: 40px;
-	width: 120px;
-}
-
-@media screen and (max-width: 1280px) {
-	#parallax #parallax_01, #parallax #parallax_02, #parallax #parallax_03 {
-		border-radius: 0px;
-	}
-}
-
-@media screen and (max-width: 1000px) {
-
-	#parallax p {
-		width: auto;
-		font-size: 24px;
-		line-height: 34px;
-	}
-
-	#parallax #parallax_01, #parallax #parallax_02, #parallax #parallax_03 {
-		padding-top: 120px; 
-		padding-bottom: 120px;
-	}
-
-
-
-}
-
-@media screen and (max-width: 800px) {
-
-	#parallax #parallax_01_block, #parallax #parallax_02_block, #parallax #parallax_03_block {
-		padding: 40px 40px 40px 40px; 
-		margin: auto;
-		width: auto;
-	}
-
-	#parallax h1 {
-		font-size: 60px;
-		padding-left: 10px;
-	}
-
-	#parallax #parallax_01, #parallax #parallax_02, #parallax #parallax_03 {
-		padding-top: 100px; 
-		padding-bottom: 100px;
-		background-attachment: inherit; 
-	}
-
-
-}
-
-
-
-
-/* WEDDINGS - PARALLAX –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-	
-#weddings_about_us h1 {
-	text-transform: uppercase;
-	letter-spacing: 8px;
-}
-	
-
-		
-#weddings_about_us #parallax_01_block, #weddings_about_us #parallax_02_block {
-	padding-bottom: 100px;
-}
-
-#weddings_about_us #parallax #parallax_01 {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("../images/weddings/about_us/our_story.jpg");
-}
-
-#weddings_about_us #parallax #parallax_02 {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("../images/weddings/about_us/the_farm.jpg");
-}
-
-@media screen and (max-width: 800px) {
-	
-	#weddings_about_us h1 {
-		font-size: 40px;
-	} 
-
-	#weddings_about_us p {
-		font-size: 22px;
-		line-height: 32px;
-	}
-
-	#weddings_about_us #parallax_01_block, #weddings_about_us #parallax_02_block {
-		padding-bottom: 60px;
-	}
-
-
-}
 
 
 
