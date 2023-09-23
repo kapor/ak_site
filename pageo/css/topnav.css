@@ -593,4 +593,17 @@ input[type=text]:focus {
 
 }
 
-
+.top_nav_special {
+	float: left;
+	width: 100vw;
+	margin: auto;
+	background: #FEF2DA;
+	text-align: center;
+	color: #222;
+	font-family: urw-din, Source Sans Pro, Sans-Serif;
+	line-height: 40px;
+	height: 40px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-weight: 200;
+}

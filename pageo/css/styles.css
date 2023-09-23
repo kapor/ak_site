@@ -200,8 +200,6 @@ a {
 }
 
 
-
-
 /* DIVIDER  –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .divider {
@@ -457,6 +455,8 @@ a {
 	}
 
 }
+
+
 
 
 /* SERVICES –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -932,7 +932,7 @@ input[type=text]:focus {
 
 
 #lunch_menu {
-	padding: 40px 20px 40px 20px;	
+	padding: 40px 20px 120px 20px;	
 	max-width: 800px;
 	margin: auto;
 }
@@ -983,16 +983,17 @@ input[type=text]:focus {
 }
 
 #lunch_menu .asterik p {
-	font-family: urw-din, Source Sans Pro, Sans-Serif;
-	font-size: 20px;
-	line-height: 30px;
-	color: #222;
-	text-align: center;
-	padding: 0px 0px 20px 0px;
+	font-family: Baskerville-URW, Source Serif Pro, Georgia;
 	font-style: italic;
+	font-size: 20px;
+	line-height: 32px;
+	width: 100%;
+	font-weight: light;
+	color: #666;
 }
 
 #lunch_menu .asterik {
+	font-family: Baskerville-URW, Source Serif Pro, Georgia;
 	margin: auto;
 	padding: 40px 0px 20px 0px;
 }
@@ -1005,7 +1006,7 @@ input[type=text]:focus {
 @media screen and (max-width: 800px) {
 
 	#lunch_menu {
-		padding: 20px 20px 40px 20px;	
+		padding: 20px 20px 120px 20px;	
 	}
 
 
@@ -1052,20 +1053,21 @@ input[type=text]:focus {
 		border-bottom: 1px dashed #222;
 	}
 
-	#lunch_menu .asterik p {
-		font-family: urw-din, Source Sans Pro, Sans-Serif;
-		font-size: 18px;
-		line-height: 22px;
-		color: #222;
-		text-align: center;
-		padding: 0px 0px 20px 0px;
-		font-style: italic;
-	}
-
 	#lunch_menu .asterik {
+		font-family: Baskerville-URW, Source Serif Pro, Georgia;
 		margin: auto;
 		padding: 40px 0px 20px 0px;
 	}
+
+	#lunch_menu .asterik p {
+		font-family: Baskerville-URW, Source Serif Pro, Georgia;
+		font-style: italic;
+		font-size: 18px;
+		line-height: 26px;
+		width: 100%;
+		font-weight: 100;
+	}
+
 
 	#lunch_menu .salad_sandwiches {
 		margin: auto;
@@ -1268,7 +1270,6 @@ div.hero_info {
 		padding: 40px 0px 0px 0px
 	}
 }
-
 
 
 
@@ -1554,11 +1555,11 @@ a:hover .button_giftshop {
 	line-height: 34px;
 }
 
-#parallax #parallax_01_block, #parallax #parallax_02_block, #parallax #parallax_03_block {
+#parallax #parallax_01_block, #parallax #parallax_02_block, #parallax #parallax_03_block, #parallax #parallax_04_block {
 	background: white; 
 	padding: 60px 60px 60px 60px; 
 	margin:0 auto; 
-	text-align:justify;
+	text-align: justify;
 }
 
 #parallax .section_overlay_mask {
@@ -1616,6 +1617,26 @@ a:hover .button_giftshop {
 	background-position: center center;
 }
 
+
+#parallax #parallax_04 {
+	height: 472px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden; 
+	position: relative; 
+	border-radius: 4px;
+	margin: auto;
+	text-align: center;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("../images/phm/phm_hero_2.jpg");
+	background-attachment: fixed; 
+	background-size: cover; 
+	-moz-background-size: cover; 
+	-webkit-background-size: cover; 
+	background-repeat: no-repeat; 
+	background-position: center center;
+}
+
 #parallax hr {
 	margin: 40px auto 40px auto;
 	width: 120px;
@@ -1640,13 +1661,26 @@ a:hover .button_giftshop {
 		padding-bottom: 115px;
 	}
 
+	#parallax #parallax_04 {
+		height: 302px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("../images/phm/phm_hero_2.jpg");
+	}
+
+	#parallax #parallax_04 img {
+		scale: .74;
+	}
+
+
 
 
 }
 
 @media screen and (max-width: 800px) {
 
-	#parallax #parallax_01_block, #parallax #parallax_02_block, #parallax #parallax_03_block {
+	#parallax #parallax_01_block, #parallax #parallax_02_block, #parallax #parallax_03_block, #parallax #parallax_04_block {
 		padding: 40px 40px 40px 40px; 
 		margin: auto;
 		width: auto;
@@ -1662,6 +1696,20 @@ a:hover .button_giftshop {
 		padding-bottom: 100px;
 		background-attachment: inherit; 
 	}
+
+	#parallax #parallax_04 {
+		height: 272px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-attachment: inherit; 
+		background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url("../images/phm/phm_hero_2.jpg");
+	}
+
+	#parallax #parallax_04 img {
+		scale: .74;
+	}
+
 
 
 }
@@ -2009,6 +2057,7 @@ a:hover .button_giftshop {
 		color: #444444;
 	}
 
+
 	.intro .outlink_icon {
 		scale: .8;
 		height: 40px;
@@ -2025,11 +2074,93 @@ a:hover .button_giftshop {
 /* PHOTOSHOOTS –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 
-#photoshoots {
+#photo {
 	background-color: #F8F4F1;
 	padding: auto;
+	padding-bottom: 120px;
 }
 
+#photo_table {
+	border-collapse: collapse;
+	width: 100%;
+	max-width: 1000px;
+	margin: auto;
+	text-align: center;
+}
+
+#photo_table td {
+	font-family: Baskerville-URW, Source Serif Pro, Georgia;
+	font-size: 20px;
+	width: 33%;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	text-align: center;
+	background-color: #fff;
+	color: #222;
+}
+
+#photo_table th {
+	font-family: Baskerville-URW, Source Serif Pro, Georgia;
+	font-size: 20px;
+	width: 33%;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	text-align: center;
+	color: #222;
+}
+
+
+#photo_table th {
+	font-family: Baskerville-URW, Source Serif Pro, Georgia;
+	font-size: 20px;
+	width: 33%;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	text-align: center;
+	border: 4px solid #fff;
+	background-color: none;
+	color: #222;
+}
+
+.photo_table2, .photo_table3 {
+	border: 4px solid #fff;
+	border-bottom: 4px dashed #F8F4F1;
+}
+
+.photo_table3 {
+	border-bottom: none;
+	border-top: 2px dashed #F8F4F1;
+}
+
+.intro_note {
+	font-family: Baskerville-URW, Source Serif Pro, Georgia;
+	font-style: italic;
+	font-size: 20px;
+	line-height: 32px;
+	width: 100%;
+	font-weight: 100;
+	color: #6219FF;
+}
+
+
+@media screen and (max-width: 650px) {
+
+	#photo_table td {
+		font-family: Baskerville-URW, Source Serif Pro, Georgia;
+		font-size: 16px;
+		width: 33%;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	#photo_table th {
+		font-family: Baskerville-URW, Source Serif Pro, Georgia;
+		font-size: 16px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+}
 
 
 

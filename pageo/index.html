@@ -16,7 +16,13 @@
 <style>
 
 #home_hero {
-	background-image: url('images/home/main_hero_BG.jpg');
+	background-image: url("images/home/main_hero_BG.jpg");
+}
+
+/* SLIDESHOW */
+/* 
+.slideshow_slide {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), 
 }
 
 .center {
@@ -25,39 +31,29 @@
     background: #444444;
 }
 
-.slideshow_lide {
-	width: 100vw;
-	height: 900px;
-	overflow: hidden;
-	position: relative;
-	padding-top: 0px;
-    background: #7B7261;
-}
 .slideshow_slide > div {
-	width: 100%;
-	height: 900px;
+	width: 100vw;
+	height: 1000px;
 	background-size: cover;
 	background-position: center;
 	background-position: top;
 	position: absolute;
-	animation: slide 50s infinite;
+	animation: slide 25s infinite;
 	opacity: 0;
 }
 
-
 .slideshow_slide > div:nth-child(2) {
-	animation-delay: 10s;
+	animation-delay: 5s;
 }
 .slideshow_slide > div:nth-child(3) {
-	animation-delay: 20s;
+	animation-delay: 10s;
 }
 .slideshow_slide > div:nth-child(4) {
-	animation-delay: 30s;
+	animation-delay: 15s;
 }
 .slideshow_slide > div:nth-child(5) {
-	animation-delay: 40s;
+	animation-delay: 20s;
 }
-
 
 @keyframes slide {
 	10% {
@@ -74,6 +70,7 @@
 	}
 }	
 	
+
 
 </style>
 
@@ -188,15 +185,33 @@
 <!--------------- HERO –––––––––––––––––––––––-->
 
 <div id="home_hero">
+
+<center>
+
+<!-- Start Fading Slidehow HTML -->
+	<div class="slideshow_slide">
+		<div style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(images/other/trees_2.jpg)"></div>
+		<div style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(images/other/trees.jpg)"></div>
+		<div style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(images/other/trees_2.jpg)"></div>
+		<div style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(images/other/trees.jpg)"></div>
+	</div>
+<!-- End Fading Slideshow HTML -->
+	  
+</center>
+
 	<div class="hero_info">
 		<div class="logo_hero_home">
 		<img src="images/global/logo.svg"/>
 		</div>
+
+<!--
 		<article>
 			<h2 style="color:#FFFFFF; text-align:center;">
 			Central valley’s premiere <br> lavender farm and venue.
 			</h2>
 		</article>
+-->
+
 
 		<div id="button_group_home">
 			<a href="weddings.html">
@@ -223,7 +238,7 @@
 
 <section class="tout1">
 	<h3 style='text-align:center'>
-		Contact us now for event inquiries a tour venue or to schedule a free consultation.
+		Contact us for event inquiries, tour&nbsp;of&nbsp;the venue or to schedule &nbsp;a&nbsp;free&nbsp;consultation.
 	</h3>
 	<h5 style='text-align:center'>
 		Gift Shop & Lunches:<br>
@@ -279,7 +294,9 @@
 		<p>
 		With a wide array of handmade lavender products – everything from pillows to beard oil – we provide anything you might need to pamper yourself&nbsp;properly.
 		</p>
-		<p><a href="giftshop.html#products""><button class="button_parallax" style="background-color:#EFDED4">VIEW PRODUCTS</button></a></p>
+		<p>
+		<a href="giftshop.html#products""><button class="button_parallax" style="background-color:#EFDED4">VIEW PRODUCTS</button></a>
+		</p>
 		<hr>
 	</div>
 </section>
@@ -297,9 +314,31 @@
 		<p>
 		Spend your afternoon dining with us. Our seasonal menus are complete with a selection of dishes prepared on-site by our catering&nbsp;team.
 		</p>
-		<p><a href="giftshop.html#lunch_anchor"><button class="button_parallax">VIEW MENU</button></a></p>
+		<p><a href="giftshop.html#lunch_anchor"><button class="button_parallax">VIEW MENU</button></a>
+		</p>
 	</div>
 </section>
+
+
+<section>
+	<div id="parallax_04">
+		<img src="images/phm/phm_logo.svg"/>
+	</div>
+</section>
+
+<section>
+	<div id="parallax_02_block">
+		<p>
+		We are proud to announce the 7th annual Pageo Holiday Market taking&nbsp;place&nbsp;on&nbsp;November&nbsp;25th.
+		</p>
+		<p>
+		<a href="https://www.pageoholiday.com" target="_blank"><button class="button_parallax" style="background-color:#44F4B3">MORE INFO</button></a>
+		</p>
+	</div>
+</section>
+
+
+
   
 </div>
 

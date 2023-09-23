@@ -1,0 +1,60 @@
+/* PHM  –––––––– */
+
+
+body {
+	background-color: #44F4B3;
+}
+
+
+.logo_hero_phm {
+	width: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	scale: 1.8;
+	padding-top: 80px;
+}
+
+@media screen and (max-width: 1000px) {
+
+	.logo_hero_phm {
+		width: 100%;
+		scale: 1;
+		display: flex;
+		padding-top: 80px;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+
+@media screen and (max-height: 1000px) {
+
+	.logo_hero_phm {
+		width: 100%;
+		scale: 1.2;
+		display: flex;
+		padding-top: 80px;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+#hero_phm {
+	display: flex;
+    width: 100%;
+    height: auto;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+    background-position: center;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#phm_content {
+	height: 1000px;
+
+}
