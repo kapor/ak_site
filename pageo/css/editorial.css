@@ -88,8 +88,8 @@
 }
 
 .photo_1 img, .photo_2 img, .photo_3 img, .photo_4 img, .photo_5 img, .photo_6 img {
-	border-radius: 2%;
-	border: 2px solid white;
+	border-radius: 1%;
+	/* border: 2px solid white; */
 	display: block;
 	height: auto;
 	max-width: 450px;

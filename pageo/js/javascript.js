@@ -56,3 +56,4 @@ function show_slides(n) {
 	gallery_caption_text.innerHTML = dots[slides-1].alt;
 }
 
+

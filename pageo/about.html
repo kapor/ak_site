@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<!-- GALLERY -->
+
+<html lang="en">
+
+
+
+<head>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi">
+<title>Pageo Gallery</title>
+<link rel="stylesheet" type="text/css" href="css/styles.css"> 
+<link rel="stylesheet" type="text/css" href="css/topnav.css">
+<link rel="stylesheet" type="text/css" href="css/phm.css"> 
+<link rel="stylesheet" type="text/css" href="css/hero.css">
+<link rel="stylesheet" type="text/css" href="css/mobile.css">
+<link rel="stylesheet" type="text/css" href="css/editorial.css">
+<link rel="stylesheet" href="https://use.typekit.net/gkr1vzv.css">
+<style>
+
+#hero_phm {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(248, 244, 241, .8)), url("images/other/vibrant_lav_field_w_silo.jpg");
+	height: 80vh;
+}
+
+.gallery_row > .gallery_column {
+	padding: 4px 2px;
+}
+
+
+body {
+	background-color: #F8F4F1;
+}
+
+#team {
+	background-color: #F8F4F1;
+}
+
+.team_container {
+	margin: auto;
+	margin-top: 40px;
+	border: 20px solid #F8F4F1;
+	padding: 180px auto 180px auto;
+	background-color: #F8F4F1;
+	max-width: 1280px;
+}
+.team_grid {
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto;
+	grid-gap: 20px;
+}
+
+.team_member { 
+	border: 30px solid #F8F4F1;
+	background-color: #F8F4F1;
+	justify-content: top;
+	display: flex;
+	align-team_members: left;
+	height: auto;
+	flex-direction: column;
+}
+
+.team_member img { 
+	width: 100%;
+}
+
+.team_member .team_member_info {
+	padding-top: 20px;
+	float: left;
+	color: #222;
+	width: 100%;
+}
+
+.team_member .team_member_info h6 {
+	text-align: center;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+
+
+
+@media all and (min-width: 670px) {
+
+	.team_container {
+		width: 100%;
+	}
+
+	.team_grid {
+		grid-template-columns: 1fr 1fr;
+		grid-auto-rows: min-content;
+		grid-gap: 10px;
+	}
+}
+
+@media all and (min-width: 900px){
+	.team_grid {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: auto;
+	}
+}
+
+	
+</style>
+
+<script src="js/javascript.js"></script>
+
+
+
+</head>
+
+<body>
+
+<!--------------- NAVIGATION –––––––––––––––––––––––-->
+
+<div id="topnav_menu" class="overlay_menu">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+		<span style="cursor:pointer" onclick="openNav()"><img src="images/global/icon/24x24_close.svg"></span>	
+	</a>
+	<div class="overlay_content">
+		<a href="weddings.html" class="overlay_link">Weddings & Events</a>
+			<a href="weddings.html#services" class="topnav_mobile_subnav">Our Services</a>
+			<a href="weddings.html#about" class="topnav_mobile_subnav">About Us</a>
+			<a href="weddings.html#test" class="topnav_mobile_subnav">Testimonials</a>
+		<!--<a href="weddings.html#snapshots" class="topnav_mobile_subnav">Snapshots</a> -->
+		<a href="giftshop.html" class="overlay_link">Gift Shop & Services</a>
+			<a href="giftshop.html#lunch_anchor" class="topnav_mobile_subnav">Lunch Menu</a>
+			<a href="giftshop.html#products" class="topnav_mobile_subnav">Products</a>
+		<a href="gallery.html" class="overlay_link">Galleries</a> <!--
+			<a href="gallery.html#weddings" class="topnav_mobile_subnav">Weddings Photos</a>
+			<a href="gallery.html#giftshop" class="topnav_mobile_subnav">Gift Shop Photos</a>
+			<a href="gallery.html#harvest" class="topnav_mobile_subnav">Harvest Photos</a>
+			<a href="gallery.html#farm" class="topnav_mobile_subnav">Around the Farm</a> 
+		<!-- ><a href="#" class="overlay_link">Gallery</a>
+		<a href="#" class="overlay_link">Contact</a> -->
+	</div>
+	<div class="button_overlay" style='background-color:#FEF2DA'>
+		<a href="#">Book a consultation</a>
+	</div>
+</div>
+
+
+<div id="topnav_contact" class="overlay_contact">
+		<div class="nav_form">
+			<div class="nav_getintouch_closex">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeContact()">
+				<span style="cursor:pointer" onclick="openContact()"><img src="images/global/icon/24x24_close.svg"></span>	
+			</a>
+			</div>
+			<div class="nav_getintouch_top">
+				<h4>
+				<ol>
+					<li> Fill out the inquiry form and submit.</li>
+					<li> Receive pricing information and availability dates.</li>
+					<li> Book a tour of the venue for a free consultation.</li>
+				</ol>
+				</h4>
+			</div>
+			<div class="nav_getintouch_bottom">
+				<form action="/action_page.php">
+					<!-- ><label for="fname">First Name</label> -->
+					<input type="text" id="fname" name="firstname" placeholder="Full Name">
+					<!-- ><label for="fname">First Name</label> -->
+					<input type="text" id="lname" name="lastname" placeholder="Email Address">
+					<!-- ><label for="fname">First Name</label> -->
+					<input type="text" id="pnumber" name="phone" placeholder="Phone Number">
+					<!-- ><label for="fname">First Name</label> -->
+					<input type="text" id="etype" name="type" placeholder="Event Type (Wedding, Shower, etc.)">
+					<!-- ><label for="fname">First Name</label> -->
+					<input type="text" id="datesofinterest" name="dates" placeholder="Date(s) of Interest)">
+					<!-- ><label for="fname">First Name</label> -->
+					<input type="text" id="numberofguests" name="guests" placeholder="Approx. Number of Guests">
+					<!-- ><label for="fname">First Name</label> -->
+					<input type="text" id="daysofweek" name="days" placeholder="Preferred Day(s) of the Week">
+					<input type="submit" value="Submit">
+				</form>
+			</div>
+		</div>
+</div>
+
+<div class="topnav_fixed">
+	<div class="topnav">
+		<div class="topnav_left">
+			<a class="nav_pageo_logo" href="index.html">PAGEO LAVENDER FARM</a>
+			<div class="topnav_vertical_divider"></div>
+			<div class="nav_link_left">
+			<a href="weddings.html">Weddings & Events</a>
+			<a href="giftshop.html">Gift Shop & Services</a>
+			</div>
+		</div>
+		<div id="menu">
+			<span style="cursor:pointer" onclick="openNav()"><img src="images/global/icon/24x24_ham.svg"></span>
+		</div>
+		<div class="topnav_right_button_group">
+			<div class="button_nav_right">
+			<span style="cursor:pointer" onclick="openContact()"><a href="#">Contact</a></span>
+				<div class="topnav_vertical_divider"></div>
+			</div>		
+		</div>	
+		<div class="topnav_right">
+			<a href="#Gallery">Galleries</a>
+		</div>
+	</div>
+			<div class="top_nav_special">Pageo Special Events</div>
+</div>
+
+
+<!--------------- HERO –––––––––––––––––––––––-->
+
+<section id="hero_phm">
+		<div class="logo_hero_phm">
+		<img src="images/phm/phm_logo.svg"/>
+		</div>
+
+	<!-- <div id="button_group_weddings">
+		<a href="#">
+		<div class="button_weddings">
+			Book a consultation
+		</div>
+		</a>	
+	</div> -->
+	
+	</div>
+
+</section>
+
+<!--------------- PHM CONTENT –––––––––––––––––––––––-->
+
+<section id="phm_content">
+
+</section>
+
+<div class='about_us'>
+
+
+	<div class="divider">
+		Activities
+	</div>
+
+<!--------------- ABOUT US –––––––––––––––––––––––-->
+
+	<div class="about_copy_image">
+	  <div class="about_row">
+  
+		<div class="about_left_copy">
+			<h1 class=h1b>Guided Tours</h1>
+			<p>Fish i must find my red catnip fishy fish bury the poop bury it deep to pet a cat, rub its belly, endure blood and agony, quietly weep, keep rubbing belly but ask to be pet then attack. Quietly weep, keep rubbing belly but no.
+			<br><br>
+			Fish i must find my red catnip fishy fish bury the poop bury it deep to pet a cat. Fishy fish bury the poop bury it deep to pet a cat rub its belly. Endure blood and agony, quietly weep, keep rubbing belly but ask to be pet then attack. </p>
+		</div>
+
+		<div class="about_right_image">
+			<div>
+				<img src="images/weddings/about_us/our_story.jpg">
+			</div>
+		</div>
+		</div>
+	</div>
+
+
+	<div class="about_image_copy">
+	  <div class="about_row">
+		<div class="about_left_image">
+			<div>
+				<img src="images/weddings/about_us/the_farm.jpg">
+			</div>
+		</div>
+		<div class="about_right_copy">
+			<h1 class=h1b>Photoshoots</h1>
+			<p>Fish i must find my red catnip fishy fish bury the poop bury it deep to pet a cat, rub its belly, endure blood and agony, quietly weep, keep rubbing belly but ask to be pet then attack. Quietly weep, keep rubbing belly but no.
+			<br><br>
+			Fish i must find my red catnip fishy fish bury the poop bury it deep to pet a cat. Fishy fish bury the poop bury it deep to pet a cat rub its belly. Endure blood and agony, quietly weep, keep rubbing belly but ask to be pet then attack. </p>
+		</div>
+		</div>
+	</div>
+
+
+</div>
+
+<!--------------- OUR TEAM –––––––––––––––––––––––-->
+
+<section id="team">
+
+
+<div class="divider">
+	OUR TEAM
+</div>
+
+<div class="team_container my-4">
+	<div class="team_grid m-0 p-0">
+		<div class="team_member">
+			<img class="img-fluid" src="images/mugs/tina.jpg">
+			<div class="team_member_info">
+				<h6>Tina Kapor</h6>
+				<h6>Head of Everything</h6>
+			</div>
+		</div>
+		<div class="team_member">
+			<img class="img-fluid" src="images/mugs/tina.jpg">
+			<div class="team_member_info">
+				<h6>Tina Kapor</h6>
+				<h6>Head of Everything</h6>
+			</div>
+		</div>
+		<div class="team_member">
+			<img class="img-fluid" src="images/mugs/tina.jpg">
+			<div class="team_member_info">
+				<h6>Tina Kapor</h6>
+				<h6>Head of Everything</h6>
+			</div>
+		</div>
+		<div class="team_member">
+			<img class="img-fluid" src="images/mugs/tina.jpg">
+			<div class="team_member_info">
+				<h6>Tina Kapor</h6>
+				<h6>Head of Everything</h6>
+			</div>
+		</div>
+		<div class="team_member">
+			<img class="img-fluid" src="images/mugs/tina.jpg">
+			<div class="team_member_info">
+				<h6>Tina Kapor</h6>
+				<h6>Head of Everything</h6>
+			</div>
+		</div>
+		<div class="team_member">
+			<img class="img-fluid" src="images/mugs/tina.jpg">
+			<div class="team_member_info">
+				<h6>Tina Kapor</h6>
+				<h6>Head of Everything</h6>
+			</div>
+		</div>
+		<div class="team_member">
+			<img class="img-fluid" src="images/mugs/tina.jpg">
+			<div class="team_member_info">
+				<h6>Tina Kapor</h6>
+				<h6>Head of Everything</h6>
+			</div>
+		</div>
+		<div class="team_member">
+			<img class="img-fluid" src="images/mugs/tina.jpg">
+			<div class="team_member_info">
+				<h6>Tina Kapor</h6>
+				<h6>Head of Everything</h6>
+			</div>
+		</div>
+		<div class="team_member">
+			<img class="img-fluid" src="images/mugs/tina.jpg">
+			<div class="team_member_info">
+				<h6>Tina Kapor</h6>
+				<h6>Head of Everything</h6>
+			</div>
+		</div>
+		<div class="team_member">
+			<img class="img-fluid" src="images/mugs/tina.jpg">
+			<div class="team_member_info">
+				<h6>Tina Kapor</h6>
+				<h6>Head of Everything</h6>
+			</div>
+		</div>
+		<div class="team_member">
+			<img class="img-fluid" src="images/mugs/tina.jpg">
+			<div class="team_member_info">
+				<h6>Tina Kapor</h6>
+				<h6>Head of Everything</h6>
+			</div>
+		</div>
+		<div class="team_member">
+			<img class="img-fluid" src="images/mugs/tina.jpg">
+			<div class="team_member_info">
+				<h6>Tina Kapor</h6>
+				<h6>Head of Everything</h6>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+</section>
+
+
+
+
+<!--------------- FOOTER –––––––––––––––––––––––-->
+
+<footer>
+	<div class="row">
+		<div class="info_1">
+			<div>
+			<p>Pageo Lavender Farm</p>
+			<p>11573 Golf Road</p>
+			<p>Turlock, Ca, 95380</p>
+			</div>
+		</div>
+		
+		<div class="info_2" style="overflow: visible;">
+			<div class="showup">
+				<img src="images/global/logo_dark.svg" width="150" height="150">
+			</div>
+		</div> 
+		<div class="info_3">
+			<div>
+			<p>Info@pageolavenderfarm.com</p>
+			<p>Phone:  209.632.5052</p>
+			<p>Fax:  209.634.1379</p>
+			</div>
+		</div> 
+
+	</div>
+</footer>
+
+
+</body>
+</html>

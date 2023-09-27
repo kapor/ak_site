@@ -290,7 +290,8 @@ a.nav_pageo_logo  {
 /* OVERLAY MOBILE MENU */
 
 .button_overlay a {
-	display: block;
+	/*display: block;*/
+	display: none;
 	width: 100%;
 	overflow: hidden;
 	margin: auto;
@@ -348,10 +349,10 @@ a.nav_pageo_logo  {
 
 .overlay_menu .overlay_link {
 	font-family: Baskerville-URW, Source Serif Pro, Georgia;
-	line-height: 48px;
+	line-height: 40px;
 	padding: 20px;
 	text-decoration: none;
-	font-size: 40px;
+	font-size: 32px;
 	color: #888888;
 	display: block;
 	transition: .4s;
