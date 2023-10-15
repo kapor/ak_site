@@ -64,9 +64,9 @@ function myFunction() {
 			{% assign posts = site.posts %}
 			{% for post in posts %}
 			<tr>
-				<td class="mygrid_data_column_1"><a href="{{site.baseurl}}{{post.url}}" rel="bookmark" title="Permanent Link to {{site.baseurl}}{{post.url}}">{{post.title}}</a></td>
-				<td class="mygrid_data_column_2"><a href="{{site.baseurl}}{{post.url}}" rel="bookmark" title="Permanent Link to {{site.baseurl}}{{post.url}}">{{post.category}}</a></td>
-				<td class="mygrid_data_column_3"><a href="{{site.baseurl}}{{post.url}}" rel="bookmark" title="Permanent Link to {{site.baseurl}}{{post.url}}">{{post.loc}}</a></td>
+				<td class="mygrid_data_column_1"><a href="{{site.baseurl}}{{post.url}}"><div style="height:100%; width:100%">{{post.title}}</div></a></td>
+				<td class="mygrid_data_column_2"><a href="{{site.baseurl}}{{post.url}}"><div style="height:100%; width:100%">{{post.category}}</div></a></td>
+				<td class="mygrid_data_column_3"><a href="{{site.baseurl}}{{post.url}}"><div style="height:100%; width:100%">{{post.loc}}</div></a></td>
 			</tr>
 			{% endfor %}
 		</table>
@@ -77,6 +77,8 @@ function myFunction() {
 	{{content}}
 	</div>
 </div>
+
+<script src="{{site.baseurl}}/js/modernizr.custom.js"></script>
 
 </body>
 </html>
