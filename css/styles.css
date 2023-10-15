@@ -16,6 +16,8 @@ footer, header, hgroup, menu, nav, output, section, summary, audio, video {
 	border: 0;
 	font: inherit;
 	vertical-align: baseline;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 
@@ -276,7 +278,7 @@ article {
 	color: #222;
 }
 
-#mygrid a:hover  {
+#mygrid .mygrid_data_column_1 a:hover {
 	text-decoration: underline;
 	color: #888;
 }
@@ -302,6 +304,7 @@ article {
 
 #mygrid th {
 	text-align: left;
+	padding-right: 14px;
 	font-family: "neuzeit-grotesk", sans-serif;
 	font-weight: 300;
 	font-style: normal;
@@ -315,6 +318,7 @@ article {
 
 #mygrid td {
 	text-align: left;
+	padding-right: 14px;
 	border-bottom: 1px dotted #aaa;
 	font-family: "neuzeit-grotesk", sans-serif;
 	font-weight: 300;
@@ -325,6 +329,10 @@ article {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	max-width: 0;
+}
+
+body {
+
 }
 
 .posts {
@@ -586,8 +594,8 @@ pre {
 	color: #7B7261;
 	padding: 20px 20px;
 	font-weight: 400;
-	margin-bottom: 40px;
-	margin-top: 20px;
+	margin-bottom: 10px;
+	margin-top: 10px;
 	border-left: 4px solid #7B7261;
 	background: #fff;
 	white-space: pre-wrap;
