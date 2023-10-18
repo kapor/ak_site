@@ -9,6 +9,7 @@
 <meta name="description" content="{% if page.description %}{{page.description}}{% else %}{{site.description}}{% endif %}">
 <link rel="canonical" href="{{site.baseurl}}{{page.url}}"
 <link rel="apple-touch-icon" href="{{site.baseurl}}/apple-touch-icon.png">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet"/>
 <link rel="stylesheet" href="{{site.baseurl}}/css/styles.css">
 <link rel="stylesheet" href="https://use.typekit.net/bff2sws.css">
 <script src="{{site.baseurl}}/js/modernizr.custom.js"></script>
@@ -27,6 +28,8 @@ function myFunction() {
 	}
 }
 </script>
+
+
 </head>
 <body>
 
@@ -40,7 +43,7 @@ function myFunction() {
 			</a>
 		</div>
 		<div class="column mid_column">
-			Highlights
+			Working
 		</div>
 		<div class="column right_column">
 			Information
@@ -53,23 +56,43 @@ function myFunction() {
 <div class="lotsofstuff">
 	<div id="big_1">
 
+		<!-- ++++++ top part of side-bar ++++++ -->
+		<div class="top_side_bar">
+			<!-- ++++++ indicator_bar ++++++ -->
+			<table id="mygrid">
+				<tr>
+					<th class="mygrid_header_1">Project</th>
+					<th class="mygrid_header_2">Category</th>
+					<th class="mygrid_header_3">Location</th>
+				</tr>
+				{% assign posts = site.posts %}
+				{% for post in posts %}
+				<tr class="table_row" style="transform: rotate(0);">
+					<a href="#{{post.target}}">
+					<td><a href="{{site.baseurl}}{{post.url}}" id="mygrid_data_column_1" class="stretched-link" onMouseOver="this.style.color='#6219FF'" onMouseOut="this.style.color='#222'";>{{post.title}}</a></td>
+					<td>{{post.category}}</td>
+					<td>{{post.loc}}</td>
+					</a>
+				</tr>
+				{% endfor %}
+			</table>
 
-		<table id="mygrid">
 
-			<tr>
-				<th class="mygrid_header_1">Project</th>
-				<th class="mygrid_header_2">Category</th>
-				<th class="mygrid_header_3">Location</th>
-			</tr>
-			{% assign posts = site.posts %}
-			{% for post in posts %}
-			<tr>
-				<td class="mygrid_data_column_1"><a href="{{site.baseurl}}{{post.url}}" rel="bookmark" title="Permanent Link to {{site.baseurl}}{{post.url}}">{{post.title}}</a></td>
-				<td class="mygrid_data_column_2"><a href="{{site.baseurl}}{{post.url}}" rel="bookmark" title="Permanent Link to {{site.baseurl}}{{post.url}}">{{post.category}}</a></td>
-				<td class="mygrid_data_column_3"><a href="{{site.baseurl}}{{post.url}}" rel="bookmark" title="Permanent Link to {{site.baseurl}}{{post.url}}">{{post.loc}}</a></td>
-			</tr>
-			{% endfor %}
-		</table>
+			<!-- ++++++ indicator_bar ++++++ -->
+			<div id="ind">
+				<ul>
+				<li class="ind_spacer">
+				</li>
+				<li class="ind">
+					{% for post in posts %}
+					<a href="#{{post.target}}"></a>
+					{% endfor %}
+				</li>
+				</ul>
+			</div>
+
+		</div>
+
 		{% include sidebar1.html %}
 	</div>
 
@@ -77,6 +100,8 @@ function myFunction() {
 	{{content}}
 	</div>
 </div>
+
+
 
 </body>
 </html>
