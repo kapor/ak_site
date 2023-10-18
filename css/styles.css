@@ -29,6 +29,10 @@ a {
 	color: #222;
 }
 
+.column a {
+	cursor: pointer; 
+}
+
 html, body {
 /*	max-width: 1800px; */
 	margin: auto;
@@ -36,8 +40,6 @@ html, body {
 	background-color: #fff;
 	scroll-behavior: smooth;
 }
-
-
 
 /* main content */
 .lotsofstuff { 
@@ -114,8 +116,6 @@ p {
 .sticky + .content {
 	padding-top: 60px;
 }
-
-
 
 .column {
 	font-family: letter-gothic-std, monospace;
@@ -228,8 +228,6 @@ h6, h6 a {
 	transform: translateY(-50%);
 }
 
-
-
 /* ++++++++++++++++ RIGHT COLUMN ++++++++++++++++ */
 
 #big2 {
@@ -268,16 +266,12 @@ h6, h6 a {
 	display: block;
 }
 
-
 /* ++++++++++++++++ LEFT COLUMN ++++++++++++++++ */
-
 
 #mygrid  {
 	width: 100%;
 	margin: 0px 0px 0px 0px;
 }
-
-
 
 #mygrid .mygrid_header_1, #mygrid .mygrid_header_2, #mygrid .mygrid_header_3 {
 	text-align: left;
@@ -293,13 +287,13 @@ h6, h6 a {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	max-width: 0;
-	padding-bottom: 10px;
+	padding: 0px 6px 10px 20px;
 }
-
 
 #mygrid td {
 	text-align: left;
 	padding-right: 14px;
+	padding-left: 20px;
 	border-bottom: 1px dotted #aaa;
 	font-family: "neuzeit-grotesk", sans-serif;
 	font-weight: 300;
@@ -312,16 +306,8 @@ h6, h6 a {
 	max-width: 0;
 }
 
-.table_row td {
-	padding-left: 20px;
-}
-
 .mygrid_header_1, .mygrid_header_2, .mygrid_header_3 {
 	padding-left: 20px;
-}
-
-body {
-
 }
 
 .posts, .feed {
@@ -331,7 +317,7 @@ body {
 }
 
 .posts_archives {
-	margin: 100px 20px 80px 20px;
+	margin: 100px 20px 200px 20px;
     background-color: #F8F4F1;
 	overflow-y: auto;
 }
@@ -346,7 +332,6 @@ body {
 	border-bottom: 1px dotted #ccc;
 	max-width: 1200px;
 }
-
 
 section img, article img {
 	width: 100%;
@@ -363,7 +348,6 @@ code {
 	max-width: 800px; 
 }
 
-
 table {
     border-spacing: 0px;
 }
@@ -377,19 +361,10 @@ header {
 	color: #222;
 }
 
-
 .table_row:hover {
 	background: #F8F4F1;
 	color: #6219FF;
 }
-
-
-
-
-
-
-
-
 
 .tag_cloud li {
 	display: inline-block;
@@ -580,9 +555,6 @@ footer p a {
 	text-decoration: none;
 }
 
-
-
-
 /* ++++++++++++++++ SYNTAX HIGHLIGHTING ++++++++++++++++ */
 
 p code {
@@ -615,7 +587,6 @@ pre {
 	width: 100%;
 }
 
-
 @media screen and (max-width: 1600px) {
 
 	.thumb_post {
@@ -636,10 +607,6 @@ pre {
 	}
 
 }
-
-
-
-
 
 @media screen and (max-width: 800px) {
 
@@ -697,8 +664,6 @@ pre {
 		background-color: #F8F4F1;
 		background-size: cover;
 	}
-
-
 }
 
 

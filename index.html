@@ -3,11 +3,7 @@ layout: default
 title: ak_site
 ---
 
-
-
-
 	<article class="feed"> 
-
 
 	{% for post in paginator.posts %}
 		<section id="{{post.target}}">
@@ -19,13 +15,11 @@ title: ak_site
 				{{post.date | date:"%B %Y"}} + {{post.loc}}
 			</time>
 		
-		</header>
-
-
+		</header> 
 
 	{% if post.image %}
 	<!-- if there's an image added to front matter, display it -->
-		<div class="thumb_post"><a href="{{site.baseurl}}{{post.url}}" title="it's ok, click me.""><img src="{{ site.baseurl }}/images/{{ post.image }}"></a>
+		<div class="thumb_post"><a href="{{site.baseurl}}{{post.url}}" title="it's ok, click me."><img src="{{ site.baseurl }}/images/{{ post.image }}"></a>
 		</div>
 	{% else %}
 	<!-- if not, display nothing -->

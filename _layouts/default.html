@@ -7,7 +7,7 @@
 <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi">
 <title>{% if page.title %}{{page.title}}{% else %}{{site.title}}{% endif %}</title> 
 <meta name="description" content="{% if page.description %}{{page.description}}{% else %}{{site.description}}{% endif %}">
-<link rel="canonical" href="{{site.baseurl}}{{page.url}}"
+<link rel="canonical" href="{{site.baseurl}}{{page.url}}">
 <link rel="apple-touch-icon" href="{{site.baseurl}}/apple-touch-icon.png">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet"/>
 <link rel="stylesheet" href="{{site.baseurl}}/css/styles.css">
@@ -33,23 +33,11 @@ function myFunction() {
 </head>
 <body>
 
+
+
 <!-- ++++++++++ nav ++++++++++ -->
 
-<div id="navbar" class="sticky">
-	<td colspan="3">
-		<div class="column left_column">
-			<a href="{{site.baseurl}}/index.html">
-			Aaron Kapor
-			</a>
-		</div>
-		<div class="column mid_column">
-			Working
-		</div>
-		<div class="column right_column">
-			Information
-		</div>       
-	</td>
-</div>
+{% include nav.html %}
 
 <!-- ++++++++++ main content ++++++++++ -->
 

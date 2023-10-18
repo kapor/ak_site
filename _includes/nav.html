@@ -1,0 +1,19 @@
+<div id="navbar" class="sticky">
+	<td colspan="3">
+		<div class="column left_column">
+			<a href="{{site.baseurl}}/index.html">
+			Aaron Kapor
+			</a>
+		</div>
+		<div class="column mid_column">
+			{% if page.title == 'ak_site' %}
+			Working
+			{% else %}
+			<a onclick="window.history.back()">< Back</a>
+			{% endif %}
+		</div>
+		<div class="column right_column">
+			Information
+		</div>       
+	</td>
+</div>
