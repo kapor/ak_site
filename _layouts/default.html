@@ -56,8 +56,6 @@ function myFunction() {
 <div class="lotsofstuff">
 	<div id="big_1">
 
-		<!-- ++++++ top part of side-bar ++++++ -->
-		<div class="top_side_bar">
 			<!-- ++++++ indicator_bar ++++++ -->
 			<table id="mygrid">
 				<tr>
@@ -76,22 +74,6 @@ function myFunction() {
 				</tr>
 				{% endfor %}
 			</table>
-
-
-			<!-- ++++++ indicator_bar ++++++ -->
-			<div id="ind">
-				<ul>
-				<li class="ind_spacer">
-				</li>
-				<li class="ind">
-					{% for post in posts %}
-					<a href="#{{post.target}}"></a>
-					{% endfor %}
-				</li>
-				</ul>
-			</div>
-
-		</div>
 
 		{% include sidebar1.html %}
 	</div>
