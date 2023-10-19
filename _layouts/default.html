@@ -11,9 +11,12 @@
 <link rel="apple-touch-icon" href="{{site.baseurl}}/apple-touch-icon.png">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet"/>
 <link rel="stylesheet" href="{{site.baseurl}}/css/styles.css">
-<link rel="stylesheet" href="{{site.baseurl}}/css/menu_grid.css">
 <link rel="stylesheet" href="https://use.typekit.net/bff2sws.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2010.07.06dev/modernizr.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
 
+<!-- ++++++++++ NAVIGTION ++++++++++ -->
 
 <script>
 window.onscroll = function() {myFunction()};
@@ -30,13 +33,35 @@ function myFunction() {
 }
 </script>
 
+<!-- ++++++++++ MENU SCROLL INDICATOR ++++++++++ -->
 
+<script>
 
+var sections = document.getElementsByTagName("section"),
+    menu_row       = document.getElementsByClassName("menu_row"),
+    i;
+
+window.onscroll = function () {
+    
+    for ( i = 0 ; i < sections.length ; i = i + 1 ) {
+        
+        if ( window.scrollY > sections[i].offsetTop && window.scrollY < sections[i].offsetTop + sections[i].offsetHeight ) {
+            
+            menu_row[i].classList.add("menu_highlight");
+
+            
+        } else {
+            menu_row[i].classList.remove("menu_highlight");
+            sections[i].classList.remove("menu_highlight");
+        }
+        
+    }
+    
+}
+</script>
 
 </head>
 <body>
-
-
 
 <!-- ++++++++++ nav ++++++++++ -->
 
@@ -46,6 +71,8 @@ function myFunction() {
 
 <div class="lotsofstuff">
 	<div id="big_1">
+
+
 
 			<!-- ++++++ indicator_bar ++++++ -->
 			<table id="menu_grid">

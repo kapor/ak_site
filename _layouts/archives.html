@@ -11,22 +11,10 @@
 <link rel="apple-touch-icon" href="{{site.baseurl}}/apple-touch-icon.png">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet"/>
 <link rel="stylesheet" href="{{site.baseurl}}/css/styles.css">
-<link rel="stylesheet" href="{{site.baseurl}}/css/menu_grid.css">
 <link rel="stylesheet" href="https://use.typekit.net/bff2sws.css">
-<script src="{{site.baseurl}}/js/modernizr.custom.js"></script>
-
-<style>
-html, body {
-/*	max-width: 1800px; */
-	margin: auto;
-	height: 100%;
-	background-color: #F8F4F1;
-	scroll-behavior: smooth;
-}
-
-</style>
-
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2010.07.06dev/modernizr.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
 
 <script>
 window.onscroll = function() {myFunction()};
@@ -53,7 +41,7 @@ function myFunction() {
 
 <!-- ++++++++++ main content ++++++++++ -->
 
-<div class="lotsofstuff">
+<div class="lotsofstuff" id="top">
 	<div id="big_1">
 
 
@@ -83,7 +71,7 @@ function myFunction() {
 	</div>
 
 	<div id="big_2">
-		<div id="top"> </div>
+		
 	{{content}}
 	</div>
 </div>
