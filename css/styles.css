@@ -8,7 +8,16 @@
 
 /* reset margins */
 html, body, div, span, h1, h2, h3, h4, h5, h6, p,
-blockquote, pre, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, section, summary, audio, video {
+blockquote, pre, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, header, hgroup, menu, nav, output, section, summary, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+    text-overflow: ellipsis;
+}
+
+footer {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -27,18 +36,15 @@ a {
 	color: #222;
 }
 
-body {
-	margin: auto;
-	height: 100%;
-	background-color: #fff;
-	scroll-behavior: smooth;
+html, body {
+    background: transparent;
+    height: 100vh;
+    margin: 0;
+    padding: 0;    
 }
 
-html {
-	margin: auto;
-	height: 100%;
-	background-color: #fff;
-	scroll-behavior: smooth;
+section {
+	overflow: hidden;
 }
 
 
