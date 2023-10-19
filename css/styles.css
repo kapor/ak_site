@@ -27,13 +27,20 @@ a {
 	color: #222;
 }
 
-html, body {
-/*	max-width: 1800px; */
+body {
 	margin: auto;
 	height: 100%;
 	background-color: #fff;
 	scroll-behavior: smooth;
 }
+
+html {
+	margin: auto;
+	height: 100%;
+	background-color: #fff;
+	scroll-behavior: smooth;
+}
+
 
 p {
 	font-family: letter-gothic-std, monospace;
