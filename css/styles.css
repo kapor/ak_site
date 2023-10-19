@@ -36,17 +36,51 @@ a {
 	color: #222;
 }
 
-html, body {
-    background: transparent;
-    height: 100vh;
-    margin: 0;
-    padding: 0;    
-}
-
 section {
 	overflow: hidden;
 }
 
+/* main content */
+.lotsofstuff { 
+    display: block;
+    top: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	position: absolute;
+	text-align: left;
+	margin-bottom: 200px;
+}
+
+.lotsofstuff_post {
+	width: 100%;
+    height: fit-content;
+	margin: 0;
+	text-align: left;
+}
+
+#big_1 {
+    width: 33.33%;
+	top: 0;
+    float: left;
+    margin: 0px;
+	height: 100%;
+    padding: 105px 0px 0px 0px;
+	position: fixed;
+	background-color: #fff;
+	overflow: scroll;
+}
+
+#big_2 {
+    width: 66.66%;
+    float: right;
+    margin: 0px;
+	height: 100%;
+    padding: 0px;
+	overflow-y: auto;
+    background-color: #F8F4F1;
+	background-size: cover;
+}
 
 p {
 	font-family: letter-gothic-std, monospace;
@@ -66,45 +100,6 @@ p {
 
 .column a {
 	cursor: pointer; 
-}
-
-/* main content */
-.lotsofstuff { 
-    display: block;
-	width: 100%;
-	height: 100%;
-	margin: 0;
-	text-align: left;
-	margin-bottom: 200px;
-}
-
-.lotsofstuff_post {
-	width: 100%;
-    height: fit-content;
-	margin: 0;
-	text-align: left;
-}
-
-#big_1 {
-    width: 33.33%;
-    float: left;
-    margin: 0px;
-	height: 100%;
-    padding: 105px 0px 0px 0px;
-	position: absolute;
-	background-color: #fff;
-	overflow: scroll;
-}
-
-#big_2 {
-    width: 66.66%;
-    float: right;
-    margin: 0px;
-	height: 100%;
-    padding: 0px;
-	overflow-y: auto;
-    background-color: #F8F4F1;
-	background-size: cover;
 }
 
 #navbar {
