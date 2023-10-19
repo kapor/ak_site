@@ -29,16 +29,32 @@ a {
 	color: #222;
 }
 
-.column a {
-	cursor: pointer; 
-}
-
 html, body {
 /*	max-width: 1800px; */
 	margin: auto;
 	height: 100%;
 	background-color: #fff;
 	scroll-behavior: smooth;
+}
+
+p {
+	font-family: letter-gothic-std, monospace;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 13px;
+	line-height: 18px;
+	color: #444;
+	margin: 0 0 1em 0;
+	letter-spacing: -0.5px;
+	display: block;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+}
+
+.column a {
+	cursor: pointer; 
 }
 
 /* main content */
@@ -81,23 +97,6 @@ html, body {
 	overflow-y: auto;
     background-color: #F8F4F1;
 	background-size: cover;
-}
-
-
-p {
-	font-family: letter-gothic-std, monospace;
-	font-weight: 400;
-	font-style: normal;
-	font-size: 13px;
-	line-height: 18px;
-	color: #444;
-	margin: 0 0 1em 0;
-	letter-spacing: -0.5px;
-	display: block;
-	margin-block-start: 1em;
-	margin-block-end: 1em;
-	margin-inline-start: 0px;
-	margin-inline-end: 0px;
 }
 
 #navbar {

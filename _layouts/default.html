@@ -53,7 +53,7 @@ function myFunction() {
 				</tr>
 				{% assign posts = site.posts %}
 				{% for post in posts %}
-				<tr class="table_row" style="transform: rotate(0);">
+				<tr data-target="{{post.target}}" class="table_row" style="transform: rotate(0);">
 					<a href="#{{post.target}}">
 					<td><a href="{{site.baseurl}}{{post.url}}" id="mygrid_data_column_1" class="stretched-link" onMouseOver="this.style.color='#6219FF'" onMouseOut="this.style.color='#222'";>{{post.title}}</a></td>
 					<td>{{post.category}}</td>
