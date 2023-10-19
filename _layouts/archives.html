@@ -11,6 +11,7 @@
 <link rel="apple-touch-icon" href="{{site.baseurl}}/apple-touch-icon.png">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet"/>
 <link rel="stylesheet" href="{{site.baseurl}}/css/styles.css">
+<link rel="stylesheet" href="{{site.baseurl}}/css/menu_grid.css">
 <link rel="stylesheet" href="https://use.typekit.net/bff2sws.css">
 <script src="{{site.baseurl}}/js/modernizr.custom.js"></script>
 
@@ -56,25 +57,26 @@ function myFunction() {
 	<div id="big_1">
 
 
-		<table id="mygrid">
-
-			<tr>
-				<th class="mygrid_header_1">Project</th>
-				<th class="mygrid_header_2">Category</th>
-				<th class="mygrid_header_3">Location</th>
-			</tr>
-			{% assign posts = site.posts %}
-			{% for post in posts %}
-			<tr class="table_row" style="transform: rotate(0);">
-<!--
-				<td scope="row""><a href="{{site.baseurl}}{{post.url}}" id='mygrid_data_column_1' class="stretched-link" onMouseOver="this.style.color='#6219FF'" onMouseOut="this.style.color='#222'";>{{post.title}}</a></td>
--->
-				<td scope="row"><a href="{{site.baseurl}}{{post.url}}" id='mygrid_data_column_1' class="stretched-link" onMouseOver="this.style.color='#6219FF'" onMouseOut="this.style.color='#222'";>{{post.title}}</a></td>
-				<td scope="row">{{post.category}}</td>
-				<td scope="row">{{post.loc}}</td>
-			</tr>
-			{% endfor %}
-		</table>
+			<!-- ++++++ indicator_bar ++++++ -->
+			<table id="menu_grid">
+				<tr>
+					<th class="menu_header">Project</th>
+					<th class="menu_header">Category</th>
+					<th class="menu_header">Location</th>
+				</tr>
+				{% assign posts = site.posts %}
+				{% for post in posts %}
+				<tr class="menu_row" style="transform: rotate(0);">
+					<td>
+						<a href="{{site.baseurl}}{{post.url}}" class="stretched-link" onMouseOver="this.style.color='#6219FF'" onMouseOut="this.style.color='#222'";>{{post.title}}
+						</a>
+					</td>
+					<td>{{post.category}}</td>
+					<td>{{post.loc}}</td>
+					</a>
+				</tr>
+				{% endfor %}
+			</table>
 
 		<!-- {% include sidebar1.html %} -->
 

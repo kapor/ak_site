@@ -1,0 +1,151 @@
+---
+layout: default
+title: ak_site
+---
+
+
+
+<script>
+var sections = document.getElementsByTagName("section"),
+    menu_row       = document.getElementsByClassName("menu_row"),
+    i;
+
+window.onscroll = function () {
+    
+    for ( i = 0 ; i < sections.length ; i = i + 1 ) {
+        
+        if ( window.scrollY > sections[i].offsetTop && window.scrollY < sections[i].offsetTop + sections[i].offsetHeight ) {
+            
+            menu_row[i].classList.add("menu_highlight");
+            
+        } else {
+            menu_row[i].classList.remove("menu_highlight");
+            sections[i].classList.remove("menu_highlight");
+        }
+        
+    }
+    
+}
+</script>
+
+<style>
+
+/* reset margins */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, form, label, legend, table, caption, tbody, tfoot, thead,
+tr, th, td, article, aside, canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, section, summary, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  height: 2800px;
+  background: #ccc;
+}
+
+
+#big_1 ul {
+  margin: 0;
+  padding: 0;
+}
+
+#big_1 ul li {
+  line-height: 40px;
+  list-style-type: none;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+section {
+  width: 100%;
+  height: 600px;
+  background: dodgerblue;
+  box-sizing: border-box;
+  border: 4px solid ;
+  margin-top: 0px;
+  line-height: 40px;
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.menu_highlight {
+  color: red;
+}
+
+#big_1 {
+  width: 33.33%;
+  float: left;
+  position: fixed;
+  height: 200px;
+  background: #ccc;
+  left: 0px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#big_2 {
+  width: 66.66%;
+  float: right;
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<div id="big_1"> 
+
+<table id="menu_grid">
+  <tr>
+    <th class="menu_header">Company</th>
+    <th class="menu_header">Contact</th>
+    <th class="menu_header">Collection</th>
+  </tr>
+  <tr class="menu_row">
+    <td class="menu_data">Baby Turtles</td>
+    <td class="menu_data">Are The Best</td>
+    <td class="menu_data">Direction</td>
+  </tr>
+  <tr class="menu_row">
+    <td class="menu_data">Baby Turtles</td>
+    <td class="menu_data">Are The Best</td>
+    <td class="menu_data">Direction</td>
+  </tr>
+    <tr class="menu_row">
+    <td class="menu_data">Baby Turtles</td>
+    <td class="menu_data">Are The Best</td>
+    <td class="menu_data">Direction</td>
+  </tr>
+</table>
+
+</div>
+
+<div id="big_2">
+<section>one</section>
+<section>two</section>
+<section>three</section>
+<section>four</section>
+</div>
+
+
+
+<script>
+
+
+
+</script>
+
+
+</body>
+</html>

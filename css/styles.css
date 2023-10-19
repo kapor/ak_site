@@ -8,9 +8,7 @@
 
 /* reset margins */
 html, body, div, span, h1, h2, h3, h4, h5, h6, p,
-blockquote, pre, form, label, legend, table, caption, tbody, tfoot, thead,
-tr, th, td, article, aside, canvas, details, embed, figure, figcaption,
-footer, header, hgroup, menu, nav, output, section, summary, audio, video {
+blockquote, pre, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, section, summary, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -75,9 +73,6 @@ p {
 }
 
 #big_1 {
- /*   display: flex;
-    flex-direction: column;
-    justify-content: space-between; */
     width: 33.33%;
     float: left;
     margin: 0px;
@@ -236,7 +231,7 @@ h6, h6 a {
 
 /* article styling */
 
-.posts p, .feed p {
+.posts p {
 	font-family: letter-gothic-std, monospace;
 	font-weight: 400;
 	font-style: normal;
@@ -252,7 +247,7 @@ h6, h6 a {
 	margin-inline-end: 0px;
 }
 
-.posts ul, .feed ul {
+.posts ul {
 	font-family: letter-gothic-std, monospace;
 	font-weight: 400;
 	font-style: normal;
@@ -267,49 +262,13 @@ h6, h6 a {
 
 /* ++++++++++++++++ LEFT COLUMN ++++++++++++++++ */
 
-#mygrid  {
-	width: 100%;
-	margin: 0px 0px 0px 0px;
-}
 
-#mygrid .mygrid_header_1, #mygrid .mygrid_header_2, #mygrid .mygrid_header_3 {
-	text-align: left;
-	font-family: letter-gothic-std, monospace;
-	font-weight: 300;
-	font-style: normal;
-	font-size: 14px;
-	line-height: 16px;
-	text-transform: uppercase;
-	letter-spacing: 1.3px;
-	color: #222;
-	white-space: nowrap; 
-	overflow: hidden;
-	text-overflow: ellipsis;
-	max-width: 0;
-	padding: 0px 6px 10px 20px;
-}
 
-#mygrid td {
-	text-align: left;
-	padding-right: 14px;
-	padding-left: 20px;
-	border-bottom: 1px dotted #aaa;
-	font-family: "neuzeit-grotesk", sans-serif;
-	font-weight: 300;
-	font-style: normal;
-	font-size: 16px;
-	line-height: 32px;
-	white-space: nowrap; 
-	overflow: hidden;
-	text-overflow: ellipsis;
-	max-width: 0;
-}
-
-.mygrid_header_1, .mygrid_header_2, .mygrid_header_3 {
+.menu_header {
 	padding-left: 20px;
 }
 
-.posts, .feed {
+.posts {
 	margin-top: 100px;
 	margin-bottom: 80px;
     background-color: #F8F4F1;
@@ -325,14 +284,14 @@ h6, h6 a {
 	margin: 0px 20px 0px 20px;
 }
 
-.feed section, .posts article {
+.posts article {
 	margin: 0px 20px 48px 20px;
 	padding: 0px 0px 24px 0px;
 	border-bottom: 1px dotted #ccc;
 	max-width: 1200px;
 }
 
-section img, article img {
+section img {
 	width: 100%;
 	background-size: cover;
 }
@@ -355,15 +314,6 @@ header {
 	padding-bottom: 10px;
 }
 
-#mygrid a  {
-	text-decoration: none;
-	color: #222;
-}
-
-.table_row:hover {
-	background: #F8F4F1;
-	color: #6219FF;
-}
 
 .tag_cloud li {
 	display: inline-block;
