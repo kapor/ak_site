@@ -16,9 +16,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
 
-<!-- ++++++++++ NAVIGTION ++++++++++ -->
+<!-- ++++++++++ TOP-NAVIGTION ++++++++++ -->
 
-<script>
+<script type="text/javascript">
 window.onscroll = function() {myFunction()};
 
 var navbar = document.getElementById("navbar");
@@ -33,32 +33,80 @@ function myFunction() {
 }
 </script>
 
+<!-- ++++++++++ SIDE-BAR NAV STATES ++++++++++ -->
+
+<script type="text/javascript">
+
+let elements = ['.menu_row', '#mygrid_data_column_1'];
+
+// Add class on mouseover
+document.querySelectorAll(elements).forEach(element => {
+	element.addEventListener('mouseover', () => {
+		element.classList.add(':hover');
+	});
+});
+
+// Remove class on mouseout
+document.querySelectorAll(elements).forEach(element => {
+	element.addEventListener('mouseout', () => {
+			element.classList.remove(':hover');
+	});
+});
+
+</script>
+
 <!-- ++++++++++ MENU SCROLL INDICATOR ++++++++++ -->
 
 <script>
 
-var sections = document.getElementsByTagName("section"),
-    menu_row       = document.getElementsByClassName("menu_row"),
+//https://stackoverflow.com/questions/16308037/detect-when-elements-within-a-scrollable-div-are-out-of-view
+
+//Here's a pure javascript version of the accepted answer without relying on jQuery and with some fixes to the partial in view detection and support for out of view on top.
+
+var container = document.getElementById("big_2"),
+	element = document.getElementsByTagName("section"),
+    menu_row = document.getElementsByClassName("menu_row"),
     i;
 
-window.onscroll = function () {
-    
-    for ( i = 0 ; i < sections.length ; i = i + 1 ) {
-        
-        if ( window.scrollY > sections[i].offsetTop && window.scrollY < sections[i].offsetTop + sections[i].offsetHeight ) {
-            
-            menu_row[i].classList.add("menu_highlight");
+const padding = container - 320;
 
-            
-        } else {
-            menu_row[i].classList.remove("menu_highlight");
-            sections[i].classList.remove("menu_highlight");
-        }
-        
-    }
-    
+function checkInView(container, element, partial) {
+
+    //Get container properties
+    let cTop = container.scrollTop;
+    let cBottom = cTop + container.clientHeight;
+
+    //Get element properties
+    let eTop = element.offsetTop - container.offsetTop; // change here
+    let eBottom = eTop + element.clientHeight;
+
+    //Check if in view    
+    let isTotal = (eTop >= cTop && eBottom <= cBottom);
+    let isPartial = partial && (
+      (eTop < cTop && eBottom > cTop) ||
+      (eBottom > cBottom && eTop < cBottom)
+    );
+
+    //Return outcome
+    return  (isTotal  || isPartial);
 }
+
+document.onscroll = function () {
+    
+    for ( i = 0 ; i < element.length ; i++ ) {
+        
+        if ( window.scrollY > element[i].offsetTop + padding && window.scrollY < element[i].offsetTop + element[i].clientHeight + padding ) {
+            menu_row[i].classList.add("menu_highlight");
+        }
+        else {
+            menu_row[i].classList.remove("menu_highlight");
+        }
+    }
+};
+
 </script>
+
+
 
 </head>
 <body>
@@ -72,20 +120,18 @@ window.onscroll = function () {
 <div class="lotsofstuff">
 	<div id="big_1">
 
-
-
-			<!-- ++++++ indicator_bar ++++++ -->
+			<!-- ++++++ menu list ++++++ -->
 			<table id="menu_grid">
 				<tr>
 					<th class="menu_header">Project</th>
 					<th class="menu_header">Category</th>
 					<th class="menu_header">Location</th>
 				</tr>
-					{% assign posts = site.posts %}
-					{% for post in posts %}
+				{% assign posts = site.posts %}
+				{% for post in posts %}
 				<tr class="menu_row" style="transform: rotate(0);">
 					<td class="menu_data">
-					<a href="{{site.baseurl}}{{post.url}}" id="mygrid_data_column_1" class="stretched-link" onMouseOver="this.style.color='#6219FF'" onMouseOut="this.style.color='#222'";>{{post.title}}
+					<a href="{{site.baseurl}}{{post.url}}" id="mygrid_data_column_1" class="stretched-link";>{{post.title}}
 					</a>
 					</td>
 					<td class="menu_data">{{post.category}}</td>
@@ -100,9 +146,59 @@ window.onscroll = function () {
 
 	<div id="big_2">
 	{{content}}
+		<div class="section_spacer">
+			<div class="return2"><a href="#top" style="color:#222222" title="return to top">return to top</a></div>
+		</div>
 	</div>
 </div>
 
+
+
+<!-- ++++++++++ CURRENT PAGE INDICATOR ++++++++++ -->
+<!--
+<script>
+// Add active class to the current button (highlight it)
+var m_grid = document.getElementById("menu_grid");
+var m_row = m_grid.getElementsByClassName("menu_row");
+for (var i = 0; i < m_row.length; i++) {
+  m_row[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("menu_row_active");
+  if (current.length > 0) { 
+    current[0].className = current[0].className.replace(" menu_row_active", "");
+  }
+  this.className += " menu_row_active";
+  });
+}
+</script>
+-->
+
+<!--
+<script>
+const m_row = document.getElementsByClassName("menu_row");
+const current = window.location.href;
+document.querySelectorAll(".menu_row a").forEach(function(elem){ 
+    if(elem.href.includes(current)){
+      m_row.classList.add(" menu_row_active");
+    }
+});
+</script>
+
+
+<script>
+(function () {
+    var current = location.pathname.split('/')[1];
+    if (current === "") return;
+    var menu_link = document.querySelectorAll('.menu_row a');
+    var menu_row = document.getElementsByClassName("menu_row"),
+
+    for (var i = 0, len = m_row.length; i < len; i++) {
+        if (menu_link[i].getAttribute("href").indexOf(current) !== -1) {
+            menu_row[i].classList.add("menu_row_active");
+        }
+    }
+})();
+</script>
+-->
 
 
 </body>

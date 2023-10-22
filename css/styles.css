@@ -17,6 +17,10 @@ blockquote, pre, form, label, legend, table, caption, tbody, tfoot, thead, tr, t
     text-overflow: ellipsis;
 }
 
+body {
+	background-color: #F8F4F1;
+}
+
 footer {
 	margin: 0;
 	padding: 0;
@@ -76,7 +80,7 @@ a {
 	height: 100%;
     padding: 0px;
 	overflow-y: auto;
-    background-color: #F8F4F1;
+    background-color: transparent;
 	background-size: cover;
 	padding-top: 100px;
 }
@@ -88,7 +92,7 @@ a {
 	max-width: 1200px;
 	overflow: hidden;
 	margin: 0px auto 40px auto;
-	background-color: #F8F4F1;
+	background: transparent;
 }
 
 
@@ -100,11 +104,20 @@ a {
 
 .menu_highlight {
     background-color: #F8F4F1;
-    font-weight: bold;
     border-left: 2px solid #6219FF;
 }
 
 .menu_row:hover {
+	background: #F8F4F1;
+	color: #6219FF;
+}
+
+.menu_row_active {
+	background: #F8F4F1;
+}
+
+
+#mygrid_data_column_1:hover {
 	background: #F8F4F1;
 	color: #6219FF;
 }
@@ -134,7 +147,8 @@ a {
 #menu_grid td {
 	text-align: left;
 	padding-right: 14px;
-	padding-left: 20px;
+	/* padding left needs to be 2px less to account for the 2px border left */
+	padding-left: 18px;
 	border-bottom: 1px dotted #aaa;
 	font-family: "neuzeit-grotesk", sans-serif;
 	font-weight: 300;
@@ -151,8 +165,6 @@ a {
 	text-decoration: none;
 	color: #222;
 }
-
-
 
 .feed ul {
 	font-family: letter-gothic-std, monospace;
@@ -182,22 +194,8 @@ article img {
 .feed {
 	margin-top: 100px;
 	margin-bottom: 80px;
-    background-color: #F8F4F1;
+    background-color: transparent;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -369,8 +367,8 @@ h6, h6 a {
 	margin: 0 0 1em 0;
 	letter-spacing: -0.5px;
 	display: block;
-	margin-block-start: 1em;
-	margin-block-end: 1em;
+	margin-block-start: 24px;
+	margin-block-end: 32px;
 	margin-inline-start: 0px;
 	margin-inline-end: 0px;
 }
@@ -438,7 +436,7 @@ table {
 }
 
 header {
-	padding-bottom: 10px;
+/*	padding-bottom: 10px; */
 }
 
 
@@ -529,6 +527,9 @@ header {
 	padding-bottom: 40px;
 }
 
+/* +++++++ RETURN ARCHIVE +++++++ */
+
+
 .return {
 	display: none;
 }
@@ -544,11 +545,52 @@ h5:target + .taglist .return {
 	color: #6219FF;
 }
 
+/* +++++++ RETURN EVERYWHERE ELSE +++++++ */
+
+
+
+h5:target + .taglist .return2 {
+	display: block;
+}
+
+.return2 {
+	text-align: left;
+	font-family: letter-gothic-std, monospace;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 14px;
+	line-height: 16px;
+	text-transform: uppercase;
+	cursor: pointer; 
+	letter-spacing: 1.3px;
+	color: #222;
+	text-decoration: none;
+	padding: 40px 20px 0px 20px;
+	margin: auto;
+
+}
+
+.section_spacer {
+	height: 200px;
+	width: 100%;
+	background: transparent;
+}
+
+section:last-of-type {
+	height: 75vh;
+}
+
+
+
 /*
 .return a:before {
 	content: '\25b2\00a0';
 }
 */
+
+
+
+
 .archive .tag_cloud li {
 	background-color: #fff;
 }
