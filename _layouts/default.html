@@ -9,12 +9,15 @@
 <meta name="description" content="{% if page.description %}{{page.description}}{% else %}{{site.description}}{% endif %}">
 <link rel="canonical" href="{{site.baseurl}}{{page.url}}">
 <link rel="apple-touch-icon" href="{{site.baseurl}}/apple-touch-icon.png">
+
 <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet"/>
 <link rel="stylesheet" href="{{site.baseurl}}/css/styles.css">
 <link rel="stylesheet" href="https://use.typekit.net/bff2sws.css">
+<script rel="stylesheet" href="{{site.baseurl}}/js/scripts.css"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2010.07.06dev/modernizr.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
+
 
 <!-- ++++++++++ TOP-NAVIGTION ++++++++++ -->
 
@@ -87,9 +90,19 @@ function checkInView(container, element, partial) {
       (eBottom > cBottom && eTop < cBottom)
     );
 
+
+document.onscroll = function () {
+	if (myTop > windowTop && myTop < windowBottom) {
+    // element is in the window
+	} else {
+    // element is NOT in the window
+    // maybe use this to scroll... 
+    // $('html, body').animate({scrollTop: myTop}, 300);
+	}
+};
     //Return outcome
     return  (isTotal  || isPartial);
-}
+};
 
 document.onscroll = function () {
     
@@ -109,7 +122,7 @@ document.onscroll = function () {
 
 
 </head>
-<body>
+<body class="no-scroll">
 
 <!-- ++++++++++ nav ++++++++++ -->
 
@@ -185,20 +198,22 @@ document.querySelectorAll(".menu_row a").forEach(function(elem){
 
 
 <script>
-(function () {
     var current = location.pathname.split('/')[1];
-    if (current === "") return;
     var menu_link = document.querySelectorAll('.menu_row a');
     var menu_row = document.getElementsByClassName("menu_row"),
-
+(function () {
+    if (current === "") return;
     for (var i = 0, len = m_row.length; i < len; i++) {
-        if (menu_link[i].getAttribute("href").indexOf(current) !== -1) {
+        if (menu_link[i].getAttribute("href").indexOf(current) !== -2) {
             menu_row[i].classList.add("menu_row_active");
         }
     }
 })();
 </script>
 -->
+
+
+
 
 
 </body>

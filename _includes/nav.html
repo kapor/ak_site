@@ -1,19 +1,140 @@
+
+
 <div id="navbar" class="sticky">
 	<td colspan="3">
-		<div class="column left_column">
+		<div class="column left_column" id="col_1">
 			<a href="{{site.baseurl}}/index.html">
 			Aaron Kapor
 			</a>
 		</div>
-		<div class="column mid_column">
+		<div class="column mid_column" id="col_2">
 			{% if page.title == 'ak_site' %}
 			Working
 			{% else %}
 			<&nbsp;<a href="{{site.baseurl}}/index.html">main</a>&nbsp;/&nbsp;<a onclick="window.history.back()">Back</a>
 			{% endif %}
 		</div>
-		<div class="column right_column">
+		<div class="column right_column" id="col_3">
 			Information
+		</div> 
+		<div class="column right_column" id="col_4">
+    	<span class="info_close"><img src="{{ site.baseurl }}/images/close_large.svg"></span>
 		</div>       
 	</td>
 </div>
+
+<div class="info_overlay_back">
+	<div class="info_overlay_left">
+	</div>
+	<div class="info_overlay">
+		<div class="info_overlay_inner">
+			{% include info.html %}
+		</div>
+	</div>
+</div>
+
+
+<!-- ++++++++++ INFO MODAL ++++++++++ -->
+<script>
+
+var btn = document.getElementById("col_3");
+var modalback = document.getElementsByClassName("info_overlay_back")[0];
+var modal = document.getElementsByClassName("info_overlay")[0];
+var modal_left = document.getElementsByClassName("info_overlay_left")[0];
+var close = document.getElementsByClassName("info_close")[0];
+var rightcol = document.getElementById("col_3");
+var midcol = document.getElementById("col_2");
+var hidcol = document.getElementById("col_4");
+var infopage = document.getElementById("info_page");
+
+
+// FUNCTIONS
+
+function openModal() {
+	modalback.style.display = "block";
+	setTimeout(() => { hidcol.style.display = "inline-block"}, 20);
+	setTimeout(() => { midcol.style.display = "none"}, 0);
+	setTimeout(() => { rightcol.style.cursor = "auto"}, 20);
+	setTimeout(() => { modalback.style.opacity = "1"}, 20);
+	setTimeout(() => { modal.style.height = "100%" }, 70);
+	setTimeout(() => { modal_left.style.height = "100%" }, 70);
+	setTimeout(() => { infopage.style.display = "inline-block" }, 50);
+}
+
+function closeModal() {
+	setTimeout(() => { rightcol.style.cursor = "pointer"}, 20);
+	setTimeout(() => { hidcol.style.display = "none"}, 20);
+	setTimeout(() => { midcol.style.width = "33.33%" }, 0);
+	setTimeout(() => { midcol.style.display = "inline-block"}, 20);
+	setTimeout(() => { modal.style.height = "0" }, 10);
+	setTimeout(() => { modal_left.style.height = "0" }, 10);
+	setTimeout(() => { modalback.style.opacity = "0"}, 20);
+	setTimeout(() => { modalback.style.display = "none" }, 140);
+	setTimeout(() => { infopage.style.display = "none" }, 0);
+}
+
+btn.addEventListener( "click", buttonEvent );
+function buttonEvent() {
+  openModal();
+  btn.removeEventListener( "click", buttonEvent );
+  setTimeout(() => {
+    close.addEventListener( "click", closeModalEvent );
+    window.addEventListener( "click", closeModalEvent2 );
+  }, 20);
+}
+
+
+function closeModalEvent() {
+  setTimeout(() => {
+    close.removeEventListener( "click", closeModalEvent );
+    window.removeEventListener( "click", closeModalEvent2 );
+    btn.addEventListener( "click", buttonEvent );
+  }, 20);
+  closeModal();
+}
+
+function closeModalEvent2() {
+  if (event.target == modal_left) {
+    setTimeout(() => {
+      close.removeEventListener( "click", closeModalEvent );
+      window.removeEventListener( "click", closeModalEvent2 );
+      btn.addEventListener( "click", buttonEvent );
+    }, 20);
+    closeModal();
+  }
+}
+
+document.addEventListener('keyup',function(e){
+    if (e.key === "Escape") { 
+        // hide modal code
+        closeModalEvent()
+    }
+});
+
+
+</script>
+
+<!-- ++++++++++ DISABLE SCROLLBAR ++++++++++ -->
+
+<script>
+$('#col_3').click(function(){
+	$('.lotsofstuff').css("overflow", "hidden");
+	$('body').css("overflow", "hidden");
+});
+
+$('.info_overlay_left').click(function(){
+	$('body').css("overflow", "visible");
+});
+
+$('.info_close').click(function(){
+	$('body').css("overflow", "visible");
+});
+
+$(document).keyup(function(e) {
+ if (e.key === "Escape") { 
+    $('body').css("overflow", "visible");
+  }
+});
+
+
+</script>

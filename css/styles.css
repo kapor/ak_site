@@ -49,8 +49,8 @@ a {
 	height: 100%;
 	margin: 0;
 	text-align: left;
-	overflow-y:scroll;
-    overflow-x:hidden;
+	overflow-y: auto;
+    overflow-x: hidden;
 
 }
 
@@ -94,6 +94,9 @@ a {
 	margin: 0px auto 40px auto;
 	background: transparent;
 }
+
+
+
 
 
 /* ++++++++++ MENU SCROLL INDICATOR ++++++++++ */
@@ -237,14 +240,16 @@ p {
 	padding-top: 60px;
 }
 
-.column {
+#col_1, #col_2, #col_3 {
 	font-family: letter-gothic-std, monospace;
 	text-transform: uppercase;
     width: 33.33%;
 	letter-spacing: 1.3px;
     display: inline-block;
     float: left;
+    text-align: left;
     line-height: 24px;
+    opacity: 100%;
     margin: 0;
     padding: 20px 0px 20px 20px;
     box-sizing: border-box;
@@ -252,6 +257,134 @@ p {
 	white-space: nowrap; 
 	overflow: hidden;
 	text-overflow: ellipsis;
+}
+
+#col_4 {
+	font-family: letter-gothic-std, monospace;
+	text-transform: uppercase;
+    width: 33.33%;
+	letter-spacing: 1.3px;
+    display: none;
+    float: left;
+    opacity: 100%;
+    box-sizing: border-box;
+    vertical-align: middle;
+	white-space: nowrap; 
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+
+#col_3, #col_4 {
+	cursor:	pointer;
+}
+
+#col_4 {
+	
+}
+
+#col_4 img{
+	width: 32px;
+	height: 32px;
+}
+
+
+
+/* ++++++++++ INFO MODAL ++++++++++ */
+
+#info_button {
+	cursor: pointer;
+}
+
+.no-scroll {
+   overflow: visible;
+}
+
+.info_overlay_back {
+	display: none;
+	position: fixed;
+	opacity: 0;
+	z-index: 5;
+	left: 0;
+	top: 64px;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-color: rgba(245,245,245,0);
+	cursor: pointer;
+	transition: all 0.25s ease;
+}
+
+.info_overlay_left {
+	border-radius: 0px;
+	width: 33.33%;
+	height: 0;
+	background-color: white;
+	z-index: 6;
+	position: absolute;
+	left: 0;
+	top: 0;
+	transform: translate(0, 0);
+	overflow-x: hidden;
+	overflow-y: auto;
+	background-color: rgba(245,245,245,0.75);
+	cursor: auto;
+	transition: all 0.25s ease;
+}
+
+
+.info_overlay {
+	border-radius: 0px;
+	width: 66.66%;
+	height: 0;
+	background-color: white;
+	z-index: 6;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transform: translate(0, 0);
+	overflow-x: hidden;
+	overflow-y: auto;
+	cursor: auto;
+	transition: all 0.5s ease;
+}
+
+.info_close {
+	position: fixed;
+	right: 0;
+	padding: 16px 16px 16px 0px;
+	cursor: pointer;
+}
+
+.info_close:hover {
+	color: #222;
+}
+
+#info_page {
+	padding: 0px 20px 20px 20px;
+	overflow-y: auto;
+	gap: 40px;
+	border-top: 1px dotted #DDD;
+	display: inline-block;
+}
+
+#info_page p {
+	font-family: "neuzeit-grotesk", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 16px;
+	line-height: 32px;
+}
+
+#info_page .info_col_1 {
+	float: left;
+	width: 48%;
+}
+
+#info_page .info_col_2 {
+	float: right;
+	width: 40%;
+	margin-right: 40px;
 }
 
 /* ++++++++++++++++ FONT SIZES ++++++++++++++++ */
@@ -547,8 +680,6 @@ h5:target + .taglist .return {
 
 /* +++++++ RETURN EVERYWHERE ELSE +++++++ */
 
-
-
 h5:target + .taglist .return2 {
 	display: block;
 }
@@ -576,10 +707,16 @@ h5:target + .taglist .return2 {
 	background: transparent;
 }
 
-section:last-of-type {
-	height: 75vh;
-}
 
+
+
+@media screen and (min-height: 991px) {
+
+	section:last-of-type {
+		height: 75vh;
+	}
+
+}
 
 
 /*
