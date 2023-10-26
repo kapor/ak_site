@@ -19,23 +19,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
 
 
-<!-- ++++++++++ TOP-NAVIGTION ++++++++++ -->
-
-<script type="text/javascript">
-window.onscroll = function() {myFunction()};
-
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
-
-function myFunction() {
-	if (window.pageYOffset >= sticky) {
-		navbar.classList.add("sticky")
-	} else {
-		navbar.classList.remove("sticky");
-	}
-}
-</script>
-
 <!-- ++++++++++ SIDE-BAR NAV STATES ++++++++++ -->
 
 <script type="text/javascript">
@@ -46,13 +29,13 @@ let elements = ['.menu_row', '#mygrid_data_column_1'];
 document.querySelectorAll(elements).forEach(element => {
 	element.addEventListener('mouseover', () => {
 		element.classList.add(':hover');
-	});
+	}); 
 });
 
 // Remove class on mouseout
 document.querySelectorAll(elements).forEach(element => {
 	element.addEventListener('mouseout', () => {
-			element.classList.remove(':hover');
+		element.classList.remove(':hover');
 	});
 });
 
@@ -60,11 +43,13 @@ document.querySelectorAll(elements).forEach(element => {
 
 <!-- ++++++++++ MENU SCROLL INDICATOR ++++++++++ -->
 
-<script>
 
-//https://stackoverflow.com/questions/16308037/detect-when-elements-within-a-scrollable-div-are-out-of-view
 
-//Here's a pure javascript version of the accepted answer without relying on jQuery and with some fixes to the partial in view detection and support for out of view on top.
+
+
+<script type="text/javascript">
+
+
 
 var container = document.getElementById("big_2"),
 	element = document.getElementsByTagName("section"),
@@ -73,53 +58,38 @@ var container = document.getElementById("big_2"),
 
 const padding = container - 320;
 
-function checkInView(container, element, partial) {
+function checkInView(container, element) {
 
     //Get container properties
     let cTop = container.scrollTop;
     let cBottom = cTop + container.clientHeight;
-
     //Get element properties
-    let eTop = element.offsetTop - container.offsetTop; // change here
+    let eTop = element.offsetTop - container.offsetTop;
     let eBottom = eTop + element.clientHeight;
-
     //Check if in view    
     let isTotal = (eTop >= cTop && eBottom <= cBottom);
-    let isPartial = partial && (
-      (eTop < cTop && eBottom > cTop) ||
-      (eBottom > cBottom && eTop < cBottom)
-    );
 
+};
 
-document.onscroll = function () {
-	if (myTop > windowTop && myTop < windowBottom) {
-    // element is in the window
-	} else {
-    // element is NOT in the window
-    // maybe use this to scroll... 
-    // $('html, body').animate({scrollTop: myTop}, 300);
-	}
-};
-    //Return outcome
-    return  (isTotal  || isPartial);
-};
 
 document.onscroll = function () {
     
     for ( i = 0 ; i < element.length ; i++ ) {
         
         if ( window.scrollY > element[i].offsetTop + padding && window.scrollY < element[i].offsetTop + element[i].clientHeight + padding ) {
-            menu_row[i].classList.add("menu_highlight");
+            menu_row[i].classList.add("menu_row_active");
+            //console.log("Truthy");
         }
         else {
-            menu_row[i].classList.remove("menu_highlight");
+            menu_row[i].classList.remove("menu_row_active");
+            //console.log("Equal to true");
         }
     }
 };
 
+
 </script>
-
-
+-->
 
 </head>
 <body class="no-scroll">
@@ -144,7 +114,7 @@ document.onscroll = function () {
 				{% for post in posts %}
 				<tr class="menu_row" style="transform: rotate(0);">
 					<td class="menu_data">
-					<a href="{{site.baseurl}}{{post.url}}" id="mygrid_data_column_1" class="stretched-link";>{{post.title}}
+					<a id="mygrid_data_column_1" href="{{site.baseurl}}{{post.url}}" class="stretched-link";>{{post.title}}
 					</a>
 					</td>
 					<td class="menu_data">{{post.category}}</td>
@@ -168,49 +138,23 @@ document.onscroll = function () {
 
 
 <!-- ++++++++++ CURRENT PAGE INDICATOR ++++++++++ -->
-<!--
-<script>
-// Add active class to the current button (highlight it)
-var m_grid = document.getElementById("menu_grid");
-var m_row = m_grid.getElementsByClassName("menu_row");
-for (var i = 0; i < m_row.length; i++) {
-  m_row[i].addEventListener("click", function() {
-  var current = document.getElementsByClassName("menu_row_active");
-  if (current.length > 0) { 
-    current[0].className = current[0].className.replace(" menu_row_active", "");
-  }
-  this.className += " menu_row_active";
-  });
-}
-</script>
--->
 
-<!--
-<script>
-const m_row = document.getElementsByClassName("menu_row");
-const current = window.location.href;
-document.querySelectorAll(".menu_row a").forEach(function(elem){ 
-    if(elem.href.includes(current)){
-      m_row.classList.add(" menu_row_active");
+<script type="text/javascript">
+const currentUrl = window.location.pathname+window.location.search;
+//let url = document.write(str.replace(/^(?:\/\/|[^/]+)*\//, ''));
+console.log(currentUrl);
+
+document.querySelectorAll("#mygrid_data_column_1").forEach((link) => {
+    if (link.href === window.location.href) {
+        link.parentNode.parentNode.classList.add("menu_highlight");
+        link.setAttribute("aria-current", "page");
     }
 });
-</script>
 
 
-<script>
-    var current = location.pathname.split('/')[1];
-    var menu_link = document.querySelectorAll('.menu_row a');
-    var menu_row = document.getElementsByClassName("menu_row"),
-(function () {
-    if (current === "") return;
-    for (var i = 0, len = m_row.length; i < len; i++) {
-        if (menu_link[i].getAttribute("href").indexOf(current) !== -2) {
-            menu_row[i].classList.add("menu_row_active");
-        }
-    }
-})();
+
+
 </script>
--->
 
 
 
