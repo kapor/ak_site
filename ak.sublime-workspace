@@ -1,0 +1,473 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"get",
+				"getElementsByClassName"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "_layouts/default.html",
+			"settings":
+			{
+				"buffer_size": 4588,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 1131,
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+			]
+		},
+		{
+			"file": "_includes/nav.html",
+			"settings":
+			{
+				"buffer_size": 3944,
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+			]
+		},
+		{
+			"file": "css/styles.css",
+			"settings":
+			{
+				"buffer_size": 14361,
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+			]
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"insta",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"colorthe",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"install",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"scss",
+				"Set Syntax: SCSS"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 172.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/aaronkapor/repos/ak_site",
+		"/Users/aaronkapor/repos/ak_site/_includes",
+		"/Users/aaronkapor/repos/ak_site/_layouts",
+		"/Users/aaronkapor/repos/ak_site/_posts",
+		"/Users/aaronkapor/repos/ak_site/css",
+		"/Users/aaronkapor/repos/ak_site/stylesheets"
+	],
+	"file_history":
+	[
+		"/Users/aaronkapor/repos/_code/snippets/viewport_visible.html",
+		"/Users/aaronkapor/repos/_code/snippets/isinviewport.html",
+		"/Users/aaronkapor/repos/_code/snippets/viewport_visible2.html",
+		"/Users/aaronkapor/repos/ak_site/_posts/2023-10-01-9.md",
+		"/Users/aaronkapor/repos/ak_site/_posts/2023-10-01-8.md",
+		"/Users/aaronkapor/repos/ak_site/_posts/2023-10-01-7.md",
+		"/Users/aaronkapor/repos/ak_site/_posts/2023-10-01-6.md",
+		"/Users/aaronkapor/repos/ak_site/_posts/2023-10-01-5.md",
+		"/Users/aaronkapor/repos/_code/snippets/modal_01/style.scss",
+		"/Users/aaronkapor/repos/_code/snippets/modal_04.html",
+		"/Users/aaronkapor/repos/_code/snippets/modal_03.html",
+		"/Users/aaronkapor/repos/ak_site/_layouts/post.html",
+		"/Users/aaronkapor/repos/ak_site/js/scripts.js",
+		"/Users/aaronkapor/repos/_code/snippets/modal_05.html",
+		"/Users/aaronkapor/repos/ak_site/_posts/2023-10-01-4.md",
+		"/Users/aaronkapor/repos/ak_site/_posts/2023-10-01-3.md",
+		"/Users/aaronkapor/repos/ak_site/_posts/2023-10-01-2.md",
+		"/Users/aaronkapor/repos/ak_site/_posts/2023-10-01-1.md",
+		"/Users/aaronkapor/repos/ak_site/_includes/info.html",
+		"/Users/aaronkapor/repos/ak_site/_posts/2023-10-01-0.md",
+		"/Users/aaronkapor/repos/ak_site/index.html",
+		"/Users/aaronkapor/repos/ak_site/css/styles.css",
+		"/Users/aaronkapor/repos/ak_site/_layouts/default.html",
+		"/Users/aaronkapor/repos/ak_site/_includes/nav.html",
+		"/Users/aaronkapor/repos/ak_site/_layouts/about.html",
+		"/Users/aaronkapor/repos/_code/snippets/active_tab2.html",
+		"/Users/aaronkapor/repos/_code/snippets/active_tab.html",
+		"/Users/aaronkapor/repos/ak_site/_layouts/archives.html",
+		"/Users/aaronkapor/repos/ak_site/_includes/info.md",
+		"/Users/aaronkapor/repos/ak_site/_layouts/page.html",
+		"/Users/aaronkapor/repos/ak_site/_includes/sidebar1.html",
+		"/Users/aaronkapor/repos/ak_site/info.html",
+		"/Users/aaronkapor/repos/ak_site/tags/index.html",
+		"/Users/aaronkapor/repos/_code/snippets/modal_05",
+		"/Users/aaronkapor/repos/_code/snippets/modal_01/modal_01.html",
+		"/Users/aaronkapor/repos/_code/snippets/modal_01/style.css",
+		"/Users/aaronkapor/repos/_code/snippets/modal_01.html",
+		"/Users/aaronkapor/Library/Application Support/Sublime Text/Packages/User/SCSS.py",
+		"/Users/aaronkapor/repos/_code/snippets/sidebar_progress3.html",
+		"/Users/aaronkapor/repos/_code/scrollmonitor-master/demos/vh-units.html",
+		"/Users/aaronkapor/repos/_code/snippets/visible_after_scrolling2.html",
+		"/Users/aaronkapor/repos/_code/snippets/sidebar_progress4.html",
+		"/Users/aaronkapor/repos/ak_site/js/scroll.js",
+		"/Users/aaronkapor/repos/_code/scrollmonitor-master/dist/umd/index.js",
+		"/Users/aaronkapor/repos/_code/snippets/visible_after_scrolling.html",
+		"/Users/aaronkapor/repos/ak_site/css/menu_grid.css",
+		"/Users/aaronkapor/repos/ak_site/sketch/index.html",
+		"/Users/aaronkapor/repos/ak_site/_includes/sidebar_grid.html",
+		"/Users/aaronkapor/repos/ak_site/_layouts/default2.html",
+		"/Users/aaronkapor/repos/ak_site/_layouts/default_short.html",
+		"/Users/aaronkapor/repos/ak_site/index_2.html",
+		"/Users/aaronkapor/repos/ak_site/stylesheets/grid-a-licious.css",
+		"/Users/aaronkapor/repos/_code/scrollmonitor-master/demos/reloadTest.html",
+		"/Users/aaronkapor/repos/_code/scrollmonitor-master/demos/stressTestInDiv.html",
+		"/Users/aaronkapor/repos/_code/scrollmonitor-master/demos/stress.html",
+		"/Users/aaronkapor/repos/_code/scrollmonitor-master/demos/fixed.html",
+		"/Users/aaronkapor/repos/_code/scrollmonitor-master/demos/divInADiv.html",
+		"/Users/aaronkapor/repos/_code/scrollmonitor-master/demos/scoreboard.html",
+		"/Users/aaronkapor/repos/ak_site/ak_site.sublime-project",
+		"/Users/aaronkapor/repos/ak_site/_layouts/home.html",
+		"/Users/aaronkapor/repos/blog/_layouts/post.html",
+		"/Users/aaronkapor/repos/blog/_config.yml",
+		"/Users/aaronkapor/repos/blog/_posts/2023-09-11-welcome-to-jekyll.md",
+		"/Users/aaronkapor/repos/gtesting_tut/index.html",
+		"/Users/aaronkapor/repos/_code/tutorials-local/Lynda - Jekyll for Web Designers/Exercice Files/Ex_Files_Jekyll_WebDesign/Exercise Files/Chapter-03/03-02/post.html",
+		"/Users/aaronkapor/repos/_code/tutorials-local/Lynda - Jekyll for Web Designers/Exercice Files/Ex_Files_Jekyll_WebDesign/Exercise Files/Chapter-03/03-02/index.html",
+		"/Users/aaronkapor/repos/git_testing/index.html",
+		"/Users/aaronkapor/repos/git_testing/_css/main.css",
+		"/Volumes/work/_resources/tutorials-server/[GEN] Lynda - GitHub for Web Designers (2014)/exercise_files/Chapter_02/02_07/index.html",
+		"/Volumes/work/_resources/tutorials-server/[GEN] Lynda - GitHub for Web Designers (2014)/exercise_files/Chapter_02/02_14/index.html",
+		"/Users/aaronkapor/repos/git_testing/_scripts/respond.min.js",
+		"/Users/aaronkapor/repos/git_testing/_scripts/modernizr-custom.js",
+		"/Users/aaronkapor/repos/git_testing/_scripts/scripts.js"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 122.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "_layouts/default.html",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4588,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"sheets":
+			[
+				{
+					"buffer": 1,
+					"file": "index.html",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1131,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								615,
+								615
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"file": "_includes/nav.html",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3944,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								155,
+								155
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"sheets":
+			[
+				{
+					"buffer": 3,
+					"file": "css/styles.css",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 14361,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								207,
+								207
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 35.0
+	},
+	"input":
+	{
+		"height": 46.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			],
+			[
+				2,
+				0,
+				3,
+				1
+			],
+			[
+				3,
+				0,
+				4,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.25,
+			0.5,
+			0.75,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "ak.sublime-project",
+	"replace":
+	{
+		"height": 66.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 1,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 298.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -17,6 +17,11 @@ blockquote, pre, form, label, legend, table, caption, tbody, tfoot, thead, tr, t
     text-overflow: ellipsis;
 }
 
+html, body{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
 body {
 	background-color: #F8F4F1;
 }
@@ -82,7 +87,7 @@ a {
 	overflow-y: auto;
     background-color: transparent;
 	background-size: cover;
-	padding-top: 100px;
+	padding-top: 80px;
 }
 
 
@@ -226,6 +231,7 @@ p {
 #navbar {
 	overflow: hidden;
 	background-color: #fff;
+	border-bottom: 1px solid #F8F4F1;
 }
 
 .sticky {
@@ -483,7 +489,7 @@ h6, h6 a {
 
 /* ++++++++++++++++ RIGHT COLUMN ++++++++++++++++ */
 
-#big2 {
+#big_2 {
 	max-width: 100%;
     overflow: auto;
 }
@@ -533,7 +539,7 @@ h6, h6 a {
 }
 
 .posts_archives {
-	margin: 0px 20px 200px 20px;
+	margin: 19px 20px 200px 20px;
     background-color: #F8F4F1;
 	overflow-y: auto;
 }

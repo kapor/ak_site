@@ -9,7 +9,6 @@
 <meta name="description" content="{% if page.description %}{{page.description}}{% else %}{{site.description}}{% endif %}">
 <link rel="canonical" href="{{site.baseurl}}{{page.url}}">
 <link rel="apple-touch-icon" href="{{site.baseurl}}/apple-touch-icon.png">
-
 <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet"/>
 <link rel="stylesheet" href="{{site.baseurl}}/css/styles.css">
 <link rel="stylesheet" href="https://use.typekit.net/bff2sws.css">
@@ -103,35 +102,14 @@ document.onscroll = function () {
 <div class="lotsofstuff">
 	<div id="big_1">
 
-			<!-- ++++++ menu list ++++++ -->
-			<table id="menu_grid">
-				<tr>
-					<th class="menu_header">Project</th>
-					<th class="menu_header">Category</th>
-					<th class="menu_header">Location</th>
-				</tr>
-				{% assign posts = site.posts %}
-				{% for post in posts %}
-				<tr class="menu_row" style="transform: rotate(0);">
-					<td class="menu_data">
-					<a id="mygrid_data_column_1" href="{{site.baseurl}}{{post.url}}" class="stretched-link";>{{post.title}}
-					</a>
-					</td>
-					<td class="menu_data">{{post.category}}</td>
-					<td class="menu_data">{{post.loc}}</td>
-					</a>
-				</tr>
-				{% endfor %}
-			</table>
+	{% include sidebar1.html %}
 
-		{% include sidebar1.html %}
 	</div>
 
 	<div id="big_2">
+
 	{{content}}
-		<div class="section_spacer">
-			<div class="return2"><a href="#top" style="color:#222222" title="return to top">return to top</a></div>
-		</div>
+
 	</div>
 </div>
 

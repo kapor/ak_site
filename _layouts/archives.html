@@ -12,7 +12,16 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet"/>
 <link rel="stylesheet" href="{{site.baseurl}}/css/styles.css">
 <link rel="stylesheet" href="https://use.typekit.net/bff2sws.css">
+<script rel="stylesheet" href="{{site.baseurl}}/js/scripts.css"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2010.07.06dev/modernizr.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
 
+<style type="text/css">
+.tag_cloud {
+	display: none;
+}
+</style>
 
 <script>
 window.onscroll = function() {myFunction()};
@@ -29,9 +38,7 @@ function myFunction() {
 }
 </script>
 </head>
-<body>
-
-
+<body class="no-scroll">
 
 <!-- ++++++++++ nav ++++++++++ -->
 
@@ -39,38 +46,17 @@ function myFunction() {
 
 <!-- ++++++++++ main content ++++++++++ -->
 
-<div class="lotsofstuff" id="top">
+<div class="lotsofstuff">
 	<div id="big_1">
 
-
-			<!-- ++++++ indicator_bar ++++++ -->
-			<table id="menu_grid">
-				<tr>
-					<th class="menu_header">Project</th>
-					<th class="menu_header">Category</th>
-					<th class="menu_header">Location</th>
-				</tr>
-				{% assign posts = site.posts %}
-				{% for post in posts %}
-				<tr class="menu_row" style="transform: rotate(0);">
-					<td>
-						<a href="{{site.baseurl}}{{post.url}}" class="stretched-link" onMouseOver="this.style.color='#6219FF'" onMouseOut="this.style.color='#222'";>{{post.title}}
-						</a>
-					</td>
-					<td>{{post.category}}</td>
-					<td>{{post.loc}}</td>
-					</a>
-				</tr>
-				{% endfor %}
-			</table>
-
-		<!-- {% include sidebar1.html %} -->
+	{% include sidebar1.html %}
 
 	</div>
 
 	<div id="big_2">
-		
+
 	{{content}}
+
 	</div>
 </div>
 
