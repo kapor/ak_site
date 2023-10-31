@@ -24,7 +24,9 @@ html, body{
 
 body {
 	background-color: #F8F4F1;
+	overflow-y: hidden; 
 }
+
 
 footer {
 	margin: 0;
@@ -49,7 +51,7 @@ a {
 /* main content */
 .lotsofstuff { 
     display: block;
-    top: 0;
+    padding-top: 80px;
 	width: 100%;
 	height: 100%;
 	margin: 0;
@@ -58,6 +60,10 @@ a {
     overflow-x: hidden;
 
 }
+
+#big_1::-webkit-scrollbar { 
+    display: none; 
+} 
 
 .lotsofstuff_post {
 	width: 100%;
@@ -68,14 +74,14 @@ a {
 
 #big_1 {
     width: 33.33%;
-	top: 0;
+	top: 20px;
     float: left;
     margin: 0px;
 	height: 100%;
-    padding: 105px 0px 0px 0px;
+    padding: 44px 0px 0px 0px;
 	position: fixed;
 	background-color: #fff;
-	overflow: scroll;
+    overflow: scroll;
 }
 
 #big_2 {
@@ -87,7 +93,6 @@ a {
 	overflow-y: auto;
     background-color: transparent;
 	background-size: cover;
-	padding-top: 80px;
 }
 
 
@@ -132,7 +137,7 @@ a {
 
 #menu_grid  {
 	width: 100%;
-	margin: 0px 0px 0px 0px;
+	margin: 40px 0px 0px 0px;
 }
 
 #menu_grid .menu_header {
