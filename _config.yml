@@ -4,7 +4,14 @@ baseurl: ""
 url: ""
 tagline: "||||||||||||||||||||||"
 category: ""
-collection: ""
+collections_dir: projects
+collections:
+  appreciate:
+    output: true
+    permalink: /:collection/:appreciate
+  matter:
+    output: true
+    permalink: /:collection/:matter
 
 # Build settings
 plugins:
@@ -13,7 +20,7 @@ plugins:
 markdown: kramdown
 kramdown:
     auto_ids: false
-paginator: enable
+paginator: enable 
 paginate: 200
 paginate_path: '/blog/page:num/'
 permalink: /blog/:categories/:year/:title/

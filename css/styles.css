@@ -47,11 +47,10 @@ a {
 	color: #222;
 }
 
-
 /* main content */
 .lotsofstuff { 
     display: block;
-    padding-top: 80px;
+    padding-top: 0px;
 	width: 100%;
 	height: 100%;
 	margin: 0;
@@ -74,11 +73,11 @@ a {
 
 #big_1 {
     width: 33.33%;
-	top: 20px;
+   	top: 0;
+    margin: 64px 0px 0px 0px;
+	padding: 24px 0px 0px 0px;
     float: left;
-    margin: 0px;
 	height: 100%;
-    padding: 44px 0px 0px 0px;
 	position: fixed;
 	background-color: #fff;
     overflow: scroll;
@@ -86,10 +85,11 @@ a {
 
 #big_2 {
     width: 66.66%;
+   	top: 0;
+    margin: 64px 0px 0px 0px;
+	padding: 24px 0px 0px 0px;
     float: right;
-    margin: 0px;
 	height: 100%;
-    padding: 0px;
 	overflow-y: auto;
     background-color: transparent;
 	background-size: cover;
@@ -101,7 +101,7 @@ a {
 	border-bottom: 1px dotted #ccc;
 	max-width: 1200px;
 	overflow: hidden;
-	margin: 0px auto 40px auto;
+	margin: 0px 0px 40px 0px;
 	background: transparent;
 }
 
@@ -137,7 +137,7 @@ a {
 
 #menu_grid  {
 	width: 100%;
-	margin: 40px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
 }
 
 #menu_grid .menu_header {
@@ -162,7 +162,7 @@ a {
 	padding-right: 14px;
 	/* padding left needs to be 2px less to account for the 2px border left */
 	padding-left: 18px;
-	border-bottom: 1px dotted #aaa;
+	border-bottom: 1px solid #F8F4F1;
 	font-family: "neuzeit-grotesk", sans-serif;
 	font-weight: 300;
 	font-style: normal;
@@ -311,11 +311,11 @@ p {
    overflow: visible;
 }
 
-.info_overlay_back {
+.overlay_back {
 	display: none;
 	position: fixed;
 	opacity: 0;
-	z-index: 5;
+	z-index: 3;
 	left: 0;
 	top: 64px;
 	width: 100%;
@@ -544,7 +544,7 @@ h6, h6 a {
 }
 
 .posts_archives {
-	margin: 19px 20px 200px 20px;
+	margin: 0px 20px 200px 20px;
     background-color: #F8F4F1;
 	overflow-y: auto;
 }
@@ -853,6 +853,24 @@ pre {
 	width: 100%;
 }
 
+#navbar_mobile {
+	display: none;
+	height: 0;
+	opacity: 0;
+}
+
+.menu_grid_mobile {
+	display: none;
+	opacity: 0;
+	height: 0;
+	padding: 0px 0px 0px 0px;
+	z-index: 4;
+	position: sticky;
+	background-color: #ffffff;
+
+}
+
+
 @media screen and (max-width: 1600px) {
 
 	.thumb_post {
@@ -889,15 +907,139 @@ pre {
 	}
 
 	#big_2 {
+	   	top: 0;
+	    margin: 64px 0px 0px 0px;
+		padding: 24px 0px 0px 0px;
 		width: 100%;
-		float: right;
-		margin: 0px;
-		height: 100%;
-		padding: 0px;
-		overflow-y: auto;
-		background-color: #F8F4F1;
-		background-size: cover;
 	}
+
+
+	#navbar_mobile {
+		display: block;
+		overflow: hidden;
+		opacity: 1;
+		height: auto;
+		z-index: 8;
+		background-color: #fff;
+		border-bottom: 1px solid #F8F4F1;
+	}
+
+	#col_1_mobile {
+		font-family: letter-gothic-std, monospace;
+		text-transform: uppercase;
+	    width: 50%;
+		letter-spacing: 1.3px;
+	    display: inline-block;
+	    float: left;
+	    text-align: left;
+	    line-height: 24px;
+	    opacity: 100%;
+	    margin: 0;
+	    padding: 20px 0px 20px 20px;
+		white-space: nowrap; 
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	#col_2_mobile {
+		font-family: letter-gothic-std, monospace;
+		text-transform: uppercase;
+	    width: 50%;
+		letter-spacing: 1.3px;
+	    display: inline-block;
+	    float: left;
+	    text-align: right;
+	    line-height: 24px;
+	    opacity: 100%;
+	    margin: 0;
+	    padding: 20px 20px 20px 0px;
+		white-space: nowrap; 
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	#col_3_mobile {
+		display: none;
+		float: right;
+	    text-align: right;
+	    opacity: 100%;
+	    margin: 0;
+	    padding: 20px 20px 20px 0px;
+		white-space: nowrap; 
+		overflow: hidden;
+		text-overflow: ellipsis;
+
+	}
+
+
+	#navbar {
+		display: none;
+	}
+
+
+	.menu_grid_mobile {
+		display: none;
+		opacity: 0;
+		height: 0;
+		padding: 0px 0px 0px 0px;
+		z-index: 4;
+		position: sticky;
+		background-color: #ffffff;
+	}
+
+	.sticky {
+		height: 100%;
+	}
+
+	#closebutton {
+		height: 64px;
+		text-align: right;
+	}
+
+	#closebutton img {
+	    padding: 20px 20px 20px 0px;
+	}
+
+
+	.menu_grid_mobile .menu_highlight {
+	    background-color: #F8F4F1;
+	    border-left: 2px solid #FFFFFF;
+	    color: #222222;
+	}
+
+	.menu_grid_mobile .menu_row:hover {
+		background: #FFFFFF;
+		color: #222222;
+	}
+
+	.menu_grid_mobile .menu_row_active {
+		background: #FFFFFF;
+		color: #222222;
+	}
+
+
+	#mygrid_data_column_1:hover {
+		background: #FFFFFF;
+		color: #222222;
+	}
+
+	.menu_grid_mobile #menu_header {
+		display: none;
+	}
+
+
+	.menu_grid_mobile .menu_grid_mobile::-webkit-scrollbar { 
+	    display: none; 
+	} 
+
+
+
+	.menu_grid_mobile {
+	    overflow: scroll;
+	}
+
+
+
 }
 
 
