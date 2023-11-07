@@ -4,5 +4,10 @@ _site
 .jekyll-metadata
 vendor
 .DS_Store
-ak_site.sublime-project
-ak_site.sublime-workspace
+*.sublime-project
+*.sublime-workspace
+*.bbprojectd
+_assets
+_archive
+_archive/
+_assets/
