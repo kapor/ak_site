@@ -155,6 +155,10 @@ a {
 	text-overflow: ellipsis;
 	max-width: 0;
 	padding: 0px 6px 10px 20px;
+/*	position: sticky;
+	top: 0; 
+	background-color: #ffffff;
+	z-index: 1;*/
 }
 
 #menu_grid td {
@@ -162,6 +166,7 @@ a {
 	padding-right: 14px;
 	/* padding left needs to be 2px less to account for the 2px border left */
 	padding-left: 18px;
+	padding-top:;
 	border-bottom: 1px solid #F8F4F1;
 	font-family: "neuzeit-grotesk", sans-serif;
 	font-weight: 300;
@@ -573,6 +578,8 @@ code {
 .tag_cloud {
 	margin: 40px 20px 0px 20px;
 	max-width: 800px; 
+	height: 50%;
+/*	padding-bottom: 100px;*/
 }
 
 table {
