@@ -23,7 +23,7 @@ html, body{
 }
 
 body {
-	background-color: #F8F4F1;
+	background-color: #F7F7F2;
 	overflow-y: hidden; 
 }
 
@@ -116,22 +116,22 @@ a {
 }
 
 .menu_highlight {
-    background-color: #F8F4F1;
+    background-color: #F7F7F2;
     border-left: 2px solid #6219FF;
 }
 
 .menu_row:hover {
-	background: #F8F4F1;
+	background: #F7F7F2;
 	color: #6219FF;
 }
 
 .menu_row_active {
-	background: #F8F4F1;
+	background: #F7F7F2;
 }
 
 
 #mygrid_data_column_1:hover {
-	background: #F8F4F1;
+	background: #F7F7F2;
 	color: #6219FF;
 }
 
@@ -167,7 +167,7 @@ a {
 	/* padding left needs to be 2px less to account for the 2px border left */
 	padding-left: 18px;
 	padding-top:;
-	border-bottom: 1px solid #F8F4F1;
+	border-bottom: 1px solid #F7F7F2;
 	font-family: "neuzeit-grotesk", sans-serif;
 	font-weight: 300;
 	font-style: normal;
@@ -241,7 +241,7 @@ p {
 #navbar {
 	overflow: hidden;
 	background-color: #fff;
-	border-bottom: 1px solid #F8F4F1;
+	border-bottom: 1px solid #F7F7F2;
 }
 
 .sticky {
@@ -545,12 +545,12 @@ h6, h6 a {
 
 .posts {
 	margin-bottom: 80px;
-    background-color: #F8F4F1;
+    background-color: #F7F7F2;
 }
 
 .posts_archives {
 	margin: 0px 20px 200px 20px;
-    background-color: #F8F4F1;
+    background-color: #F7F7F2;
 	overflow-y: auto;
 }
 
@@ -927,7 +927,7 @@ pre {
 		height: auto;
 		z-index: 8;
 		background-color: #fff;
-		border-bottom: 1px solid #F8F4F1;
+		border-bottom: 1px solid #F7F7F2;
 	}
 
 	#col_1_mobile {
@@ -1014,8 +1014,8 @@ pre {
 
 
 	.menu_grid_mobile .menu_highlight {
-	    background-color: #F8F4F1;
-	    border-left: 2px solid #F8F4F1;
+	    background-color: #F7F7F2;
+	    border-left: 2px solid #F7F7F2;
 	    color: #222222;
 	}
 
