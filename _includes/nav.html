@@ -22,7 +22,7 @@
 		</div>       
 	</td>
 </div>
-
+<div class="nav_back"></div>
 
 <div class="overlay_back">
 	<div class="info_overlay_left">
@@ -33,6 +33,8 @@
 		</div>
 	</div>
 </div>
+
+<div class="modal_back2"></div>
 
 
 <div id="navbar_mobile" class="sticky">
@@ -150,6 +152,8 @@ var rightcol = document.getElementById("col_3");
 var midcol = document.getElementById("col_2");
 var hidcol = document.getElementById("col_4");
 var infopage = document.getElementById("info_page");
+var modal_back2 = document.getElementsByClassName("modal_back2")[0];
+
 
 
 // FUNCTIONS
@@ -161,7 +165,9 @@ function openModal() {
 	setTimeout(() => { rightcol.style.cursor = "auto"}, 20);
 	setTimeout(() => { modalback.style.opacity = "1"}, 20);
 	setTimeout(() => { modal.style.height = "100%" }, 70);
-	setTimeout(() => { modal_left.style.height = "100%" }, 70);
+	setTimeout(() => { modal_left.style.height = "100%" }, 70)
+	setTimeout(() => { modal_back2.style.height = "100%" }, 70);
+	setTimeout(() => { modal_back2.style.opacity = "100%"}, 20);
 	setTimeout(() => { infopage.style.display = "inline-block" }, 50);
 }
 
@@ -174,6 +180,8 @@ function closeModal() {
 	setTimeout(() => { modal_left.style.height = "0" }, 10);
 	setTimeout(() => { modalback.style.opacity = "0"}, 20);
 	setTimeout(() => { modalback.style.display = "none" }, 140);
+	setTimeout(() => { modal_back2.style.height = "0" }, 10);
+	setTimeout(() => { modal_back2.style.opacity = "0"}, 20);
 	setTimeout(() => { infopage.style.display = "none" }, 0);
 }
 

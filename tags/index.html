@@ -26,17 +26,15 @@ title: Archives
 					<li class="tag_anchor">
 						<time itemprop="dateCreated" datetime="{{post.date}}">
 						{{ post.date | date: "%m/%d/%Y" }}
-						</time> | &nbsp;<a href="{{site.baseurl}}{{post.url}}" rel="bookmark" title="Go to {{site.baseurl}}{{post.url}}">{{post.title}}:{{post.category}}</a>
+						</time> <span class="archives_pipe">| &nbsp;</span><a href="{{site.baseurl}}{{post.url}}" rel="bookmark" title="Go to {{site.baseurl}}{{post.url}}">{{post.title}}:{{post.category}}</a>
 					</li>
 					{% endfor %}
-					<li class="return"><a href="#top" style="color:#222222" title="return to top">return to top</a></li>
+					
 				</ul>
 				{% endfor %}
 		</article>
 	</article>
+
 </main>
-	<div class="section_spacer">
-		<div class="return2"><a href="#top" style="color:#222222" title="return to top">return to top</a></div>
-	</div>
 
 
