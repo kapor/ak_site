@@ -11,7 +11,7 @@
 			{% if page.title == 'ak_site' %}
 			Working
 			{% else %}
-			<&nbsp;<a href="{{site.baseurl}}/index.html">main</a>&nbsp;/&nbsp;<a onclick="window.history.back()">Back</a>
+			<&nbsp;<a onclick="window.history.back()">Back</a>&nbsp;/&nbsp;<a href="{{site.baseurl}}/index.html">main</a>
 			{% endif %}
 		</div>
 		<div class="column right_column" id="col_3">
@@ -34,7 +34,8 @@
 	</div>
 </div>
 
-<div class="modal_back2"></div>
+<div class="modal_back_left"></div>
+<div class="modal_back_right"></div>
 
 
 <div id="navbar_mobile" class="sticky">
@@ -60,6 +61,10 @@
 	</div>
 </div>
 
+<div class="mob_white_back">
+
+</div>
+
 
 
 <script>
@@ -72,6 +77,8 @@ var menu_close = document.getElementById("closebutton");
 var menu_grid = document.getElementsByClassName("menu_grid_mobile")[0];
 var menu_back = document.getElementsByClassName("overlay_back")[0];
 var menu_link = document.getElementById("mygrid_data_column_1")[0];
+var sticky = document.getElementsByClassName("sticky")[0];
+var mob_white_back = document.getElementsByClassName("mob_white_back")[0];
 
 
 // FUNCTIONS
@@ -83,6 +90,8 @@ function openMenu() {
 	setTimeout(() => { navbar_mobile.style.width = "0"}, 0);
 	setTimeout(() => { menu_close.style.display = "block"}, 0);
 	setTimeout(() => { menu_back.style.opacity = "1"}, 70);
+	setTimeout(() => { sticky.style.height = "100vh" }, 0);
+	setTimeout(() => { mob_white_back.style.height = "100vh" }, 0);
 }
 
 function closeMenu() {
@@ -93,6 +102,8 @@ function closeMenu() {
 	setTimeout(() => { navbar_mobile.style.width = "100%"}, 0);
 	setTimeout(() => { menu_close.style.display = "none"}, 0);
 	setTimeout(() => { menu_back.style.opacity = "0"}, 70);
+	setTimeout(() => { sticky.style.height = "0vh" }, 0);
+	setTimeout(() => { mob_white_back.style.height = "0vh" }, 0);
 }
 
 
@@ -152,7 +163,8 @@ var rightcol = document.getElementById("col_3");
 var midcol = document.getElementById("col_2");
 var hidcol = document.getElementById("col_4");
 var infopage = document.getElementById("info_page");
-var modal_back2 = document.getElementsByClassName("modal_back2")[0];
+var modal_back_left = document.getElementsByClassName("modal_back_left")[0];
+var modal_back_right = document.getElementsByClassName("modal_back_right")[0];
 
 
 
@@ -166,8 +178,10 @@ function openModal() {
 	setTimeout(() => { modalback.style.opacity = "1"}, 20);
 	setTimeout(() => { modal.style.height = "100%" }, 70);
 	setTimeout(() => { modal_left.style.height = "100%" }, 70)
-	setTimeout(() => { modal_back2.style.height = "100%" }, 70);
-	setTimeout(() => { modal_back2.style.opacity = "100%"}, 20);
+	setTimeout(() => { modal_back_left.style.height = "100%" }, 70);
+	setTimeout(() => { modal_back_left.style.opacity = "100%"}, 20);
+	setTimeout(() => { modal_back_right.style.height = "100%" }, 70);
+	setTimeout(() => { modal_back_right.style.opacity = "100%"}, 20);
 	setTimeout(() => { infopage.style.display = "inline-block" }, 50);
 }
 
@@ -180,8 +194,10 @@ function closeModal() {
 	setTimeout(() => { modal_left.style.height = "0" }, 10);
 	setTimeout(() => { modalback.style.opacity = "0"}, 20);
 	setTimeout(() => { modalback.style.display = "none" }, 140);
-	setTimeout(() => { modal_back2.style.height = "0" }, 10);
-	setTimeout(() => { modal_back2.style.opacity = "0"}, 20);
+	setTimeout(() => { modal_back_left.style.height = "0" }, 10);
+	setTimeout(() => { modal_back_left.style.opacity = "0"}, 20);
+	setTimeout(() => { modal_back_right.style.height = "0" }, 10);
+	setTimeout(() => { modal_back_right.style.opacity = "0"}, 20);
 	setTimeout(() => { infopage.style.display = "none" }, 0);
 }
 

@@ -5,18 +5,18 @@
 <table id="menu_grid">
 	<tr>
 		<th class="menu_header">Project</th>
-		<th class="menu_header">Category</th>
-		<th class="menu_header">Location</th>
+		<th class="menu_header">Type</th>
+		<th class="menu_header">Size</th>
 	</tr>
 	{% assign posts = site.posts %}
 	{% for post in posts %}
 	<tr class="menu_row" style="transform: rotate(0);">
 		<td class="menu_data">
-		<a id="mygrid_data_column_1" href="{{site.baseurl}}{{post.url}}" class="stretched-link";>{{post.title}}
+		<a id="mygrid_data_column_1" href="{{site.baseurl}}{{post.url}}" class="stretched-link";>{{post.category}}
 		</a>
 		</td>
-		<td class="menu_data">{{post.category}}</td>
-		<td class="menu_data">{{post.loc}}</td>
+		<td class="menu_data">{{post.type}}</td>
+		<td class="menu_data">{{post.size}}</td>
 		</a>
 	</tr>
 	{% endfor %}
@@ -30,7 +30,7 @@
 		{% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
 		{% assign sortedTags = site_tags | split:',' | sort %}
 
-	<h6>Archives</h6>
+	<div class="menu_header_archive">Archives</div>
 
 	<ul class="archives">
 		<li><a href="{{site.baseurl}}/tags/">All posts</a></li>

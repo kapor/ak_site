@@ -8,10 +8,10 @@ collections_dir: projects
 collections:
   appreciate:
     output: true
-    permalink: /:collection/:appreciate
+    permalink: /:collection/:appreciate/:name
   matter:
     output: true
-    permalink: /:collection/:matter
+    permalink: /:collection/:matter/:name
 
 # Build settings
 plugins:

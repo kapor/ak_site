@@ -15,16 +15,57 @@ title: post
 -->
 		<header>
 			<h3>
-				{{page.title}}: {{page.category}}
+				{{page.entity}} / {{page.category}}
 			</h3>
+			
 			<time itemprop="dateCreated" datetime="{{page.date}}">
-				{{page.date | date: "%B %Y"}} + {{ page.loc }}
-			</time>
+				{{ page.loc }} + {{page.type}}
+			</time> 
+			
 		</header>
 
 			{{content}}
 
 		<footer>
+
+
+<!-- 			<div class="credit_container">
+				<div class="credit">
+					<div class="credit_top">
+						Role:
+					</div>
+					<div class="credit_bottom">
+						{{ page.role }}
+					</div>
+				</div>
+				<div class="credit">
+					<div class="credit_top">
+						Team:
+					</div>
+					<div class="credit_bottom">
+						{{ page.team }}
+					</div>
+				</div>
+				<div class="credit">
+					<div class="credit_top">
+						Location:
+					</div>
+					<div class="credit_bottom">
+						{{ page.loc }}
+					</div>
+				</div>
+				<div class="credit">
+					<div class="credit_top">
+						Date:
+					</div>
+					<div class="credit_bottom">
+						{{page.date | date: "%Y"}}
+					</div>
+				</div>
+			</div> -->
+
+
+
 			<p>{% for tag in page.tags %}<a href="{{ site.baseurl }}/tags/index.html#{{ tag | cgi_escape }}" title="Pages tagged {{ tag }}" rel="tag">{{ tag }}</a>{% unless forloop.last %}{% endunless %} {% endfor %}</p>
 		</footer>
 
