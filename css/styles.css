@@ -204,6 +204,13 @@ hr {
 	border-top: 1px solid #888;
 }
 
+@media screen and (max-width: 800px) {
+	hr {
+	    border-top: 1px solid #888;
+	    margin: 8px;
+	}
+}
+
 * {
 	box-sizing: border-box;
 }
