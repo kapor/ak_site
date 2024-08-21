@@ -659,7 +659,7 @@ p {
 
 .large_words {
 	font-family: 'Atlas Grotesk Web', 'trade-gothic-next', sans-serif;
-    font-weight: 800;
+    font-weight: 300;
     font-style: normal;
 	text-align: left;
 	font-size: 44px;
@@ -766,7 +766,7 @@ p {
 /* ––––––––– */
 
 .bg_color_none {
-	padding: 40px 40px 60px 20px;
+	padding: 40px 40px 40px 20px;
 }
 
 @media screen and (max-width: 1200px) {

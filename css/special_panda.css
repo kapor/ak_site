@@ -534,7 +534,7 @@
     font-family: 'Atlas Grotesk Web', sans-serif;
     font-size: 48px;
     line-height: 56px;
-    margin: 10px 8px 40px 8px;
+    margin: 10px 8px 20px 8px;
     text-transform: uppercase;
     text-decoration: none;
     text-align: left;
@@ -2053,9 +2053,11 @@ MOBILE MARGIN UPDATE
 @media screen and (max-width: 800px) {
 
 
-	.guide_header {
-        margin: 20px 20px;	
-	}
+    .guide_header {
+        margin: 20px 20px;
+        font-size: 32px;
+        line-height: 38px;
+    }
 
 
 	.intro_paragraph {

@@ -1306,7 +1306,7 @@
 /* ––––––––– */
 
 .bg_color_none_pc {
-    padding: 40px 40px 60px 20px;
+    padding: 40px 40px 40px 20px;
 }
 
 @media screen and (max-width: 1200px) {
