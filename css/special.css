@@ -567,6 +567,11 @@
     width: 50%;
 }
 
+.style_guide_right_3 {
+    flex: 100%;
+    width: 50%;
+}
+
 .style_guide_image {
     display: flex;
 	justify-content: center;
@@ -784,6 +789,10 @@
 
 	.style_guide_left_2 {
 	    width: 100%;
+	}
+
+	.style_guide_right_3 {
+	    display: none;
 	}
 
 	.style_guide_image {
