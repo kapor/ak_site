@@ -220,7 +220,7 @@ hr {
 @media screen and (max-width: 800px) {
 	hr {
 	    border-top: 1px solid #888;
-	    margin: 8px;
+	    margin: 8px 0px;
 	}
 }
 
@@ -1691,7 +1691,7 @@ h6, h6 a {
 	margin: 0 0 1em 0;
 	letter-spacing: -0.5px;
 	display: block;
-	margin-block-start: 20px;
+    margin-block-start: 0px;
 	margin-block-end: 20px;
 	margin-inline-start: 0px;
 	margin-inline-end: 0px;

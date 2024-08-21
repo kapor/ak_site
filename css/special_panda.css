@@ -501,6 +501,11 @@
         flex-direction: row;
         width: 100%;
     }
+
+	.guide_color_row {
+		padding: 0px 0px 0px 0px;
+	}
+
 }
 
 
@@ -1362,7 +1367,7 @@ o888ooo8888 o88o  o888o o888o      o888ooooo88   88ooo88  o888o  88o8 o888ooo888
     background-color: none;
     background-repeat: repeat;
     width: 100%;
-    height: 2px;
+    height: 1px;
     margin-top: 8px;
     margin-bottom: 8px;
     border-radius: 2px;
@@ -1429,7 +1434,7 @@ o888ooo8888 o88o  o888o o888o      o888ooooo88   88ooo88  o888o  88o8 o888ooo888
 	    background-color: none;
 	    background-repeat: repeat;
 	    width: 100%;
-	    height: 2px;
+	    height: 1px;
 	    /*margin-top: 4px;
 	    margin-bottom: 4px;*/
 	    border-radius: 2px;
@@ -1528,6 +1533,21 @@ $$/       $$/  $$$$$$$/ $$/   $$/
     letter-spacing: 1px;
     text-transform: uppercase;
     margin-top: 32px;
+  	padding-bottom: 0px;
+/*    border-bottom: 1px dotted #222222;*/
+}
+
+.app_caption1 {
+    font-family: 'Atlas typewriter Web', letter-gothic-std, monospace;
+    font-weight: 300;
+    font-style: normal;
+    text-align: left;
+    font-size: 14px;
+    line-height: 20px;
+    color: #222222;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 20px;
   	padding-bottom: 0px;
 /*    border-bottom: 1px dotted #222222;*/
 }
