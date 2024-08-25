@@ -1174,8 +1174,8 @@ flex: 100%;
 
 
 .ditto_group {
-    margin: 0px 0px 0px 0px;
-    padding: 40px 40px 80px 40px;
+	margin: 0px 0px 0px 0px;
+    padding: 40px 40px 40px 40px;
     background-color: #0094B3;
     border-bottom: #fff solid 2px;
     color: #fff;
@@ -1413,9 +1413,10 @@ flex: 100%;
 
 .contents {
 	background-color: noneIntr;
-	padding: 40px 40px 40px 40px;
-	vertical-align: baseline;
+    padding: 40px 40px 40px 40px;
+    vertical-align: baseline;
     text-overflow: ellipsis;
+    border-bottom: #E7AEC6 solid 2px;
 }
 
 
@@ -1481,6 +1482,7 @@ flex: 100%;
 
 	.contents ul {
 	    letter-spacing: 2px;
+	    margin-block-end: 0px;
 	}
 }
 
