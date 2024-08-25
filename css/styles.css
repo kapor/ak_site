@@ -1705,11 +1705,11 @@ h6, h6 a {
 	font-size: 16px;
 	line-height: 28px;
 	color: #444;
-	margin: 0 0 1em 0;
+/*	margin: 0 0 1em 0;*/
 	letter-spacing: -0.5px;
 	display: block;
     margin-block-start: 0px;
-	margin-block-end: 20px;
+/*	margin-block-end: 20px;*/
 	margin-inline-start: 0px;
 	margin-inline-end: 0px;
 }
@@ -3147,7 +3147,7 @@ MOBILE MARGIN UPDATE
 	}
 
 	footer {
-	    padding: 0px 20px;
+	    padding: 20px 20px;
 	}
 
     .large_words {
