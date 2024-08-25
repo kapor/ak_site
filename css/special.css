@@ -2,10 +2,33 @@
   v 2.0 - 10-2023
 */
 
+.gs_container1 {
+	padding: 32px;
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    background-color: #EFEFE7;
+}
 
+@media screen and (max-width: 1200px) {
+    .gs_container1 {
+        border-radius: 0px;
+        padding: 24px;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .gs_container1 {
+        border-radius: 0px;
+        padding: 20px;
+    }
+}
 
 .grid_1_group {
-	margin: 40px auto 60px auto;
+	padding: 0px;
 }
 
 
@@ -215,7 +238,7 @@
 
 
 .tagline_group {
-	margin: 40px auto 40px auto;
+/*	margin: 40px auto 40px auto;*/
 	background-color: none;
 }
 
@@ -2058,11 +2081,12 @@ html {
 
 
 .to_do_list {
-	margin: 0px 20px 4px 20px;
+/*	margin: 0px 20px 4px 20px;*/
     height: auto;
     display: flex;
     flex-direction: row;
     width: auto;
+    padding-top: 32px;
 }
 
 
@@ -2076,17 +2100,18 @@ html {
 @media screen and (max-width: 1200px) {
 
 	.to_do_list {
-		margin: 0px 10px 4px 10px;
+/*		margin: 0px 10px 4px 10px;*/
 	}
 }
 
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
 
 	.to_do_list {
-		margin: 0px 0px 4px 0px;
+/*		margin: 0px 0px 4px 0px;*/
   		flex-direction: column;
+		gap: 16px;
 	}
 
 	.to_do_list_1 {
@@ -2103,10 +2128,18 @@ html {
 	line-height: 40px;
 	letter-spacing: .5px;
 	padding-bottom: 8px;
-
 }
 
+@media screen and (max-width: 500px) {
 
+	.to_do_header {
+	    text-transform: uppercase;
+	    font-size: 20px;
+	    line-height: 32px;
+	    letter-spacing: .5px;
+	    padding-bottom: 8px;
+	}
+}
 
 
 
@@ -2131,14 +2164,14 @@ html {
 
 
 .captions {
-	width: 100%;
-	font-family: 'Atlas Grotesk Web', sans-serif;
-	font-size: 14px;
-	line-height: 24px;
-	text-transform: uppercase;
-	background-color: #fff;
-	padding: 8px 8px 8px 12px;
-	margin: 16px 0px 16px 0px;
+    width: 100%;
+    font-family: 'Atlas Grotesk Web', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    /* background-color: #fff; */
+    padding: 8px 8px 8px 0px;
+    margin: 16px 0px 8px 0px;
 }
 
 
@@ -2154,20 +2187,16 @@ html {
 }
 
 
-@media screen and (max-width: 900px) {
-    .captions {
-		margin: 8px 0px 8px 0px;
-}
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
     .captions {
         width: 100%;
         font-family: 'Atlas Grotesk Web', sans-serif;
         font-size: 12px;
         line-height: 20px;
         text-transform: uppercase;
-        background-color: #fff;
+        /*background-color: #fff;*/
         padding: 8px 8px 8px 12px;
         margin-bottom: 8px;
     }
@@ -2298,9 +2327,9 @@ MOBILE MARGIN UPDATE
 	    padding-left: 0px;
 	}
 
-	.to_do_list {
+/*	.to_do_list {
 		margin: 0px 20px 4px 20px;
-	}
+	}*/
 
 
 }

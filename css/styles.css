@@ -1652,17 +1652,14 @@ h6, h6 a {
 }
 
 @media screen and (max-width: 500px) {
-
-	.col_small img {
-		height: 240px;
-		float: left;
-		flex-direction: column;
-		width: 100%;
-		background-color: #F4F4DD;
-		border-radius: 8px;
-	}
-
-
+    .col_small img {
+        height: 240px;
+        float: left;
+        flex-direction: column;
+        width: 100%;
+        background-color: #fff;
+        border-radius: 8px;
+    }
 }
 
 
@@ -3222,6 +3219,14 @@ MOBILE MARGIN UPDATE
 		padding: 20px 20px 0px 20px;
 	}
 
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .col_des {
+        margin-left: 0px;
+    }
 
 }
 
