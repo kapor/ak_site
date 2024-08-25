@@ -1114,7 +1114,7 @@ flex: 100%;
 }
 
 .beliefs_row {
-	margin: 20px 0px 20px 0px;
+	padding: 20px 0px 20px 0px;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -1125,7 +1125,7 @@ flex: 100%;
 
 @media screen and (max-width: 1200px) {
 
-	.beliefs_row {
+	.padding {
 		margin: 0px 0px 0px 0px;
 	    height: auto;
 	    display: flex;
@@ -1139,7 +1139,7 @@ flex: 100%;
 
 
 .ditto_row {
-	margin: 20px 0px 20px 0px;
+	padding: 20px 0px 20px 0px;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -1148,7 +1148,7 @@ flex: 100%;
 }
 
 .ditto_row {
-	margin: 20px 0px 20px 0px;
+	padding: 20px 0px 20px 0px;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -1159,7 +1159,7 @@ flex: 100%;
 @media screen and (max-width: 1000px) {
 
 	.ditto_row {
-		margin: 0px 0px 0px 0px;
+		padding: 0px 0px 0px 0px;
 	    height: auto;
 	    display: flex;
 	    flex-direction: column;
@@ -1488,10 +1488,11 @@ flex: 100%;
 @media screen and (max-width: 400px) {
 
 	.contents ul {
-	    font-size: 12px;
-	    line-height: 26px;
-	    letter-spacing: 2px;
-	}
+        font-size: 12px;
+        line-height: 26px;
+        letter-spacing: 2px;
+        margin-block-end: 0px;
+    }
 }
 
 
