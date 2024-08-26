@@ -2853,68 +2853,14 @@ ul h2 {
 
 
 
-
-
-
-
-.advisors_section {
-    padding: 40px 20px 0px 40px;
-    margin :0 auto;
-    display: inline-block;
-	width: -webkit-fill-available;
+.advisors_flex_01 {
+	display: flex;
+	flex-direction: row;
+	gap: 4px;
+	border-radius: 4px;
+	margin: 4px 0px;
 }
 
-.advisors_section div {
-    display: inline-block;
-}
-
-.advisors_section img {
-	height: 180px;
-	display: block;
-	float: left;	
-}
-
-.left {
-    float: left;
-}
-
-
-@media screen and (max-width: 1200px) {
-
-	.advisors_section img {
-		height: 120px;
-	}
-
-	.advisors_section {
-	    padding: 20px 20px 0px 20px;
-	}
-
-}
-
-
-@media screen and (max-width: 800px) {
-
-	.advisors_section img {
-		height: 140px;
-	}
-
-}
-
-@media screen and (max-width: 600px) {
-
-	.advisors_section img {
-		height: 100px;
-	}
-
-}
-
-@media screen and (max-width: 400px) {
-
-	.advisors_section img {
-		height: 70px;
-	}
-
-}
 
 
 
