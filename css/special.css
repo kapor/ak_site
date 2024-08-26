@@ -1838,14 +1838,13 @@ html {
 @media screen and (max-width: 500px) {
 
 	.logos {
-		display: flex;
-		float: left;
-		height: 120px;
-		background-color: #EFEFE7;
-		padding: 20px;
-		align-items: center;
-		justify-content: center;
-
+        display: flex;
+        float: left;
+        height: 80px;
+        background-color: #EFEFE7;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
 	}
 
 	.logo_row {
@@ -1938,6 +1937,8 @@ html {
 	font-family: 'Atlas typewriter Web', letter-gothic-std, monospace;
 }
 
+.ditto_believes_containter .ditto_believes_group:
+
 
 .ditto_believes_red {
 	color: #CB0044;
@@ -1966,6 +1967,7 @@ html {
 
 
 }
+
 
 
 @media screen and (max-width: 600px) {
