@@ -68,7 +68,6 @@ body {
 
 
 
-
 /* –––––––––––––––––– FOOTER –––––––––––––––––– */
 
 
@@ -2025,10 +2024,10 @@ h5:target + .taglist .return2 {
 
 
 
-@media screen and (min-height: 991px) {
+@media screen and (min-height: 800px) {
 
 	section:last-of-type {
-		height: 10vh;
+		height: 40vh;
 	}
 
 }
