@@ -2752,6 +2752,111 @@ ul h2 {
 
 
 
+
+
+.section_head_holder {
+    background-color: #F7F7F2;
+    background-repeat: repeat;
+    background-size: 384px;
+    border-radius: 4px;
+    background-image: url(/images/patterns/tile_bg_post.png);
+    padding: 48px 32px 32px 32px;
+}
+
+
+.section_head {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: 'Atlas Grotesk Web', sans-serif;
+    font-size: 64px;
+    line-height: 72px;
+    padding-top: 16px;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    text-align: left;
+    height: auto;
+    width: auto;
+}
+
+.section_subhead {
+    font-family: 'Atlas Grotesk Web', sans-serif;
+    font-size: 32px;
+    line-height: 32px;
+    padding: 0px 0px 0px 0px;
+    text-transform: uppercase;
+    text-align: left;
+    height: auto;
+    width: auto;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+	.section_head_holder {
+    	padding: 48px 24px 32px 24px;
+	}
+
+	.section_head {
+	    font-size: 56px;
+	    line-height: 56px;
+	}
+
+	.section_subhead {
+	    font-size: 32px;
+	    line-height: 32px;
+	}
+
+}
+
+
+@media screen and (max-width: 800px) {
+
+	.section_head_holder {
+        padding: 48px 20px 20px 20px;
+	}
+
+	.section_head {
+	    font-size: 48px;
+	    line-height: 48px;
+    	padding-top: 16px;
+	}
+
+	.section_subhead {
+	    font-size: 24px;
+	    line-height: 24px;
+	}
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+	.section_head_holder {
+    	padding: 40px 20px 20px 20px;
+	}
+
+	.section_head {
+	    font-size: 40px;
+	    line-height: 40px;
+    	padding-top: 10px;
+	}
+
+	.section_subhead {
+	    font-size: 20px;
+	    line-height: 20px;
+	}
+
+}
+
+
+
+
+
+
+
+
+
 .advisors_section {
     padding: 40px 20px 0px 40px;
     margin :0 auto;
