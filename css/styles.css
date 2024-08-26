@@ -2755,11 +2755,12 @@ ul h2 {
 .advisors_section {
     padding: 40px 20px 0px 40px;
     margin :0 auto;
-    display:inline-block;
+    display: inline-block;
+	width: -webkit-fill-available;
 }
 
 .advisors_section div {
-    display:inline-block;
+    display: inline-block;
 }
 
 .advisors_section img {
