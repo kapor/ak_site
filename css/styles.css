@@ -2052,7 +2052,6 @@ p code {
 
 pre {
 	font-family: 'Atlas typewriter Web', 'trade-gothic-next', sans-serif;
-	font-weight: 200;
 	font-size: 14px;
 	line-height: 26px;
 	color: #444444;
@@ -2073,7 +2072,6 @@ pre {
 @media screen and (max-width: 800px) {
 
 	pre {
-		font-weight: 200;
 		font-size: 12px;
 		line-height: 20px;
 		color: #444444;
@@ -2082,6 +2080,20 @@ pre {
 		margin-bottom: 10px;
 		margin-top: 0px;
 
+	}
+
+}
+
+
+@media screen and (max-width: 600px) {
+	pre {
+        font-size: 10px;
+        line-height: 17px;
+        color: #444444;
+        padding: 10px 20px;
+        font-weight: 400;
+        margin-bottom: 10px;
+        margin-top: 0px;
 	}
 
 }
