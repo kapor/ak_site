@@ -396,6 +396,9 @@
 
 	.guide_group {
 		padding: 20px 0px 40px 0px;
+	    gap: 20px;
+	    display: flex;
+	    flex-direction: column;
 	}
 
 	.guide_group p {
@@ -887,6 +890,10 @@ o888ooo8888 o88o  o888o o888o      o888ooooo88   88ooo88  o888o  88o8 o888ooo888
     padding-top: 24px;
 }
 
+.gs_container1 .app_subhead:last-of-type {
+	padding-bottom: 20px;
+}
+
 .app_subhead ul {
     font-family: 'Atlas Grotesk Web', 'trade-gothic-next', sans-serif;
     font-weight: 300;
@@ -1029,10 +1036,11 @@ o888ooo8888 o88o  o888o o888o      o888ooooo88   88ooo88  o888o  88o8 o888ooo888
 
 @media screen and (max-width: 500px) {
 
+
     .app_subhead {
         font-size: 16px;
         line-height: 24px;
-        padding-top: 8px;
+        padding-top: 16px;
     }
 
     .app_subhead ul {
@@ -1078,6 +1086,10 @@ o888ooo8888 o88o  o888o o888o      o888ooooo88   88ooo88  o888o  88o8 o888ooo888
     list-style-type: disc;
 	list-style-position: outside;
     padding-bottom: 16px;
+}
+
+.app_subhead li:last-of-type {
+    padding-bottom: 0px;
 }
 
 
