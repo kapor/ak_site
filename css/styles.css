@@ -456,7 +456,7 @@ a {
 
 	#menu_grid {
 	    width: 100%;
-	    margin: 0px 0px 60px 0px;
+	    margin: 0px 0px 80px 0px;
 	}
 
 	#menu_grid td {
@@ -2246,10 +2246,11 @@ pre {
 		display: block;
 		overflow: hidden;
 		opacity: 1;
-		height: auto;
+		height: 64px;
 		z-index: 8;
 		background-color: #fff;
 		border-bottom: 1px solid #F7F7F2;
+		padding: 20px 20px 20px 20px;
 	}
 
 	#col_1_mobile {
@@ -2265,17 +2266,16 @@ pre {
 	    line-height: 24px;
 	    opacity: 100%;
 	    margin: 0;
-	    padding: 20px 0px 20px 20px;
 		white-space: nowrap; 
 		overflow: hidden;
 		text-overflow: ellipsis;
 	}
 
 	#col_2_mobile {
-	    font-family: 'Atlas typewriter Web', letter-gothic-std, monospace;
+	    /*font-family: 'Atlas typewriter Web', letter-gothic-std, monospace;
 	    font-weight: 300;
 	    font-style: normal;
-		text-transform: uppercase;
+		text-transform: uppercase;*/
 	    width: 50%;
 		letter-spacing: 1.3px;
 	    display: inline-block;
@@ -2284,7 +2284,6 @@ pre {
 	    line-height: 24px;
 	    opacity: 100%;
 	    margin: 0;
-	    padding: 20px 20px 20px 0px;
 		white-space: nowrap; 
 		overflow: hidden;
 		text-overflow: ellipsis;
@@ -2303,7 +2302,6 @@ pre {
 	    line-height: 24px;
 	    opacity: 100%;
 	    margin: 0;
-	    padding: 20px 20px 20px 0px;
 		white-space: nowrap; 
 		overflow: hidden;
 		text-overflow: ellipsis;
