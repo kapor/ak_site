@@ -439,7 +439,6 @@ a {
 	font-style: normal;
 	font-size: 14px;
 	line-height: 40px;
-
 	text-align: left;
 	padding-right: 14px;
 	/* padding left needs to be 2px less to account for the 2px border left */
@@ -451,6 +450,24 @@ a {
 	text-overflow: ellipsis;
 	max-width: 0;
 }
+
+
+@media screen and (max-width: 800px) {
+
+	#menu_grid {
+	    width: 100%;
+	    margin: 0px 0px 60px 0px;
+	}
+
+	#menu_grid td {
+		padding-right: 20px;
+		/* padding left needs to be 2px less to account for the 2px border left */
+		padding-left: 20px;
+	}
+
+}
+
+
 
 #menu_grid a  {
 	text-decoration: none;
@@ -2126,6 +2143,59 @@ pre {
 	display: none;
 }
 
+@media screen and (max-width: 800px) {
+
+	.menu_grid_mobile {
+		display: none;
+		opacity: 0;
+		height: 0;
+		max-height: 100vh;
+		padding: 0px 0px 0px 0px;
+		z-index: 20;
+		position: relative;
+		background-color: #ffffff;
+		overflow-y: scroll;
+	}
+
+
+	.menu_grid_mobile .menu_highlight {
+	    background-color: #F7F7F2;
+	    border-left: 2px solid #F7F7F2;
+	    color: #222222;
+	}
+
+	.menu_grid_mobile .menu_row:hover {
+		background: #FFFFFF;
+		color: #222222;
+	}
+
+	.menu_grid_mobile .menu_row_active {
+		background: #FFFFFF;
+		color: #222222;
+	}
+
+	.menu_grid_mobile #menu_header {
+		display: none;
+	}
+
+
+	.menu_grid_mobile .menu_grid_mobile::-webkit-scrollbar { 
+	    display: none; 
+	} 
+
+
+	.menu_grid_mobile {
+	    overflow: scroll;
+	}
+
+
+	#menu_grid .menu_data2 {
+		text-align: right;
+	} 
+
+}
+
+
 #col_2_mobile {
 	display: none;
 
@@ -2247,18 +2317,6 @@ pre {
 	}
 
 
-	.menu_grid_mobile {
-		display: none;
-		opacity: 0;
-		height: 0;
-		max-height: 100vh;
-		padding: 0px 0px 0px 0px;
-		z-index: 20;
-		position: relative;
-		background-color: #ffffff;
-		overflow-y: scroll;
-	}
-
 	.sticky {
 		z-index: 20;
 	}
@@ -2273,42 +2331,13 @@ pre {
 	}
 
 
-	.menu_grid_mobile .menu_highlight {
-	    background-color: #F7F7F2;
-	    border-left: 2px solid #F7F7F2;
-	    color: #222222;
-	}
-
-	.menu_grid_mobile .menu_row:hover {
-		background: #FFFFFF;
-		color: #222222;
-	}
-
-	.menu_grid_mobile .menu_row_active {
-		background: #FFFFFF;
-		color: #222222;
-	}
-
 
 	#mygrid_data_column_1:hover {
 		background: #FFFFFF;
 		color: #222222;
 	}
 
-	.menu_grid_mobile #menu_header {
-		display: none;
-	}
 
-
-	.menu_grid_mobile .menu_grid_mobile::-webkit-scrollbar { 
-	    display: none; 
-	} 
-
-
-
-	.menu_grid_mobile {
-	    overflow: scroll;
-	}
 
 }
 
