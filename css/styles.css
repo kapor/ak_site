@@ -2749,6 +2749,72 @@ ul h2 {
 }
 
 
+
+
+
+.advisors_section {
+    padding: 40px 20px 0px 40px;
+    margin :0 auto;
+    display:inline-block;
+    width: 1000px;
+    min-width: 850px;
+}
+.advisors_section div {
+    display:inline-block;
+}
+
+.advisors_section img {
+	height: 180px;
+	display: block;
+	float: left;	
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+
+	.advisors_section img {
+		height: 120px;
+	}
+
+	.advisors_section {
+	    padding: 20px 20px 0px 20px;
+	}
+
+}
+
+
+@media screen and (max-width: 800px) {
+
+	.advisors_section img {
+		height: 140px;
+	}
+
+}
+
+@media screen and (max-width: 600px) {
+
+	.advisors_section img {
+		height: 100px;
+	}
+
+}
+
+@media screen and (max-width: 400px) {
+
+	.advisors_section img {
+		height: 70px;
+	}
+
+}
+
+
+
+
+
+
+
 .image_container {
 	background-color: none;
 	background-repeat: repeat;
