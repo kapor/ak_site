@@ -2666,6 +2666,13 @@ ul h2 {
 	margin-bottom: 4px;
 }
 
+@media screen and (max-width: 800px) {
+
+	.divider_advisors {
+		height: 8px;
+	}
+}
+
 
 
 .big_divider_bottom {
@@ -2678,16 +2685,7 @@ ul h2 {
 	margin-bottom: 20px;
 }
 
-@media screen and (max-width: 800px) {
 
-
-	.divider_advisors {
-	    margin-top: 4px;
-	    margin-bottom: 4px;
-	}
-
-
-}
 
 
 

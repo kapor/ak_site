@@ -260,9 +260,59 @@
     margin: 48px 20px 40px 20px;
 }
 
+@media screen and (max-width: 1000px) {
+    .hp_container {
+        margin: 48px 0px 40px 0px;
+    }
+}
+
+
+.hp_container1 {
+    padding: 0px 0px 20px 0px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid white;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 1200px) {
+    .hp_container1 {
+        padding: 4px 0px 14px 0px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .hp_container1 {
+        padding: 4px 0px 14px 0px;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+.hp_elements_flex {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+@media screen and (max-width: 1200px) {
+    .hp_elements_flex {
+       gap: 20px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .hp_elements_flex {
+       gap: 16px;
+    }
+}
+
+
 .hp_container2 {
-    padding: 40px 40px 40px 40px;
-    border-radius: 8px;
+    padding: 40px 40px 60px 40px;
     background-repeat: repeat;
     background-size: 300px;
     border-radius: 4px;
@@ -272,37 +322,63 @@
     margin-top: 8px;
 }
 
+@media screen and (max-width: 1200px) {
+    .hp_container2 {
+        padding: 20px 20px 40px 20px;
+    }
+}
 
-.sub_continaer {
-    margin-bottom: 40px;
-    margin-top: 40px;
+@media screen and (max-width: 1000px) {
+    .hp_container2 {
+        padding: 16px 16px 30px 16px;
+    }
 }
 
 
-@media screen and (max-width: 1200px) {
-
+@media screen and (max-width: 800px) {
     .hp_container2 {
-        padding: 20px 20px 30px 20px;
+        border-radius: 0px;
+        margin-bottom: 4px;
+        margin-top: 4px;
     }
 
-
 }
+
+
+.sub_continaer img {
+    border-radius: 0px;
+/*    margin-bottom: 40px;
+    margin-top: 40px;*/
+}
+
 
 
 @media screen and (max-width: 1000px) {
-    .hp_container {
-        margin: 48px 0px 40px 0px;
-    }
-
-    .hp_container2 {
-        padding: 16px 16px 20px 16px;
-    }
 
     .sub_continaer {
-        margin-bottom: 20px;
-        margin-top: 20px;
+/*        margin-bottom: 20px;
+        margin-top: 20px;*/
     }
 }
+
+
+
+.hp_container2_flex {
+    padding: 40px 40px 60px 40px;
+    background-repeat: repeat;
+    background-size: 300px;
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
 
 
 .hp_section_header {
@@ -345,12 +421,31 @@
     font-family: 'Atlas typewriter Web', letter-gothic-std, monospace;
     margin-left: 0px;
     letter-spacing: 1px;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 14px;
     width: 100%;
-    /* margin-top: 20px; */
-    margin-bottom: 24px;
+    margin-bottom: 14px;
     color: #222222;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .hp_section_subhead2 {
+        font-size: 10px;
+        line-height: 12px;
+        margin-bottom: 8px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hp_section_subhead2 {
+        font-size: 8px;;
+        line-height: 10px;
+        margin-bottom: 8px;
+        width: 100%;
+    }
 }
 
 
@@ -391,16 +486,6 @@
         margin-bottom: 16px;
     }
 
-
-    .hp_section_subhead2 {
-        font-size: 14px;
-        line-height: 20px;
-        margin-bottom: 8px;
-        /* margin-top: 8px; */
-        width: 100%;
-    }
-
-
     .hp_section_subhead3 {
         font-size: 14px;
         line-height: 18px;
@@ -409,6 +494,54 @@
         width: 100%;
     }
 }
+
+
+@media screen and (max-width: 1000px) {
+    .hp_section_header {
+        width: 100%;
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 0px;
+    }
+}
+
+
+
+.hp_section_subhead5 {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    font-family: 'Atlas typewriter Web', letter-gothic-std, monospace;
+    margin-left: 0px;
+    letter-spacing: 1px;
+    max-width: 900px;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: #222222;
+}
+
+@media screen and (max-width: 1000px) {
+    .hp_section_subhead5 {
+        font-size: 12px;
+        line-height: 20px;
+        margin-top: 8px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hp_section_subhead5 {
+        font-size: 10px;
+        line-height: 18px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+}
+
 
 
 
@@ -519,6 +652,29 @@
     width: fit-content;
     border-left: 2px solid #666;
     border-right: 2px solid #666;
+}
+
+.hp_note_white2 {
+    font-family: "plantin", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 20px 0px 20px 0px;
+    width: fit-content;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .hp_note_white2 {
+        font-family: "plantin", sans-serif;
+        font-weight: 200;
+        font-style: italic;
+        color: #ffffff;
+        font-size: 12px;
+        padding: 10px 0px 10px 0px;
+        width: fit-content;
+    }
 }
 
 
@@ -871,6 +1027,14 @@
     margin-top: 0px;
     margin-bottom: 0px;
     border-radius: 2px;
+}
+
+@media screen and (max-width: 800px) {
+
+    .hp_divider_3 {
+        border-radius: 0px;
+    }
+
 }
 
 .hp_divider_4_dark_blue {
@@ -1461,13 +1625,6 @@ MOBILE MARGIN UPDATE
         border-radius: 0px;
     }
 
-    .hp_container2 {
-        border-radius: 0px;
-        padding: 32px 20px;
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-    }
 
     .hp_container3 {
         border-radius: 0px;
@@ -1490,6 +1647,7 @@ MOBILE MARGIN UPDATE
 
     .hp_col_4 {
         margin-bottom: 0px;
+        margin-top: 16px;
     }
 
     .hp_col_0 {
@@ -1520,10 +1678,7 @@ MOBILE MARGIN UPDATE
         margin-bottom: 8px;
     }
 
-    .sub_continaer {
-        margin-bottom: 20px;
-        margin-top: 0px;
-    }
+
 
     .hp_note_white {
         margin-bottom: 20px;
@@ -1532,6 +1687,7 @@ MOBILE MARGIN UPDATE
 
     .hp_col_2 {
         margin-bottom: 0px; 
+        margin-top: 16px;
     }
 
 
