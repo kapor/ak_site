@@ -76,12 +76,18 @@ body {
 
 footer {
 	margin: 0;
-	padding: 8px 0px;
+	padding: 20px 0px 0px 0px;
 	border: 0;
 	font: inherit;
 	vertical-align: baseline;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 800px) {
+	footer {
+		padding: 8px 0px;
+	}
 }
 
 footer p {
@@ -1948,6 +1954,13 @@ header {
 	margin-bottom: 0px;
 }
 
+@media screen and (max-width: 800px) {
+	.archive li {
+		margin-bottom: 0px;
+		height: 32px;
+	}
+}
+
 .archive .tag_cloud li {
 	background-color: #fff;
 }
@@ -2015,7 +2028,7 @@ h5:target + .taglist .return2 {
 @media screen and (min-height: 991px) {
 
 	section:last-of-type {
-		height: 75vh;
+		height: 10vh;
 	}
 
 }

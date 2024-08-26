@@ -30,7 +30,7 @@
 		{% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
 		{% assign sortedTags = site_tags | split:',' | sort %}
 
-	<div class="menu_header_archive">Archives</div>
+	<div class="menu_header_archive">Inventory</div>
 
 	<ul class="archives">
 		<li><a href="{{site.baseurl}}/tags/">All posts</a></li>
