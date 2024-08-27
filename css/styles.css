@@ -704,7 +704,16 @@ p {
 	font-weight: 300;
 	font-style: normal;
 	font-size: 14px;
-	line-height: 28px;
+	line-height: 26px;
+	letter-spacing: .2px;
+}
+
+#info_page div {
+	font-family: 'Atlas Grotesk Web', 'neuzeit-grotesk', sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 14px;
+	line-height: 26px;
 	letter-spacing: .2px;
 }
 
@@ -720,7 +729,9 @@ p {
 }
 
 
-
+.info_header {
+	padding-top: 8px;
+}
 
 
 
