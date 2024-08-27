@@ -307,7 +307,7 @@
         line-height: 24px;
         /*padding-top: 10px;*/
         padding-left: 20px;
-        margin-block-start: 16px;
+        margin-block-start: 4px;
     }
 
     .nav_subhead ol {
@@ -1329,7 +1329,7 @@
     background-color: none;
     background-repeat: repeat;
     width: 100%;
-    height: 16px;
+    height: 8px;
 /*    margin-top: 4px;
     margin-bottom: 4px;*/
 }
@@ -1339,7 +1339,7 @@
 
     .frf_divider_3 {
         background-image: url("../images/patterns/checkerboard_frf2.svg");
-        height: 8px;
+        height: 4px;
     }
 
 }

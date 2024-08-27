@@ -1814,7 +1814,7 @@ $$/       $$/  $$$$$$$/ $$/   $$/
 
 	.data_image img {
         height: auto;
-        object-fit: cover;
+        object-fit: contain;
 	}
 }
 
@@ -1830,7 +1830,7 @@ $$/       $$/  $$$$$$$/ $$/   $$/
     }
 
     .data_image img {
-        max-height: 400px;
+        max-height: 300px;
     }
 
 }
