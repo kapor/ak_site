@@ -18,6 +18,13 @@ blockquote, pre, form, label, legend, table, caption, tbody, tfoot, thead, tr, t
 }
 
 
+@media screen and (max-width: 800px) {
+
+	.highlight {
+	    padding-top: 10px;
+	}
+}
+
 
 html, body{
     padding: 0 !important;
@@ -857,6 +864,13 @@ p {
 	}
 }
 
+@media screen and (max-width: 500px) {
+
+	.bg_color_none {
+		padding: 20px 0px 20px 0px;
+	}
+}
+
 /* ––––––––– */
 
 .bg_color_none_less_pad {
@@ -1016,7 +1030,7 @@ h2 {
 @media screen and (max-width: 500px) {
     h2 {
         font-size: 22px;
-        line-height: 34px;
+        line-height: 32px;
         padding-bottom: 20px;
     }
 
@@ -1623,6 +1637,14 @@ h6, h6 a {
 
 }
 
+@media screen and (max-width: 500px) {
+
+	.row_3 {
+		padding-top: 0px;
+	}
+
+}
+
 .col_small {
 	width: 100%;
 	display: flex;
@@ -1696,7 +1718,7 @@ h6, h6 a {
         flex-direction: column;
         width: 100%;
         background-color: #fff;
-        border-radius: 8px;
+        border-radius: 2px;
     }
 }
 
@@ -3211,6 +3233,7 @@ time {
 
 .home_footer {
 	margin: 0px 0px;
+	padding: 0px 0px 0px 0px;
 }
 
 

@@ -1295,8 +1295,8 @@ o888ooo8888 o88o  o888o o888o      o888ooooo88   88ooo88  o888o  88o8 o888ooo888
         padding: 20px;
     }
     .app_container3 {
-		border-radius: 0px;
-        padding: 20px;
+        border-radius: 0px;
+        padding: 20px 20px 32px 20px;
     }
     
     .app_container4 {
