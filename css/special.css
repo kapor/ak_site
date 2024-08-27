@@ -517,12 +517,18 @@
 	.style_guide_header {
         font-size: 24px;
         line-height: 32px;
-        padding: 8px 0px 20px 0px;
+        padding: 20px 0px 20px 0px;
 	}
 }
 
 
 
+@media screen and (max-width: 600px) {
+
+	.style_guide_header {
+        padding: 8px 0px 20px 0px;
+	}
+}
 
 
 
@@ -1194,18 +1200,6 @@ flex: 100%;
 }
 
 
-.beliefs_title {
-	font-size: 14px;
-	line-height: 28px;
-	background-color: #fff;
-	font-family: 'Atlas typewriter Web', letter-gothic-std, monospace;
-	color: #fff;
-	padding: 8px 8px 8px 12px;
-	margin-bottom: 8px;
-	border: 1px #fff solid;
-	border-radius: 4px;
-	letter-spacing: -0.25px;
-}
 
 .beliefs_description {
 	font-size: 14px;
@@ -1230,6 +1224,20 @@ flex: 100%;
     gap: 20px;
     width: auto;
 }
+
+
+@media screen and (max-width: 1200px) {
+
+	.beliefs_row {
+		padding: 20px 0px 0px 0px;
+	    height: auto;
+	    display: flex;
+	    flex-direction: column;
+	    gap: 20px;
+	    width: auto;
+	}
+}
+
 
 
 @media screen and (max-width: 1200px) {
@@ -1302,6 +1310,20 @@ flex: 100%;
 	border-radius: 4px;
 	letter-spacing: -0.25px;
 }
+
+.beliefs_title {
+	font-size: 14px;
+	line-height: 20px;
+	background-color: #fff;
+	font-family: 'Atlas typewriter Web', letter-gothic-std, monospace;
+	color: #fff;
+	padding: 8px 8px 8px 12px;
+	margin-bottom: 8px;
+	border: 1px #fff solid;
+	border-radius: 4px;
+	letter-spacing: -0.25px;
+}
+
 
 
 .ditto_group .beliefs_description {
