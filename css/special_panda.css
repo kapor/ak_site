@@ -890,10 +890,10 @@ o888ooo8888 o88o  o888o o888o      o888ooooo88   88ooo88  o888o  88o8 o888ooo888
     padding-top: 24px;
 }
 
-.gs_container1 .app_subhead:last-of-type {
+/*.gs_container1 .app_subhead:last-of-type {
 	padding-bottom: 20px;
 }
-
+*/
 .app_subhead ul {
     font-family: 'Atlas Grotesk Web', 'trade-gothic-next', sans-serif;
     font-weight: 300;

@@ -23,7 +23,7 @@
 @media screen and (max-width: 800px) {
     .gs_container1 {
         border-radius: 0px;
-        padding: 20px;
+        padding: 20px 20px 24px 20px;
     }
 }
 
