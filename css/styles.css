@@ -3348,6 +3348,84 @@ time {
 
 
 
+.g_group {
+	background-color: #222222;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	padding: 20px;
+	margin-bottom: 20px;
+	border-radius: 8px;
+}
+
+
+@media screen and (max-width: 800px) {
+	.g_group {
+		border-radius: 0px;
+		gap: 8px;
+		padding: 12px;
+		margin-bottom: 8px;
+	}
+}
+
+
+#g_framework {
+	padding: 0px;
+	background-color: transparent;
+}
+
+#g_framework img {
+	border-radius: 8px;
+}
+
+@media screen and (max-width: 800px) {
+	#g_framework img {
+		border-radius: 0px;
+	}
+}
+
+#g_framework .g_outer {
+	background-color: transparent;
+}
+
+.g_outer {
+	background-color: #222222;
+	display: flex;
+	flex-direction: row;
+	gap: 12px;
+}
+
+@media screen and (max-width: 800px) {
+	.g_outer {
+		background-color: #222222;
+		display: flex;
+		flex-direction: row;
+		gap: 8px;
+	}
+}
+
+
+.g_inner {
+	width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*
 MOBILE MARGIN UPDATE                        
