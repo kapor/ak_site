@@ -3412,11 +3412,21 @@ time {
 
 
 
+.lulldull {
+	max-width: 800px;
+    align-content: center;
+    margin: auto;
+    padding-bottom: 80px;
+}
 
 
 
-
-
+@media screen and (max-width: 800px) {
+	.lulldull {
+    	padding-bottom: 40px;
+		max-width: 400px;
+	}
+}
 
 
 
