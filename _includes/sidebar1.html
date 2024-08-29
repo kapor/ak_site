@@ -6,7 +6,7 @@
 	<tr>
 		<th class="menu_header">Project</th>
 		<th class="menu_header">Type</th>
-		<th class="menu_header">Size</th>
+		<th class="menu_header" id="menu_header_column_3">Size</th>
 	</tr>
 	{% assign posts = site.posts %}
 	{% for post in posts %}
@@ -15,8 +15,8 @@
 		<a id="mygrid_data_column_1" href="{{site.baseurl}}{{post.url}}" class="stretched-link";>{{post.category}}
 		</a>
 		</td>
-		<td class="menu_data">{{post.type}}</td>
-		<td class="menu_data">{{post.size}}</td>
+		<td class="menu_data" id="mygrid_data_column_2">{{post.type}}</td>
+		<td class="menu_data" id="mygrid_data_column_3">{{post.size}}</td>
 		</a>
 	</tr>
 	{% endfor %}

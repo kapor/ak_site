@@ -98,9 +98,17 @@ footer {
 
 footer p {
     font-family: 'Atlas typewriter Web', letter-gothic-std, monospace;
-    font-weight: 300;
     font-style: normal;
 	line-height: 32px;
+	font-size: 13px;
+    color: #444;
+    margin: 0 0 1em 0;
+    letter-spacing: -0.5px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
 footer p a {
@@ -421,6 +429,20 @@ a {
 #mygrid_data_column_1:hover {
 	background: #F7F7F2;
 	color: #6219FF;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+	#menu_grid #mygrid_data_column_3 {
+		display: none;
+		text-align: right;
+	}
+
+	#menu_grid #menu_header_column_3 {
+		display: none;
+		text-align: right;
+	}
 }
 
 #menu_grid  {
@@ -2049,18 +2071,32 @@ h5:target + .taglist .return2 {
 }
 
 .section_spacer {
-	height: 100px;
-	width: auto%;
+	height: 200px;
+	width: auto;
 	background: transparent;
 }
 
 
 
 
-@media screen and (min-height: 800px) {
+section:last-of-type {
+	/*height: 40vh;*/
+	margin-bottom: 40vh;
+}
+
+
+
+@media screen and (max-height: 1100px) {
 
 	section:last-of-type {
-		height: 40vh;
+		/*height: 40vh;*/
+		margin-bottom: 10vh;
+	}
+
+	.section_spacer {
+		height: 8px;
+		width: auto;
+		background: transparent;
 	}
 
 }
@@ -3215,14 +3251,60 @@ time {
 
 
 .home_section {
-	border-bottom: 1px dotted #ccc;
-	max-width: 1200px;
-	overflow: hidden;
-	background: transparent;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	margin: 20px 20px;
+    border-bottom: 1px dotted #ccc;
+    max-width: 1200px;
+    overflow: hidden;
+    background: transparent;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin: 20px 20px 20px 20px;
 }
+
+#big_2 section:first-child {
+	border-bottom: 1px dotted #ccc;
+    max-width: 1200px;
+    overflow: hidden;
+    background: transparent;
+    /* padding-top: 20px; */
+    padding-bottom: 10px;
+    margin: 0px 20px 20px 20px;
+}
+
+
+
+@media screen and (max-width: 800px) {
+	.home_section {
+		margin: 40px 20px;
+        padding-top: 0px;
+        padding-bottom: 20px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	#big_2 section:first-child {
+		margin: 20px 20px;
+		padding-top: 0px;
+    	padding-bottom: 20px;
+	}
+}
+
+
+@media screen and (max-width: 500px) {
+    .home_section {
+		margin: 20px 20px;
+        padding-top: 0px;
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+	#big_2 section:first-child {
+		margin: 20px 20px;
+        padding-top: 0px;
+        padding-bottom: 20px;
+	}
+}
+
 
 
 
@@ -3266,20 +3348,9 @@ time {
 		display: none;
 	}
 
-	.home_section {
-		margin: 0px 20px;
-		padding-top: 30px;
-    	padding-bottom: 30px;
-	}
 }
 
-@media screen and (max-width: 500px) {
-    .home_section {
-        margin: 0px 20px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-}
+
 
 @media screen and (max-width: 500px) {
 
@@ -3399,7 +3470,7 @@ time {
 	.g_outer {
 		background-color: #222222;
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		gap: 8px;
 	}
 }
@@ -3408,6 +3479,13 @@ time {
 .g_inner {
 	width: 50%;
 }
+
+@media screen and (max-width: 800px) {
+	.g_inner {
+		width: 100%;
+	}
+}
+
 
 
 
@@ -3537,4 +3615,38 @@ MOBILE MARGIN UPDATE
 }
 
 
+.post-nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto 20px;
+    padding-bottom: 80px;
+}
+
+.post-nav {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: 'Atlas typewriter Web', letter-gothic-std, monospace;
+	font-weight: 300;
+	font-style: normal;
+	text-align: left;
+	font-size: 24px;
+	line-height: 32px;
+	text-transform: uppercase;
+	letter-spacing: 0px;
+}
+
+.unsighted {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	word-wrap: normal !important;
+}
 
