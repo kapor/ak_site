@@ -3658,3 +3658,9 @@ MOBILE MARGIN UPDATE
 	word-wrap: normal !important;
 }
 
+.booklist_normal {
+	padding: 0px 20px;
+	margin: 20px 0px;
+	background-color: #FFFFFF;
+}
+
