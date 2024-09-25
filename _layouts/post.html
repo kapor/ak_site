@@ -14,10 +14,17 @@ title: post
 		</div>
 -->
 		<header>
+			{% if page.entity %}
 			<h3>
 				{{page.entity}} / {{page.category}}
 			</h3>
-			
+			{% else %}
+			<h3>
+				{{page.category}}
+			</h3>
+				{% endif %}
+
+
 			<time itemprop="dateCreated" datetime="{{page.date}}">
 				{{ page.loc }} + {{page.type}}
 			</time> 
