@@ -9,11 +9,8 @@ title: AK
 <section class="home_section">
 
 	<header class="home_header">
-		{% if post.entity %}
 		<h3><a href="{{site.baseurl}}{{post.url}}" title="it's ok.">{{post.entity}} / {{post.category}}</a></h3>
-		{% else %}
-		<h3><a href="{{site.baseurl}}{{post.url}}" title="it's ok.">{{post.category}}</a></h3>
-		{% endif %}
+		
 		<!-- <time itemprop="dateCreated" datetime="{{post.date}}">
 			{{post.date | date: "%Y"}} + {{ post.loc }}
 		</time> -->
