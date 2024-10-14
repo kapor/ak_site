@@ -3241,6 +3241,9 @@ HOME UPDATE
 
 .home_header {
 	padding-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
 }
 
 .home_header h3 a {
@@ -3770,5 +3773,19 @@ font-family: "orator-std", monospace;
     padding: 80px 0px;
     border-radius: 8px;
 }
+
+
+.home_header_cell {
+/*	float: right;*/
+	width: 40%;
+	background-color: #ffffff;
+
+}
+
+
+
+
+
+
 
 

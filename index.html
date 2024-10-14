@@ -8,24 +8,25 @@ title: AK
 
 <section class="home_section">
 
-	<header class="home_header">
-		<h3><a href="{{site.baseurl}}{{post.url}}" title="it's ok.">{{post.entity}} / {{post.category}}</a></h3>
-		
-		<!-- <time itemprop="dateCreated" datetime="{{post.date}}">
-			{{post.date | date: "%Y"}} + {{ post.loc }}
-		</time> -->
-
-		<!-- <time>
-			{{ post.loc }} | {{ post.type }} | {{ post.size }}
-		</time>  -->
-	
-	</header> 
 
 	{% if post.image %}
 	<!-- if there's an image added to front matter, display it -->
 	<a href="{{site.baseurl}}{{post.url}}" title="it's ok.">
 		<div class="thumb_post" style="background-image: url( {{ site.baseurl }}/images/{{ post.image }} );">
-			<!-- <a href="{{site.baseurl}}{{post.url}}" title="it's ok, click me."><img src="{{ site.baseurl }}/images/{{ post.image }}"></a> -->
+
+			<header class="home_header">
+				<div class="home_header_cell">
+					<h3><a href="{{site.baseurl}}{{post.url}}" title="it's ok.">{{post.entity}} / {{post.category}}</a></h3>
+				</div>
+				<div class="home_header_cell">
+					<p class="home_excerpt">
+						<a href="{{site.baseurl}}{{post.url}}">{{post.excerpt | strip_html}}</a><a href="{{site.baseurl}}{{post.url}}" title="read more" class="more">[...]
+						</a>
+					</p>
+				</div>
+			</header> 
+
+
 		</div>
 	</a>
 	{% else %}
@@ -35,11 +36,6 @@ title: AK
 		</div>
 	</a>
 	{% endif %}
-
-	<p class="home_excerpt">
-		<a href="{{site.baseurl}}{{post.url}}">{{post.excerpt | strip_html}}</a><a href="{{site.baseurl}}{{post.url}}" title="read more" class="more">[...]
-		</a>
-	</p>
 
 
 	<footer class="home_footer">
