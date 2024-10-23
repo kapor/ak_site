@@ -1364,7 +1364,7 @@
 
 
 .hp_notes {
-    padding: 4px 8px 4px 8px;
+    padding: 4px 8px 4px 16px;
     margin-left: 0;
     display: block;
     font-family: 'Atlas Grotesk Web', sans-serif;
@@ -1374,11 +1374,18 @@
     text-transform: none;
     width: 100%;
     margin-top: 0px;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
     color: #222222;
     border-left: 4px solid #FFFFFF;
-    background-color: ;
 }
+
+@media screen and (max-width: 1000px) {
+    .hp_notes {
+        padding: 4px 8px 4px 10px;
+    }
+}
+
+
 
 .hp_notes a {
     color: #6219FF;
@@ -1410,7 +1417,10 @@
     height: 100%;
     margin-bottom: 8px;
     margin-top: 8px;
+    display: flex;
+    gap: 16px;
     background-image: url(/images/patterns/tile_bg_beige.png);
+    flex-direction: column;
 }
 
 
@@ -1521,7 +1531,7 @@
     line-height: 26px;
     text-transform: uppercase;
     width: 90%;
-    margin: 0px 0px 32px 0px;
+    margin: 0px 0px 24px 0px;
     color: #222222;
 }
 
@@ -1701,6 +1711,7 @@ MOBILE MARGIN UPDATE
 
     .hp_container_pc {
         border-radius: 0px;
+        gap: 10px;
     }
 
 
