@@ -17,6 +17,8 @@ collections:
 plugins:
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-seo-tag
 markdown: kramdown
 kramdown:
     auto_ids: false
