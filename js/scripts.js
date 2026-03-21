@@ -90,10 +90,6 @@ document.querySelectorAll(elements).forEach(element => {
 /* ++++++++++ MENU SCROLL INDICATOR ++++++++++ */
 
 
-//https://stackoverflow.com/questions/16308037/detect-when-elements-within-a-scrollable-div-are-out-of-view
-
-//Here's a pure javascript version of the accepted answer without relying on jQuery and with some fixes to the partial in view detection and support for out of view on top.
-
 var container = document.getElementById("big_2"),
   element = document.getElementsByTagName("section"),
     menu_row = document.getElementsByClassName("menu_row"),
