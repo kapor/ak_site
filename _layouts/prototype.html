@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+
+<!-- kapor_did_this -->
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>{% if page.title %}{{page.title}}{% else %}{{site.title}}{% endif %}</title> 
+<meta name="description" content="|||||||||||||||||">
+<link rel="canonical" href="{{site.baseurl}}{{page.url}}">
+<link rel="apple-touch-icon" href="{{site.baseurl}}/apple-touch-icon.png">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet"/>
+<link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}/images/icon/favicon.svg">
+<link rel="stylesheet" href="{{site.baseurl}}/sketch/css/fonts.css">
+<link rel="stylesheet" href="{{site.baseurl}}/sketch/css/matter.css">
+
+
+
+
+
+<script>
+window.addEventListener('scroll', function() {
+  const navbar = document.getElementById('topnav_fixed');
+  if (window.scrollY > 50) {
+    navbar.classList.add('scrolled');
+  } else {
+    navbar.classList.remove('scrolled');
+  }
+});
+
+</script>
+
+
+
+
+</head>
+<body class="no-scroll">
+
+
+
+<!-- ++++++++++ nav ++++++++++ -->
+
+<div id="topnav_fixed">
+    <div class="left"> 
+        <img src="{{site.baseurl}}/sketch/images/matter_logo.svg" alt="">
+        <span class="nav_links">
+            <div class="nav_link">Products
+                <svg xmlns="http://www.w3.org/2000/svg" width="7" height="4" viewBox="0 0 7 4" fill="none">
+                <path d="M3.24996 3.99995L6.49991 0H0L3.24996 3.99995Z" fill="#222222"/>
+                </svg>
+            </div>
+            <div class="nav_link">Resources
+                <svg xmlns="http://www.w3.org/2000/svg" width="7" height="4" viewBox="0 0 7 4" fill="none">
+                <path d="M3.24996 3.99995L6.49991 0H0L3.24996 3.99995Z" fill="#222222"/>
+                </svg>
+            </div>
+            <div class="nav_link">Enterprise</div>
+            <div class="nav_link">Demo</div>
+            <div class="nav_link">Pricing</div>
+        </span>
+    </div>
+
+    <div class="right"> 
+        <div class="nav_link" id="signin">Sign in</div>
+
+        <div class="nav_button_group">
+            <button class="nav_button_outline"> 
+                <div class="nav_link">Contact Sales</div>
+            </button>
+            <button class="nav_button_solid"> 
+                <div class="nav_link">Get Started</div>
+            </button>
+            <div class="ham">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <path d="M6 20H26V23.5H6V20Z" fill="#222222"/>
+                    <path d="M6 8H26V11.5H6V8Z" fill="#222222"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+<!-- <div id="topnav_fixed_mobile">
+    <div class="left"> 
+        <img src="{{site.baseurl}}/sketch/images/matter_logo.svg" alt="">
+    </div>
+
+    <div class="right"> 
+        <div class="nav_link">Sign in</div>
+
+        <div class="nav_button_group">
+            <button class="nav_button_outline"> 
+                <div class="nav_link">Contact Sales</div>
+            </button>
+            <button class="nav_button_solid"> 
+                <div class="nav_link">Get Started</div>
+            </button>
+            <div class="ham">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <path d="M6 20H26V23.5H6V20Z" fill="#222222"/>
+                    <path d="M6 8H26V11.5H6V8Z" fill="#222222"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+
+</div> -->
+
+<!-- ++++++++++ HERO ++++++++++ -->
+
+<div id="home_hero" style="background-image: url('{{site.baseurl}}/sketch/images/hero_bg.png')" ;="">
+
+    <div class="hero_content">
+
+        <div class="hero_title">
+            Employee Recognition Software for&nbsp;Slack and&nbsp;Teams
+        </div>
+        <div class="hero_button_group">
+            <button>
+                <img src="{{site.baseurl}}/sketch/images/icons/icon_slack.svg" alt="">
+                Add to Slack
+            </button>
+            <button>
+                <img src="{{site.baseurl}}/sketch/images/icons/icon_teams.svg" alt="">
+                Add to Teams
+            </button>
+        </div>
+
+    <div class="hero_demo">
+        <div class="demo_container" style="background-image: url('{{site.baseurl}}/sketch/images/bg/hero_placeholder.png')" ;="">
+
+        </div>
+        <div class="demo_button_group">
+            <button class="demo_button_on">
+                Recognition
+            </button>
+            <button class="demo_button">
+                Rewards
+            </button>
+            <button class="demo_button">
+                Surveys
+            </button>
+        </div>
+    </div> 
+
+
+    </div>
+
+
+
+</div>
+
+
+<!-- 
+
+  ___  ___   ___ ___   _   _    
+ / __|/ _ \ / __|_ _| /_\ | |   
+ \__ \ (_) | (__ | | / _ \| |__ 
+ |___/\___/ \___|___/_/ \_\____|
+                 
+
+ -->
+
+
+<div class="social_proof_grid">
+    Trusted by 4,700+ Companies
+
+
+    <div class="social_proof">
+        <div class="company_logo">
+            <img src="{{site.baseurl}}/sketch/images/social/social_proof_logo_01.svg" alt="">
+        </div>
+        <div class="company_logo">
+            <img src="{{site.baseurl}}/sketch/images/social/social_proof_logo_02.svg" alt="">
+        </div>
+        <div class="company_logo">
+            <img src="{{site.baseurl}}/sketch/images/social/social_proof_logo_03.svg" alt="">
+        </div>
+        <div class="company_logo">
+            <img src="{{site.baseurl}}/sketch/images/social/social_proof_logo_04.svg" alt="">
+        </div>
+        <div class="company_logo">
+            <img src="{{site.baseurl}}/sketch/images/social/social_proof_logo_05.svg" alt="">
+        </div>
+        <div class="company_logo">
+            <img src="{{site.baseurl}}/sketch/images/social/social_proof_logo_06.svg" alt="">
+        </div>
+        <div class="company_logo">
+            <img src="{{site.baseurl}}/sketch/images/social/social_proof_logo_07.svg" alt="">
+        </div>
+        <div class="company_logo">
+            <img src="{{site.baseurl}}/sketch/images/social/social_proof_logo_08.svg" alt="">
+        </div>
+        <div class="company_logo">
+            <img src="{{site.baseurl}}/sketch/images/social/social_proof_logo_09.svg" alt="">
+        </div>
+        <div class="company_logo">
+            <img src="{{site.baseurl}}/sketch/images/social/social_proof_logo_10.svg" alt="">
+        </div>
+        <div class="company_logo">
+            <img src="{{site.baseurl}}/sketch/images/social/social_proof_logo_11.svg" alt="">
+        </div>
+        <div class="company_logo">
+            <img src="{{site.baseurl}}/sketch/images/social/social_proof_logo_12.svg" alt="">
+        </div>
+<!--         <div class="company_logo">
+            <img src="{{site.baseurl}}/sketch/images/social/social_proof_logo_13.svg" alt="">
+        </div>
+        <div class="company_logo">
+            <img src="{{site.baseurl}}/sketch/images/social/social_proof_logo_14.svg" alt="">
+        </div> -->
+    </div>
+</div>
+
+<div class="pattern1" style="margin-top:0px"></div>
+
+
+
+
+<!-- 
+
+  ___ ___  ___  ___  _   _  ___ _____   ___ _   _ ___ _____ ___ 
+ | _ \ _ \/ _ \|   \| | | |/ __|_   _| / __| | | |_ _|_   _| __|
+ |  _/   / (_) | |) | |_| | (__  | |   \__ \ |_| || |  | | | _| 
+ |_| |_|_\\___/|___/ \___/ \___| |_|   |___/\___/|___| |_| |___|
+                                                                                                                                                                  
+ -->
+
+
+ <div id="product suite">
+
+
+    <div class="product_suite_tabs_container">
+        Your Matter Suite
+    </div>
+    <div class="product_suite_tabs">
+        <button class="product_suite_tab1">
+            <img src="{{site.baseurl}}/sketch/images/icons/recognition.svg" alt="">
+            Recognition
+        </button>
+        <button class="product_suite_tab2">
+            <img src="{{site.baseurl}}/sketch/images/icons/rewards.svg" alt="">
+            Rewards
+        </button>
+        <button class="product_suite_tab3">
+            <img src="{{site.baseurl}}/sketch/images/icons/surveys.svg" alt="">
+            Surveys
+        </button>
+    </div>
+
+
+
+
+    <section id="section1">
+
+        <div class="product_title" id="recognition">
+            <h1 class="product_title_header">
+                Recognition
+            </h1>
+            <h3 class="product_title_suhead">
+                Whether it’s monthly or quarterly, your team can choose who they want feedback and skills they want to work on.
+            </h3>
+        </div>
+
+        <div class="product_card">
+            <div class="product_card_left">
+                <div class="product_card_list">
+
+                    <div class="product_card_item">
+                        <div class="pci_outside">
+                            <div class="pci_inside">
+                                <div class="title">
+                                    Peer Recognition
+                                </div>
+                                <div class="description">
+                                    Share kudos for all to see and celebrate. Recognize each other regularly and in the moment with kudos.
+                                </div>
+                            </div>
+                            <div class="cta">
+                                Learn More
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product_card_item">
+                        <div class="pci_outside">
+                            <div class="pci_inside">
+                                <div class="title">
+                                    Company Values
+                                </div>
+                                <div class="description">
+                                    Make people feel more connected to the company and each other with customizable kudos templates.
+                                </div>
+                            </div>
+                            <div class="cta">
+                                Learn More
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product_card_item">
+                        <div class="pci_outside">
+                            <div class="pci_inside">
+                                <div class="title">
+                                    Feedback Friday
+                                </div>
+                                <div class="description">
+                                    Automate weekly recognition in Slack and Microsoft Teams with Feedback Friday. Encourage your team to share kudos consistently.
+                                </div>
+                            </div>
+                            <div class="cta">
+                                Learn More
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product_card_item">
+                        <div class="pci_outside">
+                            <div class="pci_inside">
+                                <div class="title">
+                                    Celebrations
+                                </div>
+                                <div class="description">
+                                    Automatically celebrate birthdays and work anniversaries in Slack and Microsoft Teams so every milestone is recognized and shared across your team.
+                                </div>
+                            </div>
+                            <div class="cta">
+                                Learn More
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product_card_item">
+                        <div class="pci_outside">
+                            <div class="pci_inside">
+                                <div class="title">
+                                    Analytics / Reporting
+                                </div>
+                                <div class="description">
+                                    Answer culture questions with analytics. Leverage kudos, rewards, and feedback activity to see engagement insights and trends.
+                                </div>
+                            </div>
+                            <div class="cta">
+                                Learn More
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <burron class="expplore">
+                    Explore Recognition
+                </burron>
+            </div>
+            <div class="product_card_right" style="background-image: url('/sketch/images/bg/right_1.png');">
+                <div class="product_ui">
+                    <img src="{{site.baseurl}}/sketch/images/product/recognition_ui_001.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <div class="pattern1"></div>
+
+
+
+    <section id="section2">
+
+
+        <div class="product_title" id="rewards">
+            <h1 class="product_title_header">
+                Rewards
+            </h1>
+            <h3 class="product_title_suhead">
+                Matter helps organizations recognize, reward, and understand their people. Built for Slack and Teams, and flexible enough for every workplace.
+            </h3>
+        </div>
+
+        <div class="product_card">
+            <div class="product_card_left">
+                <div class="product_card_list">
+
+                    <div class="product_card_item">
+                        <div class="pci_outside">
+                            <div class="pci_inside">
+                                <div class="title">
+                                    Gift Cards
+                                </div>
+                                <div class="description">
+                                    3,500+ options across 200+ countries. Add Matter coins to kudos, celebrations, and surveys — and instantly redeem for gift cards, company rewards, donations, etc.
+                                </div>
+                            </div>
+                            <div class="cta">
+                                Learn More
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product_card_item">
+                        <div class="pci_outside">
+                            <div class="pci_inside">
+                                <div class="title">
+                                    Custom Rewards
+                                </div>
+                                <div class="description">
+                                    Create your own rewards store with custom company-branded rewards. Whether it’s an extra day off, an exclusive t-shirt, or a unique perk, offer rewards that match your culture.
+                                </div>
+                            </div>
+                            <div class="cta">
+                                Learn More
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product_card_item">
+                        <div class="pci_outside">
+                            <div class="pci_inside">
+                                <div class="title">
+                                    Prepaid Cards
+                                </div>
+                                <div class="description">
+                                    Reward your team with digital gift cards and prepaid options from 3,500+ brands across 200+ countries. From everyday essentials to global favorites, employees can choose rewards that work for them.
+                                </div>
+                            </div>
+                            <div class="cta">
+                                Learn More
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product_card_item">
+                        <div class="pci_outside">
+                            <div class="pci_inside">
+                                <div class="title">
+                                    Monetary Rewards
+                                </div>
+                                <div class="description">
+                                    Reward your team with digital gift cards and prepaid options from 3,500+ brands across 200+ countries. From everyday essentials to global favorites, employees can choose rewards that work for them.
+                                </div>
+                            </div>
+                            <div class="cta">
+                                Learn More
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product_card_item">
+                        <div class="pci_outside">
+                            <div class="pci_inside">
+                                <div class="title">
+                                    Charitable Donations
+                                </div>
+                                <div class="description">
+                                    Give employees the option to donate their rewards to causes they care about, supporting global and local nonprofits.
+                                </div>
+                            </div>
+                            <div class="cta">
+                                Learn More
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <burron class="expplore">
+                    Explore Rewards
+                </burron>
+            </div>
+            <div class="product_card_right" style="background-image: url('/sketch/images/bg/right_2.png');">
+                <div class="product_ui">
+                    <img src="{{site.baseurl}}/sketch/images/product/rewards_ui_001.png" alt="">
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="pattern1"></div>
+
+
+
+    <section id="section3">
+
+        <div class="product_title" id="surveys">
+            <h1 class="product_title_header">
+                Surveys
+            </h1>
+            <h3 class="product_title_suhead">
+                Collect feedback directly in Slack or Teams and act on it fast. No extra logins. No chasing responses. Higher participation, automatically.
+            </h3>
+        </div>
+
+        <div class="product_card" style="height:800px">
+            <div class="product_card_left" style="height:800px">
+                <div class="product_card_list">
+
+                    <div class="product_card_item">
+                        <div class="pci_outside">
+                            <div class="pci_inside">
+                                <div class="title">
+                                    Employee Surveys
+                                </div>
+                                <div class="description">
+                                    Automatically send employee surveys in Slack or Teams (and email), get real-time feedback, view powerful analytics, and offer rewards.
+                                </div>
+                            </div>
+                            <div class="cta">
+                                Learn More
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product_card_item">
+                        <div class="pci_outside">
+                            <div class="pci_inside">
+                                <div class="title">
+                                    Pulse Surveys + eNPS
+                                </div>
+                                <div class="description">
+                                    Pulse surveys that work. Transform your organization into a champion of diversity, equity, inclusion, and belonging.
+                                </div>
+                            </div>
+                            <div class="cta">
+                                Learn More
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product_card_item">
+                        <div class="pci_outside">
+                            <div class="pci_inside">
+                                <div class="title">
+                                    Onboarding Surveys
+                                </div>
+                                <div class="description">
+                                    Collect valuable new hire feedback. Automate onboarding feedback surveys, get early sentiment signals, spot red flags, and optimize your onboarding process.
+                                </div>
+                            </div>
+                            <div class="cta">
+                                Learn More
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <burron class="expplore">
+                    Explore Recognition
+                </burron>
+            </div>
+            <div class="product_card_right" style="height: 800px; background-image: url('/sketch/images/bg/right_3.png');">
+                <div class="product_ui">
+                    <img src="{{site.baseurl}}/sketch/images/product/surveys_ui_001.png" alt="">
+                </div>
+            </div>
+        </div>
+     </section>
+</div>
+
+
+
+<div class="pattern1"></div>
+
+
+
+<div id="awards_module">
+    <h3>
+        An award-winning platform
+    </h3>
+
+    <div class="awards_row_01">
+        <div class="award">
+            <img src="{{site.baseurl}}/sketch/images/awards/g2_01.svg" alt="">
+        </div>
+        <div class="award">
+            <img src="{{site.baseurl}}/sketch/images/awards/g2_02.svg" alt="">
+        </div>
+        <div class="award">
+            <img src="{{site.baseurl}}/sketch/images/awards/g2_03.svg" alt="">
+        </div>
+        <div class="award">
+            <img src="{{site.baseurl}}/sketch/images/awards/g2_04.svg" alt="">
+        </div>
+        <div class="award">
+            <img src="{{site.baseurl}}/sketch/images/awards/g2_05.svg" alt="">
+        </div>
+    </div>
+
+    <div class="awards_row_02">
+        <div class="award">
+            <img src="{{site.baseurl}}/sketch/images/awards/award_getapp.svg" alt="">
+        </div>
+        <div class="award">
+            <img src="{{site.baseurl}}/sketch/images/awards/award_capt.svg" alt="">
+        </div>
+        <div class="award">
+            <img src="{{site.baseurl}}/sketch/images/awards/award_soft.svg" alt="">
+        </div>
+    </div>
+
+</div>
+
+
+<div class="pattern1"></div>
+
+
+
+<div id="footer">
+    <div class="footer_top">
+        <div class ="footer_top_left">
+            <div class="footer_exploding_m">
+                <img src="{{site.baseurl}}/sketch/images/exploding.svg" alt="">
+            </div>
+            <div class="button_lockup">
+                Trusted by 4,700+ Companies in 120+ Countries
+                <button class="footer_button">
+                    Contact Sales
+                </button>
+            </div>
+        </div>
+
+        <div class="footer_top_right">
+            <div class="footer_column1">
+                <div class="footer_column_header">
+                    Company
+                </div>
+                <ul class="footer_links">
+                    <li>About Us</li>
+                    <li>Careers</li>
+                    <li>Blog</li>
+                    <li>Contact Us</li>
+                    <li>Sign In</li>
+                </ul>
+            </div>
+            <div class="footer_column2">
+                <div class="footer_column_header">
+                    Platform
+                </div>
+                <ul class="footer_links">
+                    <li>Recognition</li>
+                    <li>Rewards</li>
+                    <li>Surveys</li>
+                    <li>Integrations</li>
+                    <li>Slack Integration</li>
+                    <li>Microsoft Teams<br>Integration</li>
+                </ul>
+            </div>
+            <div class="footer_column3">
+                <div class="footer_column_header">
+                    Resources
+                </div>
+                <ul class="footer_links">
+                    <li>Help Center</li>
+                    <li>Customer Stories</li>
+                    <li>Video Guides</li>
+                    <li>Rewards Budget<br>Calculator</li>
+                    <li>Employee Turnover<br>Calculator</li>
+                    <li>Skills Guide</li>
+                </ul>
+            </div>
+            <div class="footer_column4">
+                <div class="footer_column_header">
+                    Get Started
+                </div>
+                <ul class="footer_links">
+                    <li>Watch Demo</li>
+                    <li>Enterprise</li>
+                    <li>Pricing</li>
+                    <li>Contact Sales</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+</body>
+
+
+
+</html>
+
+

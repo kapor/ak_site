@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'CircularXX';
+    src: url('/sketch/fonts/woff/CircularXX-BlackItalic.woff2') format('woff2'),
+        url('CircularXX-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CircularXX';
+    src: url('/sketch/fonts/woff/CircularXX-Black.woff2') format('woff2'),
+        url('CircularXX-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CircularXX';
+    src: url('/sketch/fonts/woff/CircularXX-Bold.woff2') format('woff2'),
+        url('CircularXX-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CircularXX';
+    src: url('/sketch/fonts/woff/CircularXX-BoldItalic.woff2') format('woff2'),
+        url('CircularXX-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CircularXX Book';
+    src: url('/sketch/fonts/woff/CircularXX-Book.woff2') format('woff2'),
+        url('CircularXX-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CircularXX Book';
+    src: url('/sketch/fonts/woff/CircularXX-BookItalic.woff2') format('woff2'),
+        url('CircularXX-BookItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CircularXX ExtraBlack';
+    src: url('/sketch/fonts/woff/CircularXX-ExtraBlack.woff2') format('woff2'),
+        url('CircularXX-ExtraBlack.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CircularXX ExtraBlack';
+    src: url('/sketch/fonts/woff/CircularXX-ExtraBlackItalic.woff2') format('woff2'),
+        url('CircularXX-ExtraBlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CircularXX';
+    src: url('/sketch/fonts/woff/CircularXX-Italic.woff2') format('woff2'),
+        url('CircularXX-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CircularXX Light';
+    src: url('/sketch/fonts/woff/CircularXX-Light.woff2') format('woff2'),
+        url('CircularXX-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CircularXX';
+    src: url('/sketch/fonts/woff/CircularXX-LightItalic.woff2') format('woff2'),
+        url('CircularXX-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CircularXX Medium';
+    src: url('/sketch/fonts/woff/CircularXX-Medium.woff2') format('woff2'),
+        url('CircularXX-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CircularXX';
+    src: url('/sketch/fonts/woff/CircularXX-MediumItalic.woff2') format('woff2'),
+        url('CircularXX-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CircularXX Regular';
+    src: url('/sketch/fonts/woff/CircularXX-Regular.woff2') format('woff2'),
+        url('CircularXX-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CircularXX Thin';
+    src: url('/sketch/fonts/woff/CircularXX-Thin.woff2') format('woff2'),
+        url('CircularXX-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CircularXX';
+    src: url('/sketch/fonts/woff/CircularXX-ThinItalic.woff2') format('woff2'),
+        url('CircularXX-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
