@@ -601,11 +601,16 @@ h3 {
     width: 33.33%;
 
     color: var(--m1_black, #222);
-    font-family: CircularXX Regular;
-    font-size: 24px;
+    font-family: CircularXX Light;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+
+}
+
+.icon_rec {
+    fill: #ff4757; 
 }
 
 
