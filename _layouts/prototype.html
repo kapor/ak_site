@@ -32,6 +32,39 @@ window.addEventListener('scroll', function() {
 
 </script>
 
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const sections = document.querySelectorAll(".content-section");
+  const tabs = document.querySelectorAll(".tab");
+
+  const observerOptions = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.6 // Triggers when 60% of the section is visible
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        // Get the ID of the intersecting section
+        const activeId = entry.target.getAttribute("id");
+
+        // Remove active class from all tabs
+        tabs.forEach((tab) => {
+          tab.classList.remove("active");
+
+          // Add active class if the href matches the section ID
+          if (tab.getAttribute("href") === `#${activeId}`) {
+            tab.classList.add("active");
+          }
+        });
+      }
+    });
+  }, observerOptions);
+
+  sections.forEach((section) => observer.observe(section));
+});
+</script>
 
 
 
@@ -240,26 +273,26 @@ window.addEventListener('scroll', function() {
         Your Matter Suite
     </div>
     <div class="product_suite_tabs">
-        <button class="product_suite_tab1">
+        <a class="tab" href="#section1">
             <img src="{{site.baseurl}}/sketch/images/icons/recognition.svg" alt="">
             Recognition
-        </button>
-        <button class="product_suite_tab2">
+        </a>
+        <a class="tab" href="#section2">
             <img src="{{site.baseurl}}/sketch/images/icons/rewards.svg" alt="">
             Rewards
-        </button>
-        <button class="product_suite_tab3">
+        </a>
+        <a class="tab" href="#section3">
             <img src="{{site.baseurl}}/sketch/images/icons/surveys.svg" alt="">
             Surveys
-        </button>
+        </a>
     </div>
 
 
 
 
-    <section id="section1">
+    <section id="section1" class="content-section">
 
-        <div class="product_title" id="recognition">
+        <div class="product_title">
             <h1 class="product_title_header">
                 Recognition
             </h1>
@@ -372,10 +405,10 @@ window.addEventListener('scroll', function() {
 
 
 
-    <section id="section2">
+    <section id="section2" class="content-section">
 
 
-        <div class="product_title" id="rewards">
+        <div class="product_title">
             <h1 class="product_title_header">
                 Rewards
             </h1>
@@ -488,9 +521,9 @@ window.addEventListener('scroll', function() {
 
 
 
-    <section id="section3">
+    <section id="section3" class="content-section">
 
-        <div class="product_title" id="surveys">
+        <div class="product_title">
             <h1 class="product_title_header">
                 Surveys
             </h1>

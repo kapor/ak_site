@@ -10,6 +10,7 @@ blockquote, pre, form, label, legend, table, caption, tbody, tfoot, thead, tr, t
     font: inherit;
     vertical-align: baseline;
     text-overflow: ellipsis;
+    scroll-margin-top: 160px; 
 }
 
 
@@ -565,7 +566,7 @@ h3 {
     position: -webkit-sticky; /* Safari support */
     display: flex;
     height: 82px;
-    top: 80px;
+    top: 79px;
     padding: 0;
     justify-content: center;
     align-items: flex-start;
@@ -581,10 +582,12 @@ h3 {
     z-index: 2001;
 }
 
+.product_suite_tabs a {
+    text-decoration: none;
+}
 
-.product_suite_tab1,
-.product_suite_tab2,
-.product_suite_tab3 {
+
+.product_suite_tabs .tab {
     display: flex;
     height: 80px;
     padding: 9px 21px;
@@ -606,28 +609,12 @@ h3 {
 }
 
 
-.product_suite_tab1,
-.product_suite_tab2,
-.product_suite_tab3 {
-    display: flex;
-    height: 80px;
-    padding: 9px 21px;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    flex: 1 0 0;
-    border: none;
-/*    border: 1px solid var(--m1_light1, #CCC);*/
-    background: #FFF;
-    width: 33.33%;
 
-    color: var(--m1_black, #222);
-    font-family: CircularXX Regular;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+.product_suite_tabs .tab.active {
+    background: var(--m1_light6, #EFECE8);
+    transition: background 0.4s Ease; /* Smooth animation */
 }
+
 
 
 
