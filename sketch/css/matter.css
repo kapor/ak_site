@@ -500,7 +500,7 @@ h3 {
         flex-direction: column;
         height: auto;
         padding: 0px 20px;
-        width: stretch;
+        width: 100%;
     }
 }
 
