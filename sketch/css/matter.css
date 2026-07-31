@@ -1,6 +1,8 @@
  /* prototype matter
 */
 
+
+
 /* reset margins */
 html, body, div, span, h1, h2, h3, h4, h5, h6, p,
 blockquote, pre, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, header, hgroup, menu, nav, output, section, summary, audio, video {
@@ -218,7 +220,7 @@ h3 {
     text-align: right;
     font-feature-settings: 'liga' off;
     /*font-family: CircularXX;*/
-    font-size: 16px;
+    font-size: 16px;v
     font-style: normal;
     font-weight: 200;
     line-height: normal;
@@ -240,6 +242,14 @@ h3 {
     background: #FFF;
 }
 
+.nav_button_outline:hover {
+    background: #FBF7FF;
+}
+
+.nav_button_outline:active {
+    background: #FFF;
+}
+
 
 @media screen and (max-width: 768px) {
     .nav_button_outline {
@@ -252,11 +262,11 @@ h3 {
     color: var(--m1_purple, #9327FF);
     text-align: center;
     font-feature-settings: 'liga' off;
-    font-family: CircularXX Regular;
+    font-family: CircularXX Light;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: normal;
+    line-height: normal; 
     letter-spacing: 0.8px;
 }
 
@@ -272,6 +282,14 @@ h3 {
     background: var(--m1_purple, #9327FF);
 }
 
+.nav_button_solid:hover {
+    background: #9E3CFF;
+}
+
+.nav_button_solid:active {
+    background: var(--m1_purple, #9327FF);
+}
+
 .nav_button_group {
     display: flex;
     gap: 8px;
@@ -282,7 +300,7 @@ h3 {
     color: #FFFFFF;
     text-align: center;
     font-feature-settings: 'liga' off;
-    font-family: CircularXX Regular;
+    font-family: CircularXX Light;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -359,7 +377,7 @@ h3 {
 
 
 .hero_title {
-    font-family: 'CircularXX Book', Arial, sans-serif; 
+    font-family: 'CircularXX Regular', Arial, sans-serif; 
     text-align: center;
     font-feature-settings: 'liga' on;
     font-size: 88px;
@@ -2214,9 +2232,157 @@ h3 {
 
 
 
+.button_grid {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+
+.button_white_black .nav_link {
+    text-align: center;
+    font-feature-settings: 'liga' off;
+    font-family: CircularXX Light;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.8px;
+    color: #222222;
+}
+
+
+.button_white_black {
+    display: flex;
+    height: 44px;
+    padding: 20px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border-radius: 4px;
+    border: none;
+    background: #FFF;
+
+}
+
+.button_white_black:hover {
+    background: #F3F3F3;
+}
+
+.button_white_black:active {
+    background: #FFF;
+}
+
+
+.button_black_white .nav_link {
+    text-align: center;
+    font-feature-settings: 'liga' off;
+    font-family: CircularXX Light;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.8px;
+    color: #FFFFFF;
+}
+
+.button_black_white {
+    display: flex;
+    height: 44px;
+    padding: 20px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border-radius: 4px;
+    border: none;
+    background: #222;
+
+}
+
+.button_black_white:hover {
+    background: #444444;
+}
+
+.button_black_white:active {
+    background: #222;
+}
 
 
 
+
+
+.button_grey_white .nav_link {
+    text-align: center;
+    font-feature-settings: 'liga' off;
+    font-family: CircularXX Light;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.8px;
+    color: #FFFFFF;
+}
+
+.button_grey_white {
+    display: flex;
+    height: 44px;
+    padding: 20px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border-radius: 4px;
+    border: none;
+    background: #444444;
+    /*background-color: #444444; -webkit-transition: background-color .5s; transition: background-color .5s;*/
+
+}
+
+.button_grey_white:hover {
+    background: #000000;
+    /*background-color: #000000; -webkit-transition: background-color .5s; transition: background-color .5s;*/
+}
+
+.button_grey_white:active {
+    background: #444444;
+    background-color: #444444;
+}
+
+
+
+.button_biege_purple .nav_link {
+    text-align: center;
+    font-feature-settings: 'liga' off;
+    font-family: CircularXX Light;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.8px;
+    color: #9327FF;
+}
+
+.button_biege_purple {
+    display: flex;
+    height: 44px;
+    padding: 20px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border-radius: 4px;
+    border: none;
+    background: #F4E9E1;
+    /*background-color: #F4E9E1; -webkit-transition: background-color 1s; transition: background-color .5s;*/
+
+}
+
+.button_biege_purple:hover {
+    background: #EADDCF;
+}
+
+.button_biege_purple:active {
+    background: #F4E9E1;
+}
 
 
 
