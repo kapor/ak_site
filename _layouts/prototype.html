@@ -29,6 +29,35 @@ window.addEventListener('scroll', function() {
     navbar.classList.remove('scrolled');
   }
 });
+</script>
+
+<script>
+
+
+window.addEventListener('scroll', () => {
+  const bgLayer = document.querySelector('.nav_button_outline');
+  
+  // If scrolled down more than 50px, add the class. Otherwise, remove it.
+  if (window.scrollY > 50) {
+    bgLayer.classList.add('scrolled');
+  } else {
+    bgLayer.classList.remove('scrolled');
+  }
+});
+
+</script>
+
+<script>
+window.addEventListener('scroll', () => {
+  const bgLayer = document.querySelector('.fade-bg');
+  
+  // If scrolled down more than 50px, add the class. Otherwise, remove it.
+  if (window.scrollY > 50) {
+    bgLayer.classList.add('scrolled');
+  } else {
+    bgLayer.classList.remove('scrolled');
+  }
+});
 
 </script>
 
@@ -76,6 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
 <!-- ++++++++++ nav ++++++++++ -->
 
 <div id="topnav_fixed">
+    <div class="fade-bg"></div>
     <div class="left"> 
         <div class="logo_box">
             <img src="{{site.baseurl}}/sketch/images/matter_logo.svg" alt="">
@@ -101,7 +131,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="nav_link" id="signin">Sign in</div>
 
         <div class="nav_button_group">
-            <button class="nav_button_outline"> 
+            <button class="nav_button_outline" id="nav_button_outline"> 
                 <div class="nav_link">Contact Sales</div>
             </button>
             <button class="nav_button_solid"> 
